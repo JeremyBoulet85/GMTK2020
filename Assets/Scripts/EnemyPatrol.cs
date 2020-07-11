@@ -40,6 +40,7 @@ public class EnemyPatrol : MonoBehaviour
     private Transform player;
     private GameObject exclamationInstance = null;
     private Canvas canvas;
+    private Camera cam;
 
     void Awake()
     {
@@ -49,6 +50,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Start()
     {
+        cam = FindObjectOfType<Camera>();
         animator = GetComponent<Animator>();
         soundManager = GetComponent<SoundManager>();
         SwitchToWalking();
@@ -141,7 +143,7 @@ public class EnemyPatrol : MonoBehaviour
             if (canvas != null)
             {
                 exclamationInstance = Instantiate(exclamation, canvas.transform);
-                exclamationInstance.transform.position = new Vector2(transform.position.x, transform.position.y + 1.7f);
+                exclamationInstance.transform.position = cam.WorldToScreenPoint(new Vector2(transform.position.x, transform.position.y + 1.7f));
             }
         }
 
