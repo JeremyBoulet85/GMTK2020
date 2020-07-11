@@ -20,10 +20,9 @@ public class PlayerController : MonoBehaviour
 
     public void Sneeze()
     {
-        soundManager.PlaySneezeSound();
+        soundManager.PlaySound(SoundType.Sneeze, 0.9f);
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector2 velocity = new Vector3();
@@ -39,23 +38,9 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("Horizontal", velocity.x);
             animator.SetFloat("Vertical", velocity.y);
-            PlayFootstepSound();
+            soundManager.PlayFootstepSound();
         }
 
         rb.MovePosition(rb.position + velocity.normalized * speed * Time.fixedDeltaTime);
-    }
-
-    private float timeWaitedBetweenFootstepSound = 0.0f;
-    private float timeToWaitBetweenFootstepSound = 2.0f;
-
-    private void PlayFootstepSound()
-    {
-        timeWaitedBetweenFootstepSound += Time.fixedDeltaTime;
-
-        if  (timeWaitedBetweenFootstepSound >= timeToWaitBetweenFootstepSound)
-        {
-            timeWaitedBetweenFootstepSound = 0.0f;
-            soundManager.PlayFootstepSound();
-        }
     }
 }

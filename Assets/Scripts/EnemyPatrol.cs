@@ -16,6 +16,8 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField]
     float waitTime = 2f;
 
+    private SoundManager soundManager;
+
     private Animator animator;
 
     enum PatrolState
@@ -40,7 +42,8 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        animator     = GetComponent<Animator>();
+        soundManager = GetComponent<SoundManager>();
     }
 
     private void Update()
@@ -88,6 +91,7 @@ public class EnemyPatrol : MonoBehaviour
         }
 
         UpdateAnimationDirection();
+        soundManager.PlayFootstepSound(0.8f, 0.15f);
         transform.Translate(speed * direction * Time.deltaTime, Space.World);
     }
 
@@ -106,6 +110,7 @@ public class EnemyPatrol : MonoBehaviour
         // For now... Exclamation!
         UpdateAnimationDirection();
         animator.SetFloat("Speed", 0.0f);
+        soundManager.PlayFootstepSound(0.4f);
     }
 
     private void SwitchToWaiting()

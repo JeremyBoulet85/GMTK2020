@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253cf53c0f112134cb699ee05fb596ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sneeze: {fileID: 8300000, guid: 85284f8d61ff8cc4e8d604c1e2ab26e0, type: 3}
-  footstep: {fileID: 8300000, guid: 9be7cc8964f74d347a15ba4862c57f72, type: 3}
+  footstepSound: {fileID: 8300000, guid: 9be7cc8964f74d347a15ba4862c57f72, type: 3}
+  sneezeSound: {fileID: 8300000, guid: 85284f8d61ff8cc4e8d604c1e2ab26e0, type: 3}
 --- !u!82 &1757092791154853441
 AudioSource:
   m_ObjectHideFlags: 0

@@ -2,30 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum SoundType
+{
+    Footstep,
+    Sneeze
+}
+
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField]
-    private AudioClip sneeze = null;
-
-    [SerializeField]
-    private AudioClip footstep = null;
-
     private AudioSource audioSource = null;
+    public AudioClip footstepSound = null;
+    public AudioClip sneezeSound = null;
+    private float timeWaitedBetweenFootstepSound;
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        timeWaitedBetweenFootstepSound = Random.Range(-0.1f, 1.5f);
     }
 
-    public void PlaySneezeSound()
+    public void PlaySound(SoundType soundType, float volume)
     {
-        audioSource.volume = 0.8f;
-        audioSource.PlayOneShot(sneeze);
+        switch (soundType)
+        {
+            case SoundType.Footstep:
+                audioSource.volume = volume;
+                audioSource.PlayOneShot(footstepSound);
+                break;
+            case SoundType.Sneeze:
+                audioSource.volume = volume;
+                audioSource.PlayOneShot(sneezeSound);
+                break;
+        }
+
     }
 
-    public void PlayFootstepSound()
+    public void PlayFootstepSound(float timeToWaitBetweenFootstepSound = 2.0f, float volume = 0.3f)
     {
-        audioSource.volume = 0.4f;
-        audioSource.PlayOneShot(footstep);
+        timeWaitedBetweenFootstepSound += Time.fixedDeltaTime;
+
+        if (timeWaitedBetweenFootstepSound >= timeToWaitBetweenFootstepSound)
+        {
+            timeWaitedBetweenFootstepSound = 0.0f;
+            PlaySound(SoundType.Footstep, volume);
+        }
     }
 }
