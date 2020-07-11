@@ -11,7 +11,7 @@ public class EnemyPatrol : MonoBehaviour
     Transform pointB;
 
     [SerializeField]
-    float speed = 3f;
+    float speed = 2f;
 
     [SerializeField]
     float waitTime = 2f;
