@@ -17,7 +17,8 @@ public class EnemyPatrol : MonoBehaviour
     float waitTime = 2f;
 
     private SoundManager soundManager;
-
+    private float footstepSoundInterval = 0.8f;
+    private float footstepSoundDistance = 10.0f;
     private Animator animator;
 
     enum PatrolState
@@ -91,7 +92,10 @@ public class EnemyPatrol : MonoBehaviour
         }
 
         UpdateAnimationDirection();
-        soundManager.PlayFootstepSound(0.8f, 0.15f);
+        if (Vector3.Distance(transform.position, player.position) < footstepSoundDistance)
+        {
+            soundManager.PlayFootstepSound(footstepSoundInterval, 0.15f);
+        }
         transform.Translate(speed * direction * Time.deltaTime, Space.World);
     }
 
@@ -110,7 +114,7 @@ public class EnemyPatrol : MonoBehaviour
         // For now... Exclamation!
         UpdateAnimationDirection();
         animator.SetFloat("Speed", 0.0f);
-        soundManager.PlayFootstepSound(0.4f);
+        //soundManager.PlayFootstepSound(footstepSoundInterval / 2.0f);
     }
 
     private void SwitchToWaiting()
