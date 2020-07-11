@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
         soundManager = GetComponent<SoundManager>();
 
         soundManager.PlaySound(SoundType.Music, 0.06f);
+        soundManager.PlaySound(SoundType.Ambiance, 0.1f);
 
         lastPosition = transform.position;
     }
