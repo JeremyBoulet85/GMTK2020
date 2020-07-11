@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private SoundManager soundManager;
+    private float timeBetweenFootstepSound = 0.34f;
     private Vector3 lastPosition;
 
     private void Start()
@@ -32,10 +33,12 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         float effectiveSpeed = normalSpeed;
+        float effectiveTimeBetweenFootstepSound = timeBetweenFootstepSound;
 
         if (Input.GetKey(KeyCode.LeftShift)) {
             animator.speed = 2.0f;
             effectiveSpeed = runningSpeed;
+            effectiveTimeBetweenFootstepSound = timeBetweenFootstepSound / 2.0f;
         } else
         {
             animator.speed = 1.0f;
@@ -62,7 +65,7 @@ public class PlayerController : MonoBehaviour
         if (distanceTravelled >= 0.001f)
         {
             animator.SetFloat("Speed", effectiveSpeed);
-            soundManager.PlayFootstepSound(0.34f);
+            soundManager.PlayFootstepSound(effectiveTimeBetweenFootstepSound);
         } else
         {
             animator.SetFloat("Speed", 0.0f);
