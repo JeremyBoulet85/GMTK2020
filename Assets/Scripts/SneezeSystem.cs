@@ -5,23 +5,33 @@ public class SneezeSystem : MonoBehaviour
 
     public GaugeBarController sneezeBar;
     int sneezeLevel;
-    const int maxSneezeLevel = 100;
-    const float delayAmount = 0.1f; // seconds
+    bool isSneezing;
+    const int maxSneezeLevel = 50;
+    const float fillingDelayAmount = 0.5f; // seconds
+    const float drainingDelayAmount = 0.01f; // seconds
 
     protected float timer;
 
     void Start()
     {
         timer = 0;
+        isSneezing = false;
         sneezeLevel = 0;
         sneezeBar.SetMax(maxSneezeLevel);
     }
 
     void Update()
     {
+        Debug.Log(sneezeLevel);
+        if (isSneezing)
+        {
+            Sneezing();
+            return;
+        }
+
         timer += Time.deltaTime;
 
-        if (timer >= delayAmount)
+        if (timer >= fillingDelayAmount && !isSneezing)
         {
             timer = 0f;
             IncreaseSneezeLevel();
@@ -39,9 +49,22 @@ public class SneezeSystem : MonoBehaviour
 
     void Sneeze()
     {
+        isSneezing = true;
         sneezeLevel = 0;
-        sneezeBar.SetValue(0);
-        Debug.Log("Sneeze!!");
+        Sneezing();
         // do more things
+    }
+
+    void Sneezing()
+    {
+        timer += Time.deltaTime;
+
+        if (timer >= drainingDelayAmount)
+        {
+            sneezeBar.DecreaseValue(1);
+
+            if (sneezeBar.GetValue() == 0)
+                isSneezing = false;
+        }
     }
 }
