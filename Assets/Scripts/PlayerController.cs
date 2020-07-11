@@ -32,6 +32,11 @@ public class PlayerController : MonoBehaviour
     {
         soundManager.PlaySound(SoundType.Sneeze, 0.9f);
     }
+    
+    public void CollectKey()
+    {
+        soundManager.PlaySound(SoundType.KeyCollect, 0.7f);
+    }
 
     void FixedUpdate()
     {

@@ -7,7 +7,8 @@ public enum SoundType
     Footstep,
     Sneeze,
     Music,
-    Ambiance
+    Ambiance,
+    KeyCollect
 }
 
 public class SoundManager : MonoBehaviour
@@ -17,8 +18,10 @@ public class SoundManager : MonoBehaviour
     private AudioSource audioSourceSneeze = null;
     private AudioSource audioSourceMusic = null;
     private AudioSource audioSourceBell = null;
+    private AudioSource audioSourceCollectKey = null;
     public AudioClip footstepSound = null;
     public AudioClip sneezeSound = null;
+    public AudioClip keyCollect = null;
     public AudioClip ambiance = null;
     public AudioClip music = null;
     public AudioClip bell1 = null;
@@ -29,11 +32,12 @@ public class SoundManager : MonoBehaviour
 
     public void Start()
     {
-        audioSourceFootstep = gameObject.AddComponent<AudioSource>();
-        audioSourceSneeze   = gameObject.AddComponent<AudioSource>();
-        audioSourceMusic    = gameObject.AddComponent<AudioSource>();
-        audioSourceBell     = gameObject.AddComponent<AudioSource>();
-        audioSourceAmbiance = gameObject.AddComponent<AudioSource>();
+        audioSourceCollectKey = gameObject.AddComponent<AudioSource>();
+        audioSourceAmbiance   = gameObject.AddComponent<AudioSource>();
+        audioSourceFootstep   = gameObject.AddComponent<AudioSource>();
+        audioSourceSneeze     = gameObject.AddComponent<AudioSource>();
+        audioSourceMusic      = gameObject.AddComponent<AudioSource>();
+        audioSourceBell       = gameObject.AddComponent<AudioSource>();
 
         timeWaitedBetweenFootstepSound = Random.Range(-0.1f, 1.5f);
         audioSourceBell.volume = 0.06f;
@@ -71,6 +75,10 @@ public class SoundManager : MonoBehaviour
             case SoundType.Sneeze:
                 audioSourceSneeze.volume = volume;
                 audioSourceSneeze.PlayOneShot(sneezeSound);
+                break;
+            case SoundType.KeyCollect:
+                audioSourceCollectKey.volume = volume;
+                audioSourceCollectKey.PlayOneShot(keyCollect);
                 break;
             case SoundType.Music:
                 audioSourceMusic.volume = volume;
