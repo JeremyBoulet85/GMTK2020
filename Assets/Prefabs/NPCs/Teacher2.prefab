@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 0}
   pointB: {fileID: 0}
-  speed: 1
+  speed: 2
   waitTime: 2
 --- !u!95 &1877948538764498664
 Animator:
