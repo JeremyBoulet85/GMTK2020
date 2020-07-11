@@ -11,6 +11,11 @@ public class GaugeBarController : MonoBehaviour
         slider.maxValue = max;
         slider.value = 0;
     }
+
+    public void SetValue(int value)
+    {
+        slider.value = value;
+    }
     
     public void IncreaseValue(int increment)
     {
