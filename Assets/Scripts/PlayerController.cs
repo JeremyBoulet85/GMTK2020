@@ -41,17 +41,24 @@ public class PlayerController : MonoBehaviour
         velocity.y -= Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)  ? 1.0f : 0.0f;
         velocity.x += Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? 1.0f : 0.0f;
 
+        if (velocity.sqrMagnitude >= 0.01f)
+        {
+            animator.SetFloat("Horizontal", velocity.x);
+            animator.SetFloat("Vertical", velocity.y);
+        }
+
         rb.MovePosition(rb.transform.position + velocity.normalized * effectiveSpeed * Time.fixedDeltaTime);
 
         float distanceTravelled = Vector3.Distance(transform.position, lastPosition);
         lastPosition = transform.position;
 
-        animator.SetFloat("Speed", distanceTravelled);
         if (distanceTravelled >= 0.001f)
         {
-            animator.SetFloat("Horizontal", velocity.x);
-            animator.SetFloat("Vertical", velocity.y);
+            animator.SetFloat("Speed", effectiveSpeed);
             soundManager.PlayFootstepSound(0.34f);
+        } else
+        {
+            animator.SetFloat("Speed", 0.0f);
         }
     }
 }
