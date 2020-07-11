@@ -22,9 +22,6 @@ public class PlayerController : MonoBehaviour
         rb           = GetComponent<Rigidbody2D>();
         soundManager = GetComponent<SoundManager>();
 
-        soundManager.PlaySound(SoundType.Music, 0.06f);
-        soundManager.PlaySound(SoundType.Ambiance, 0.1f);
-
         lastPosition = transform.position;
     }
 
@@ -32,9 +29,26 @@ public class PlayerController : MonoBehaviour
     {
         soundManager.PlaySound(SoundType.Sneeze, 0.9f);
     }
+    
+    public void CollectKey()
+    {
+        soundManager.PlaySound(SoundType.KeyCollect, 0.7f);
+    }
+
+    private bool soundInit = false;
+    
+    private void InitSound()
+    {
+        soundInit = true;
+        soundManager.PlaySound(SoundType.Music, 0.06f);
+        soundManager.PlaySound(SoundType.Ambiance, 0.1f);
+    }
 
     void FixedUpdate()
     {
+        if (!soundInit)
+            InitSound();
+
         float effectiveSpeed = normalSpeed;
         float effectiveTimeBetweenFootstepSound = timeBetweenFootstepSound;
 
