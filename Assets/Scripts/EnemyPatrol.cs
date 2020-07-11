@@ -24,34 +24,34 @@ public class EnemyPatrol : MonoBehaviour
     private float footstepSoundDistance = 10.0f;
     private Animator animator;
 
-    private Animator animator;
-    
     enum PatrolState
     {
         Walking,
         Waiting,
-        Chase,
+        FoundPlayer,
         Stop
     }
 
     private PatrolState state;
-    private Transform currentTarget;
+    private Transform currentTarget = null;
     private Vector3 direction;
-    private float timer = 0f;
+    private float waitTimer = 0f;
+    private float foundTimer = 0f;
     private Transform player;
-    private GameObject exclamationInstance;
+    private GameObject exclamationInstance = null;
+    private Canvas canvas;
 
     void Awake()
     {
+        canvas = FindObjectOfType<Canvas>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        currentTarget = pointA;
-        UpdateDirection(currentTarget.position);
     }
 
     private void Start()
     {
-        animator     = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         soundManager = GetComponent<SoundManager>();
+        SwitchToWalking();
     }
 
     private void Update()
@@ -60,13 +60,17 @@ public class EnemyPatrol : MonoBehaviour
         {
             case PatrolState.Waiting:
                 Wait();
+                DetectPlayer();
+                break;
+            case PatrolState.FoundPlayer:
+                FoundPlayer();
                 break;
             case PatrolState.Stop:
                 Stop();
                 break;
         }
     }
-    
+
     private void FixedUpdate()
     {
         switch (state)
@@ -75,27 +79,29 @@ public class EnemyPatrol : MonoBehaviour
                 DetectPlayer();
                 Walk();
                 break;
-            case PatrolState.Chase:
-                DetectPlayer();
-                ChasePlayer();
-                break;
         }
     }
 
     private void Wait()
     {
+        if (state != PatrolState.Waiting)
+            return;
+
         animator.SetFloat("Speed", 0.0f);
 
-        timer += Time.deltaTime;
-        if (timer > waitTime)
+        waitTimer += Time.deltaTime;
+        if (waitTimer > waitTime)
         {
-            timer = 0f;
-            state = PatrolState.Walking;
+            waitTimer = 0f;
+            SwitchToWalking();
         }
     }
 
     private void Walk()
     {
+        if (state != PatrolState.Walking)
+            return;
+
         if (HasReachedTarget(currentTarget.position, 0.5f))
         {
             SwitchToWaiting();
@@ -113,43 +119,72 @@ public class EnemyPatrol : MonoBehaviour
     private void DetectPlayer()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized);
+        Debug.DrawRay(transform.position, direction * 1000);
         if (hit.collider != null && hit.transform.tag == "Player")
         {
-            UpdateDirection(player.position);
-            state = PatrolState.Chase;
+            state = PatrolState.FoundPlayer;
         }
     }
 
-    private void ChasePlayer()
+    private void FoundPlayer()
     {
-        // For now... Exclamation!
+        if (state != PatrolState.FoundPlayer)
+            return;
+
+        UpdateDirection(player.position);
         UpdateAnimationDirection();
 
         animator.SetFloat("Speed", 0.0f);
 
-        if (timer == 0)
+        if (foundTimer == 0)
         {
-            exclamationInstance = Instantiate(exclamation, FindObjectOfType<Canvas>().transform);
-            exclamationInstance.transform.position = new Vector2(transform.position.x, transform.position.y + 1.7f);
+            if (canvas != null)
+            {
+                exclamationInstance = Instantiate(exclamation, canvas.transform);
+                exclamationInstance.transform.position = new Vector2(transform.position.x, transform.position.y + 1.7f);
+            }
         }
 
-        timer += Time.deltaTime;
-        if (timer > waitTime)
+        foundTimer += Time.deltaTime;
+        if (foundTimer > waitTime)
         {
-            Destroy(exclamationInstance);
-            timer = 0f;
+            if (exclamationInstance != null)
+            {
+                Destroy(exclamationInstance);
+            }
+            foundTimer = 0f;
 
             state = PatrolState.Stop;
         }
     }
 
-    private void Stop() { }
+    private void Stop()
+    {
+        if (state != PatrolState.Stop)
+            return;
+
+        GameManager.instance.StrikeCount++;
+        SwitchToWalking();
+    }
 
     private void SwitchToWaiting()
     {
-        currentTarget = currentTarget.Equals(pointA) ? pointB : pointA;
-        UpdateDirection(currentTarget.position);
         state = PatrolState.Waiting;
+    }
+
+    private void SwitchToWalking()
+    {
+        state = PatrolState.Walking;
+        if (currentTarget == null)
+        {
+            currentTarget = pointA;
+        }
+        else
+        {
+            currentTarget = currentTarget.Equals(pointA) ? pointB : pointA;
+        }
+        UpdateDirection(currentTarget.position);
+        UpdateAnimationDirection();
     }
 
     private bool HasReachedTarget(Vector3 target, float distance)
@@ -164,7 +199,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (state == PatrolState.Walking)
+        if (state == PatrolState.Walking && !collision.collider.CompareTag("Player"))
         {
             SwitchToWaiting();
         }
