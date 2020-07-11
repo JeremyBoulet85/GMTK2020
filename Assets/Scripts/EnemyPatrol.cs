@@ -29,7 +29,10 @@ public class EnemyPatrol : MonoBehaviour
         Walking,
         Waiting,
         FoundPlayer,
-        Stop
+        Stop,
+        Investigating,
+        LookAround,
+        Chase
     }
 
     private PatrolState state;
@@ -41,6 +44,11 @@ public class EnemyPatrol : MonoBehaviour
     private GameObject exclamationInstance = null;
     private Canvas canvas;
     private Camera cam;
+    private Vector3 soundLocation;
+    private bool alerted = false;
+    private Vector3[] directions = { new Vector3(-1, 0, 0), new Vector3(0, 1, 0), new Vector3(1, 0, 0), new Vector3(0, -1, 0) };
+    private int lookAroundCounter = 0;
+    private float lookAroundTime = 1.5f;
 
     void Awake()
     {
@@ -61,8 +69,16 @@ public class EnemyPatrol : MonoBehaviour
         switch (state)
         {
             case PatrolState.Waiting:
-                Wait();
                 DetectPlayer();
+                Wait();
+                break;
+            case PatrolState.Investigating:
+                DetectPlayer();
+                Investigate();
+                break;
+            case PatrolState.LookAround:
+                DetectPlayer();
+                LookAround();
                 break;
             case PatrolState.FoundPlayer:
                 FoundPlayer();
@@ -81,6 +97,10 @@ public class EnemyPatrol : MonoBehaviour
                 DetectPlayer();
                 Walk();
                 break;
+            case PatrolState.Chase:
+                DetectPlayer();
+                Chase();
+                break;
         }
     }
 
@@ -88,6 +108,8 @@ public class EnemyPatrol : MonoBehaviour
     {
         if (state != PatrolState.Waiting)
             return;
+
+        alerted = false;
 
         animator.SetFloat("Speed", 0.0f);
 
@@ -104,12 +126,19 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.Walking)
             return;
 
+        alerted = false;
+
         if (HasReachedTarget(currentTarget.position, 0.5f))
         {
             SwitchToWaiting();
             return;
         }
 
+        MoveCharacter();
+    }
+
+    private void MoveCharacter()
+    {
         UpdateAnimationDirection();
         if (Vector3.Distance(transform.position, player.position) < footstepSoundDistance)
         {
@@ -133,13 +162,12 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.FoundPlayer)
             return;
 
-        UpdateDirection(player.position);
-        UpdateAnimationDirection();
-
-        animator.SetFloat("Speed", 0.0f);
+        alerted = false;
 
         if (foundTimer == 0)
         {
+            UpdateDirection(player.transform.position);
+
             if (canvas != null)
             {
                 exclamationInstance = Instantiate(exclamation, canvas.transform);
@@ -165,8 +193,70 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.Stop)
             return;
 
+        alerted = false;
+
         GameManager.instance.StrikeCount++;
         SwitchToWalking();
+    }
+
+    private void Investigate()
+    {
+        if (state != PatrolState.Investigating)
+            return;
+
+        float distance = Vector3.Distance(transform.position, soundLocation);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized, Vector3.Distance(transform.position, soundLocation));
+
+        if (hit.collider != null && hit.collider.CompareTag("Sound"))
+        {
+            // No obstacle between enemy and sound = Walk toward it and look around
+            state = PatrolState.Chase;
+        }
+        else
+        {
+            // Obstacle between enemy and sound = Stay in place and look around
+            state = PatrolState.LookAround;
+        }
+    }
+
+    private void Chase()
+    {
+        if (state != PatrolState.Chase)
+            return;
+
+        if (HasReachedTarget(soundLocation, 0.5f))
+        {
+            state = PatrolState.LookAround;
+        }
+        else
+        {
+            UpdateDirection(soundLocation);
+            MoveCharacter();
+        }
+    }
+
+    private void LookAround()
+    {
+        if (state != PatrolState.LookAround)
+            return;
+
+        waitTimer += Time.deltaTime;
+        if (waitTimer > lookAroundTime)
+        {
+            waitTimer = 0f;
+            if (lookAroundCounter < 4)
+            {
+                direction = directions[lookAroundCounter];
+                UpdateAnimationDirection();
+                lookAroundCounter++;
+            }
+            else
+            {
+                lookAroundCounter = 0;
+                alerted = false;
+                SwitchToWalking();
+            }
+        }
     }
 
     private void SwitchToWaiting()
@@ -186,7 +276,6 @@ public class EnemyPatrol : MonoBehaviour
             currentTarget = currentTarget.Equals(pointA) ? pointB : pointA;
         }
         UpdateDirection(currentTarget.position);
-        UpdateAnimationDirection();
     }
 
     private bool HasReachedTarget(Vector3 target, float distance)
@@ -197,13 +286,17 @@ public class EnemyPatrol : MonoBehaviour
     private void UpdateDirection(Vector3 target)
     {
         direction = (target - transform.position).normalized;
+        UpdateAnimationDirection();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (state == PatrolState.Walking && !collision.collider.CompareTag("Player"))
+        if (collider.CompareTag("Sound") && !alerted)
         {
-            SwitchToWaiting();
+            alerted = true;
+            soundLocation = collider.gameObject.transform.position;
+            UpdateDirection(soundLocation);
+            state = PatrolState.Investigating;
         }
     }
 
