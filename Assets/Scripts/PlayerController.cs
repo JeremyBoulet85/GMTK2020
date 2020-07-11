@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         velocity.y -= Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)  ? 1.0f : 0.0f;
         velocity.x += Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? 1.0f : 0.0f;
 
-        rb.MovePosition(rb.transform.position + velocity.normalized * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.transform.position + velocity.normalized * effectiveSpeed * Time.fixedDeltaTime);
 
         float distanceTravelled = Vector3.Distance(transform.position, lastPosition);
         lastPosition = transform.position;
