@@ -4,6 +4,8 @@ public class SneezeSystem : MonoBehaviour
 {
 
     public GaugeBarController sneezeBar;
+
+    SoundManager soundManager;
     int sneezeLevel;
     bool isSneezing;
     const int maxSneezeLevel = 50;
@@ -18,6 +20,7 @@ public class SneezeSystem : MonoBehaviour
         isSneezing = false;
         sneezeLevel = 0;
         sneezeBar.SetMax(maxSneezeLevel);
+        soundManager = GetComponent<SoundManager>();
     }
 
     void Update()
@@ -51,6 +54,7 @@ public class SneezeSystem : MonoBehaviour
     {
         isSneezing = true;
         sneezeLevel = 0;
+        soundManager.PlaySound(SoundType.Sneeze, 0.9f);
         Sneezing();
         // do more things
     }
