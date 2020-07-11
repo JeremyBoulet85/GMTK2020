@@ -1,0 +1,2696 @@
+fileFormatVersion: 2
+guid: 6238655b412d1404eb8f63b9f2babdbf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -90184689049277514
+    second: Generic Male NPCs A_0
+  - first:
+      213: 7657854018210519886
+    second: Generic Male NPCs A_1
+  - first:
+      213: 3701423918549034365
+    second: Generic Male NPCs A_2
+  - first:
+      213: 2615093905412564455
+    second: Generic Male NPCs A_3
+  - first:
+      213: 2846480147448313912
+    second: Generic Male NPCs A_4
+  - first:
+      213: -3590043610641671483
+    second: Generic Male NPCs A_5
+  - first:
+      213: 8042199328434925682
+    second: Generic Male NPCs A_6
+  - first:
+      213: 4009537392451100220
+    second: Generic Male NPCs A_7
+  - first:
+      213: 1339097781273241627
+    second: Generic Male NPCs A_8
+  - first:
+      213: 5791732459632687802
+    second: Generic Male NPCs A_9
+  - first:
+      213: 4898811355684176244
+    second: Generic Male NPCs A_10
+  - first:
+      213: -2258791673805464944
+    second: Generic Male NPCs A_11
+  - first:
+      213: 6186575987339032608
+    second: Generic Male NPCs A_12
+  - first:
+      213: 5896717005353560027
+    second: Generic Male NPCs A_13
+  - first:
+      213: -7650245277877665717
+    second: Generic Male NPCs A_14
+  - first:
+      213: -2373381166842066198
+    second: Generic Male NPCs A_15
+  - first:
+      213: 6248139463751488542
+    second: Generic Male NPCs A_16
+  - first:
+      213: -8274445913558047836
+    second: Generic Male NPCs A_17
+  - first:
+      213: -4709590853299468785
+    second: Generic Male NPCs A_18
+  - first:
+      213: -9086852901870549887
+    second: Generic Male NPCs A_19
+  - first:
+      213: -5009665496366153029
+    second: Generic Male NPCs A_20
+  - first:
+      213: 924747768217182112
+    second: Generic Male NPCs A_21
+  - first:
+      213: -7963732140969738286
+    second: Generic Male NPCs A_22
+  - first:
+      213: 4103034920750395096
+    second: Generic Male NPCs A_23
+  - first:
+      213: -3607178921817007606
+    second: Generic Male NPCs A_24
+  - first:
+      213: -8717551204280770475
+    second: Generic Male NPCs A_25
+  - first:
+      213: 6859769288717341530
+    second: Generic Male NPCs A_26
+  - first:
+      213: -1907178186720639963
+    second: Generic Male NPCs A_27
+  - first:
+      213: -8219185182880420054
+    second: Generic Male NPCs A_28
+  - first:
+      213: -8022320057221597431
+    second: Generic Male NPCs A_29
+  - first:
+      213: 2324497599302246404
+    second: Generic Male NPCs A_30
+  - first:
+      213: 6606778211847140797
+    second: Generic Male NPCs A_31
+  - first:
+      213: -481936538698119887
+    second: Generic Male NPCs A_32
+  - first:
+      213: -4095378968521097172
+    second: Generic Male NPCs A_33
+  - first:
+      213: -306657298058849853
+    second: Generic Male NPCs A_34
+  - first:
+      213: -2808658917393887216
+    second: Generic Male NPCs A_35
+  - first:
+      213: -743055293960045777
+    second: Generic Male NPCs A_36
+  - first:
+      213: 5182606882217738130
+    second: Generic Male NPCs A_37
+  - first:
+      213: 2019946055561400590
+    second: Generic Male NPCs A_38
+  - first:
+      213: -8462432463613782596
+    second: Generic Male NPCs A_39
+  - first:
+      213: 7449373175322350981
+    second: Generic Male NPCs A_40
+  - first:
+      213: 5790154223975638865
+    second: Generic Male NPCs A_41
+  - first:
+      213: 3818598633880932784
+    second: Generic Male NPCs A_42
+  - first:
+      213: 6841998714814773292
+    second: Generic Male NPCs A_43
+  - first:
+      213: 7215101598302861656
+    second: Generic Male NPCs A_44
+  - first:
+      213: 6618884288448276329
+    second: Generic Male NPCs A_45
+  - first:
+      213: 2655396330189068791
+    second: Generic Male NPCs A_46
+  - first:
+      213: 8947365434127372479
+    second: Generic Male NPCs A_47
+  - first:
+      213: 5316091950167218249
+    second: Generic Male NPCs A_48
+  - first:
+      213: 7637529056115323139
+    second: Generic Male NPCs A_49
+  - first:
+      213: 7924289538946851491
+    second: Generic Male NPCs A_50
+  - first:
+      213: 1827283996120901215
+    second: Generic Male NPCs A_51
+  - first:
+      213: 353391285599820616
+    second: Generic Male NPCs A_52
+  - first:
+      213: 1023614397513424395
+    second: Generic Male NPCs A_53
+  - first:
+      213: -8964865688235314474
+    second: Generic Male NPCs A_54
+  - first:
+      213: -352681821403909640
+    second: Generic Male NPCs A_55
+  - first:
+      213: -4166847281512950716
+    second: Generic Male NPCs A_56
+  - first:
+      213: 2955185575008208068
+    second: Generic Male NPCs A_57
+  - first:
+      213: 3882744387439173080
+    second: Generic Male NPCs A_58
+  - first:
+      213: 8279639446159369164
+    second: Generic Male NPCs A_59
+  - first:
+      213: 5797039748601847069
+    second: Generic Male NPCs A_60
+  - first:
+      213: 4320520919396517010
+    second: Generic Male NPCs A_61
+  - first:
+      213: -544268100440876543
+    second: Generic Male NPCs A_62
+  - first:
+      213: 1796107498775328114
+    second: Generic Male NPCs A_63
+  - first:
+      213: -5071040216406359543
+    second: Generic Male NPCs A_64
+  - first:
+      213: 1447446532190851104
+    second: Generic Male NPCs A_65
+  - first:
+      213: -2668821317382543404
+    second: Generic Male NPCs A_66
+  - first:
+      213: 1653737406966664496
+    second: Generic Male NPCs A_67
+  - first:
+      213: 3132381019911933736
+    second: Generic Male NPCs A_68
+  - first:
+      213: -2564191378160370997
+    second: Generic Male NPCs A_69
+  - first:
+      213: -4446881809158499301
+    second: Generic Male NPCs A_70
+  - first:
+      213: 4728044984709603983
+    second: Generic Male NPCs A_71
+  - first:
+      213: -2227623379718625951
+    second: Generic Male NPCs A_72
+  - first:
+      213: -6270204139930658947
+    second: Generic Male NPCs A_73
+  - first:
+      213: 5680061449583456987
+    second: Generic Male NPCs A_74
+  - first:
+      213: 1341910270062012043
+    second: Generic Male NPCs A_75
+  - first:
+      213: -5212406821966583175
+    second: Generic Male NPCs A_76
+  - first:
+      213: 1321112415931264898
+    second: Generic Male NPCs A_77
+  - first:
+      213: -1691889558431610971
+    second: Generic Male NPCs A_78
+  - first:
+      213: 5073002387807917883
+    second: Generic Male NPCs A_79
+  - first:
+      213: -3804568700031841325
+    second: Generic Male NPCs A_80
+  - first:
+      213: -785991101699303545
+    second: Generic Male NPCs A_81
+  - first:
+      213: -4939093601626451155
+    second: Generic Male NPCs A_82
+  - first:
+      213: 3109162550677297279
+    second: Generic Male NPCs A_83
+  - first:
+      213: 771766458488431994
+    second: Generic Male NPCs A_84
+  - first:
+      213: -6739872823690056626
+    second: Generic Male NPCs A_85
+  - first:
+      213: 3865757745447308650
+    second: Generic Male NPCs A_86
+  - first:
+      213: 2976704786660602114
+    second: Generic Male NPCs A_87
+  - first:
+      213: -3171076502898160865
+    second: Generic Male NPCs A_88
+  - first:
+      213: 2181015084078941971
+    second: Generic Male NPCs A_89
+  - first:
+      213: -1462425078663216603
+    second: Generic Male NPCs A_90
+  - first:
+      213: -1697303287834639444
+    second: Generic Male NPCs A_91
+  - first:
+      213: -7698516234544816930
+    second: Generic Male NPCs A_92
+  - first:
+      213: 6593296967685641518
+    second: Generic Male NPCs A_93
+  - first:
+      213: -7225207652179368751
+    second: Generic Male NPCs A_94
+  - first:
+      213: 5274199036575383275
+    second: Generic Male NPCs A_95
+  - first:
+      213: 6329331329601541766
+    second: Generic Male NPCs A_0
+  - first:
+      213: 6455100874085637255
+    second: Generic Male NPCs A_1
+  - first:
+      213: -7288862828117130858
+    second: Generic Male NPCs A_2
+  - first:
+      213: 708844109677439966
+    second: Generic Male NPCs A_3
+  - first:
+      213: -6417656628041714985
+    second: Generic Male NPCs A_4
+  - first:
+      213: -2823464228572478404
+    second: Generic Male NPCs A_5
+  - first:
+      213: 4107264370296533466
+    second: Generic Male NPCs A_6
+  - first:
+      213: -5483086668459321986
+    second: Generic Male NPCs A_7
+  - first:
+      213: -4099635811893760046
+    second: Generic Male NPCs A_8
+  - first:
+      213: -8129758140361152804
+    second: Generic Male NPCs A_9
+  - first:
+      213: -105663474782328944
+    second: Generic Male NPCs A_10
+  - first:
+      213: -7278261964778867774
+    second: Generic Male NPCs A_11
+  - first:
+      213: 2096500411706219313
+    second: Generic Male NPCs A_12
+  - first:
+      213: -6784704558315688185
+    second: Generic Male NPCs A_13
+  - first:
+      213: -8649404808994689751
+    second: Generic Male NPCs A_14
+  - first:
+      213: -5433843967585997323
+    second: Generic Male NPCs A_15
+  - first:
+      213: -6268740151834650675
+    second: Generic Male NPCs A_16
+  - first:
+      213: 3712244714718088225
+    second: Generic Male NPCs A_17
+  - first:
+      213: -6188203977035235004
+    second: Generic Male NPCs A_18
+  - first:
+      213: -8900948575464139360
+    second: Generic Male NPCs A_19
+  - first:
+      213: -6342614331214570315
+    second: Generic Male NPCs A_20
+  - first:
+      213: -903988996518045654
+    second: Generic Male NPCs A_21
+  - first:
+      213: -8996095529175953187
+    second: Generic Male NPCs A_22
+  - first:
+      213: 2976250348855811762
+    second: Generic Male NPCs A_23
+  - first:
+      213: -3716018652584472473
+    second: Generic Male NPCs A_24
+  - first:
+      213: -89364608851443320
+    second: Generic Male NPCs A_25
+  - first:
+      213: 4812760765411308549
+    second: Generic Male NPCs A_26
+  - first:
+      213: 869927156392283807
+    second: Generic Male NPCs A_27
+  - first:
+      213: 7931740740254153907
+    second: Generic Male NPCs A_28
+  - first:
+      213: -6801862793188890149
+    second: Generic Male NPCs A_29
+  - first:
+      213: 1020124666525455331
+    second: Generic Male NPCs A_30
+  - first:
+      213: -2541310446819442051
+    second: Generic Male NPCs A_31
+  - first:
+      213: -6879310728828676338
+    second: Generic Male NPCs A_32
+  - first:
+      213: 5815459691076094240
+    second: Generic Male NPCs A_33
+  - first:
+      213: 4469312563109427530
+    second: Generic Male NPCs A_34
+  - first:
+      213: 458563218088989022
+    second: Generic Male NPCs A_35
+  - first:
+      213: -4289507087211513235
+    second: Generic Male NPCs A_36
+  - first:
+      213: 4609524040556648038
+    second: Generic Male NPCs A_37
+  - first:
+      213: -2849607811932828751
+    second: Generic Male NPCs A_38
+  - first:
+      213: 8399687851394082064
+    second: Generic Male NPCs A_39
+  - first:
+      213: 9168536294940991316
+    second: Generic Male NPCs A_40
+  - first:
+      213: -2230923718530248156
+    second: Generic Male NPCs A_41
+  - first:
+      213: 6939400469335009810
+    second: Generic Male NPCs A_42
+  - first:
+      213: 2608278983267331282
+    second: Generic Male NPCs A_43
+  - first:
+      213: -1868542657156221270
+    second: Generic Male NPCs A_44
+  - first:
+      213: -867645751350428161
+    second: Generic Male NPCs A_45
+  - first:
+      213: 645155691317768558
+    second: Generic Male NPCs A_46
+  - first:
+      213: -4981417663000651498
+    second: Generic Male NPCs A_47
+  - first:
+      213: 653934388558800691
+    second: Generic Male NPCs A_48
+  - first:
+      213: -7013625838074549329
+    second: Generic Male NPCs A_49
+  - first:
+      213: -6701293703043754232
+    second: Generic Male NPCs A_50
+  - first:
+      213: -3018366782937888107
+    second: Generic Male NPCs A_51
+  - first:
+      213: -5161995546319771452
+    second: Generic Male NPCs A_52
+  - first:
+      213: -916521198657932225
+    second: Generic Male NPCs A_53
+  - first:
+      213: -4068179923477583759
+    second: Generic Male NPCs A_54
+  - first:
+      213: -5065144669075518159
+    second: Generic Male NPCs A_55
+  - first:
+      213: -5198728595261403684
+    second: Generic Male NPCs A_56
+  - first:
+      213: -7699570626641509821
+    second: Generic Male NPCs A_57
+  - first:
+      213: -8292096066197139774
+    second: Generic Male NPCs A_58
+  - first:
+      213: 7517885974960424401
+    second: Generic Male NPCs A_59
+  - first:
+      213: 1163890548758253817
+    second: Generic Male NPCs A_60
+  - first:
+      213: -3166534441320339444
+    second: Generic Male NPCs A_61
+  - first:
+      213: 3099480658360351509
+    second: Generic Male NPCs A_62
+  - first:
+      213: 6624032933204550207
+    second: Generic Male NPCs A_63
+  - first:
+      213: 7020622349479113399
+    second: Generic Male NPCs A_64
+  - first:
+      213: 8294637627616259106
+    second: Generic Male NPCs A_65
+  - first:
+      213: -6979217928180807150
+    second: Generic Male NPCs A_66
+  - first:
+      213: -379204849389966707
+    second: Generic Male NPCs A_67
+  - first:
+      213: 4027822066331431706
+    second: Generic Male NPCs A_68
+  - first:
+      213: 6397545670162864423
+    second: Generic Male NPCs A_69
+  - first:
+      213: -4138678304360955827
+    second: Generic Male NPCs A_70
+  - first:
+      213: 3830709558228893232
+    second: Generic Male NPCs A_71
+  - first:
+      213: -2570143855401221970
+    second: Generic Male NPCs A_72
+  - first:
+      213: 7915487225696386266
+    second: Generic Male NPCs A_73
+  - first:
+      213: 5252526773071486108
+    second: Generic Male NPCs A_74
+  - first:
+      213: -332583430523709780
+    second: Generic Male NPCs A_75
+  - first:
+      213: -3597946906487255927
+    second: Generic Male NPCs A_76
+  - first:
+      213: 291846901718682887
+    second: Generic Male NPCs A_77
+  - first:
+      213: 907900116193287113
+    second: Generic Male NPCs A_78
+  - first:
+      213: -6573713708221815893
+    second: Generic Male NPCs A_79
+  - first:
+      213: 5700671157510777240
+    second: Generic Male NPCs A_80
+  - first:
+      213: -7413045302497809818
+    second: Generic Male NPCs A_81
+  - first:
+      213: -5092926118457365161
+    second: Generic Male NPCs A_82
+  - first:
+      213: -3962556057187253674
+    second: Generic Male NPCs A_83
+  - first:
+      213: -3085765629910964622
+    second: Generic Male NPCs A_84
+  - first:
+      213: -8821624509683815536
+    second: Generic Male NPCs A_85
+  - first:
+      213: -5245763053617687886
+    second: Generic Male NPCs A_86
+  - first:
+      213: 6976313882639000992
+    second: Generic Male NPCs A_87
+  - first:
+      213: 6346909256647342234
+    second: Generic Male NPCs A_88
+  - first:
+      213: -7525101090988952731
+    second: Generic Male NPCs A_89
+  - first:
+      213: 7758569986659607527
+    second: Generic Male NPCs A_90
+  - first:
+      213: 5052064960865421382
+    second: Generic Male NPCs A_91
+  - first:
+      213: -1853045463491419097
+    second: Generic Male NPCs A_92
+  - first:
+      213: 7476933726633002665
+    second: Generic Male NPCs A_93
+  - first:
+      213: -7478499433609118052
+    second: Generic Male NPCs A_94
+  - first:
+      213: 4318516395232195999
+    second: Generic Male NPCs A_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Generic Male NPCs A_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68696ae5f4d46d750800000000000000
+      internalID: 6329331329601541766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c103d5b00259950800000000000000
+      internalID: 6455100874085637255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691878930e1c8da90800000000000000
+      internalID: -7288862828117130858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edba37e46f156d900800000000000000
+      internalID: 708844109677439966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2742b8c47efe6a0800000000000000
+      internalID: -6417656628041714985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c344ae35e3a01d8d0800000000000000
+      internalID: -2823464228572478404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1b42efe2feff830800000000000000
+      internalID: 4107264370296533466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e755dc5c9b928e3b0800000000000000
+      internalID: -5483086668459321986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df2a9b23fa2b17c0800000000000000
+      internalID: -4099635811893760046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6eeed6b0c4d2f80800000000000000
+      internalID: -8129758140361152804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097add721ab988ef0800000000000000
+      internalID: -105663474782328944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_11
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c37e1f0e4b6efa90800000000000000
+      internalID: -7278261964778867774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b95374404481d10800000000000000
+      internalID: 2096500411706219313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fae9fa623e7d1a0800000000000000
+      internalID: -6784704558315688185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92de059172427f780800000000000000
+      internalID: -8649404808994689751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd232383bb1794b0800000000000000
+      internalID: -5433843967585997323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_16
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7daac8b06f009a0800000000000000
+      internalID: -6268740151834650675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12cc71456ea848330800000000000000
+      internalID: 3712244714718088225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_18
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441c727f4451f1aa0800000000000000
+      internalID: -6188203977035235004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_19
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5d07b0e6a797480800000000000000
+      internalID: -8900948575464139360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc57a0ded18af7a0800000000000000
+      internalID: -6342614331214570315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_21
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a281ea51cc26473f0800000000000000
+      internalID: -903988996518045654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0dcf197c2772380800000000000000
+      internalID: -8996095529175953187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_23
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bede266ce3cd4920800000000000000
+      internalID: 2976250348855811762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7601af949bc0e6cc0800000000000000
+      internalID: -3716018652584472473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8810be99c5382cef0800000000000000
+      internalID: -89364608851443320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5043743ca6c5ac240800000000000000
+      internalID: 4812760765411308549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_27
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e4a31c32a921c00800000000000000
+      internalID: 869927156392283807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcb759dd24331e60800000000000000
+      internalID: 7931740740254153907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_29
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9a701d3ddea91a0800000000000000
+      internalID: -6801862793188890149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_30
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e31dd6baf5382e00800000000000000
+      internalID: 1020124666525455331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_31
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d728651fc937bbcd0800000000000000
+      internalID: -2541310446819442051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0712ac1757c780a0800000000000000
+      internalID: -6879310728828676338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_33
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029813407c9a4b050800000000000000
+      internalID: 5815459691076094240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49f352c810360e30800000000000000
+      internalID: 4469312563109427530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_35
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51114931d42d5600800000000000000
+      internalID: 458563218088989022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6abc3de70c9874c0800000000000000
+      internalID: -4289507087211513235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666900d41b158ff30800000000000000
+      internalID: 4609524040556648038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_38
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbc09cfac82478d0800000000000000
+      internalID: -2849607811932828751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_39
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015228ee89fa19470800000000000000
+      internalID: 8399687851394082064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_40
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fdb3aee2f2d3f70800000000000000
+      internalID: 9168536294940991316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_41
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422d20ca2ba2a01e0800000000000000
+      internalID: -2230923718530248156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_42
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a64e8d5f3bd4060800000000000000
+      internalID: 6939400469335009810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_43
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc24c08ae7723420800000000000000
+      internalID: 2608278983267331282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_44
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6f9807a5a9116e0800000000000000
+      internalID: -1868542657156221270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_45
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd71ef39c085f3f0800000000000000
+      internalID: -867645751350428161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_46
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6131dddead04f800800000000000000
+      internalID: 645155691317768558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_47
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6195df637037edab0800000000000000
+      internalID: -4981417663000651498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337a5789cdd331900800000000000000
+      internalID: 653934388558800691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_49
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faba016c5789aae90800000000000000
+      internalID: -7013625838074549329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807d38ec1e83003a0800000000000000
+      internalID: -6701293703043754232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_51
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a0625276b9c16d0800000000000000
+      internalID: -3018366782937888107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_52
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c826796668ec58b0800000000000000
+      internalID: -5161995546319771452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34f0e463dcd743f0800000000000000
+      internalID: -916521198657932225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_54
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1782ebae9ebea87c0800000000000000
+      internalID: -4068179923477583759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_55
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d4acf72cdf4b9b0800000000000000
+      internalID: -5065144669075518159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_56
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd47cbf2e76ad7b0800000000000000
+      internalID: -5198728595261403684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_57
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34240042f41a52590800000000000000
+      internalID: -7699570626641509821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_58
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cec7eaaf8e8cec80800000000000000
+      internalID: -8292096066197139774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_59
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d548677675e45860800000000000000
+      internalID: 7517885974960424401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f09b2c9948f62010800000000000000
+      internalID: 1163890548758253817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_61
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08af00e3b53e04d0800000000000000
+      internalID: -3166534441320339444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_62
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b33cdac31930b20800000000000000
+      internalID: 3099480658360351509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32652c6bda4deb50800000000000000
+      internalID: 6624032933204550207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_64
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2feda74d24e6160800000000000000
+      internalID: 7020622349479113399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_65
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ce7a6b9f87c1370800000000000000
+      internalID: 8294637627616259106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_66
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21aceb49546d42f90800000000000000
+      internalID: -6979217928180807150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_67
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a6107d23bccbaf0800000000000000
+      internalID: -379204849389966707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_68
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a133a2a34d2b5e730800000000000000
+      internalID: 4027822066331431706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_69
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729556034e5a8c850800000000000000
+      internalID: 6397545670162864423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_70
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4003f482067096c0800000000000000
+      internalID: -4138678304360955827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_71
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e3de71c0a692530800000000000000
+      internalID: 3830709558228893232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0482dd7c3055cd0800000000000000
+      internalID: -2570143855401221970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_73
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc76c791b579dd60800000000000000
+      internalID: 7915487225696386266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_74
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c97226549b4e840800000000000000
+      internalID: 5252526773071486108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_75
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6147dc12d626bf0800000000000000
+      internalID: -332583430523709780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_76
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c8c1ee956811ec0800000000000000
+      internalID: -3597946906487255927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_77
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d8db9f539dc0400800000000000000
+      internalID: 291846901718682887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_78
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb9c3d6852899c00800000000000000
+      internalID: 907900116193287113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_79
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3a25e163a75c4a0800000000000000
+      internalID: -6573713708221815893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_80
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899aebcd63adc1f40800000000000000
+      internalID: 5700671157510777240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_81
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a6db8c2929f1990800000000000000
+      internalID: -7413045302497809818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_82
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d2a02cdaa4259b0800000000000000
+      internalID: -5092926118457365161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_83
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65208c0b24c2209c0800000000000000
+      internalID: -3962556057187253674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2762c0932882d25d0800000000000000
+      internalID: -3085765629910964622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09baa665f3b439580800000000000000
+      internalID: -8821624509683815536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_86
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2df35cb4e4337b0800000000000000
+      internalID: -5245763053617687886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_87
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5e250a388d0d060800000000000000
+      internalID: 6976313882639000992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_88
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a987a107750c41850800000000000000
+      internalID: 6346909256647342234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_89
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563f2bc6d68719790800000000000000
+      internalID: -7525101090988952731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_90
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e36ad3db4afbab60800000000000000
+      internalID: 7758569986659607527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_91
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648c49e905a8c1640800000000000000
+      internalID: 5052064960865421382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_92
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724e1f308f8a846e0800000000000000
+      internalID: -1853045463491419097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_93
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a609112c9763c760800000000000000
+      internalID: 7476933726633002665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_94
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9eb4ce4368073890800000000000000
+      internalID: -7478499433609118052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Male NPCs A_95
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95f38ee7c37eeb30800000000000000
+      internalID: 4318516395232195999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

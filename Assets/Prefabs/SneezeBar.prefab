@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 2678459005284664465}
   - component: {fileID: 4398679078065384588}
   m_Layer: 5
-  m_Name: HealthBar
+  m_Name: SneezeBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
