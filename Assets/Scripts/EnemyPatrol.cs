@@ -27,7 +27,7 @@ public class EnemyPatrol : MonoBehaviour
         Walking,
         Waiting,
         FoundPlayer,
-        Stop,
+        CaughtPlayer,
         Investigating,
         LookAround,
         Chase
@@ -62,40 +62,39 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Update()
     {
+        SeePlayer();
+        HearPlayerSound();
         switch (state)
         {
             case PatrolState.Waiting:
                 Wait();
-                SeePlayer();
                 break;
             case PatrolState.Investigating:
                 Investigate();
-                SeePlayer();
                 break;
             case PatrolState.LookAround:
                 LookAround();
-                SeePlayer();
                 break;
             case PatrolState.FoundPlayer:
                 FoundPlayer();
                 break;
-            case PatrolState.Stop:
-                Stop();
+            case PatrolState.CaughtPlayer:
+                StrikePlayer();
                 break;
         }
     }
 
     private void FixedUpdate()
     {
+        SeePlayer();
+        HearPlayerSound();
         switch (state)
         {
             case PatrolState.Walking:
                 Walk();
-                SeePlayer();
                 break;
             case PatrolState.Chase:
                 Chase();
-                SeePlayer();
                 break;
         }
     }
@@ -164,13 +163,13 @@ public class EnemyPatrol : MonoBehaviour
             }
             foundTimer = 0f;
 
-            state = PatrolState.Stop;
+            state = PatrolState.CaughtPlayer;
         }
     }
 
-    private void Stop()
+    private void StrikePlayer()
     {
-        if (state != PatrolState.Stop)
+        if (state != PatrolState.CaughtPlayer)
             return;
 
         GameManager.instance.StrikeCount++;
@@ -182,17 +181,17 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.Investigating)
             return;
 
-        float distance = Vector3.Distance(transform.position, soundLocation);
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized, Vector3.Distance(transform.position, soundLocation));
-
-        if (hit.collider != null && hit.collider.CompareTag("Sound"))
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position);
+        if (hit.collider != null && hit.collider.CompareTag("Player"))
         {
-            // No obstacle between enemy and sound = Walk toward it and look around
+            state = PatrolState.FoundPlayer;
+        }
+        else if (hit.collider == null)
+        {
             state = PatrolState.Chase;
         }
         else
         {
-            // Obstacle between enemy and sound = Stay in place and look around
             state = PatrolState.LookAround;
         }
     }
@@ -268,15 +267,20 @@ public class EnemyPatrol : MonoBehaviour
 
     private void SeePlayer()
     {
-        if (PlayerInsideSphere() && IsInsideVisionCone() && CanSeePlayer())
+        if (state == PatrolState.FoundPlayer || state == PatrolState.CaughtPlayer)
+        {
+            return;
+        }
+
+        if (PointInsideSphere(player.transform.position) && IsInsideVisionCone() && CanSeePlayer())
         {
             state = PatrolState.FoundPlayer;
         }
     }
 
-    private bool PlayerInsideSphere()
+    private bool PointInsideSphere(Vector2 point)
     {
-        return Vector3.Distance(player.transform.position, transform.position) < 8f;
+        return Vector2.Distance(point, transform.position) < 8f;
     }
 
     private bool IsInsideVisionCone()
@@ -287,21 +291,28 @@ public class EnemyPatrol : MonoBehaviour
         return Vector2.Angle(targetDir, forward) < 10f;
     }
 
-    //private void HearPlayerSound()
-    //{
-    //    if (player.GetComponent<SoundManager>().madeSound && PointInsideSphere(player.transform.position, transform.position, 8f))
-    //    {
-    //        UpdateDirection(player.transform.position);
-    //        if (CanSeePlayer())
-    //        {
-    //            state = PatrolState.FoundPlayer;
-    //        }
-    //        else
-    //        {
-    //            state = PatrolState.LookAround;
-    //        }
-    //    }
-    //}
+    private void HearPlayerSound()
+    {
+        if (state == PatrolState.FoundPlayer || state == PatrolState.CaughtPlayer)
+        {
+            return;
+        }
+
+        if (player.GetComponent<SoundManager>().madeSound && PointInsideSphere(player.transform.position))
+        {
+            soundLocation = player.transform.position;
+
+            UpdateDirection(soundLocation);
+            if (CanSeePlayer())
+            {
+                state = PatrolState.FoundPlayer;
+            }
+            else
+            {
+                state = PatrolState.Investigating;
+            }
+        }
+    }
 
     private bool CanSeePlayer()
     {

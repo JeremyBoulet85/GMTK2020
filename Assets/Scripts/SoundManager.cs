@@ -14,6 +14,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip footstepSound = null;
     public AudioClip sneezeSound = null;
     private float timeWaitedBetweenFootstepSound;
+    public bool madeSound = false;
+    protected float timer;
 
     public void Start()
     {
@@ -32,6 +34,7 @@ public class SoundManager : MonoBehaviour
             case SoundType.Sneeze:
                 audioSource.volume = volume;
                 audioSource.PlayOneShot(sneezeSound);
+                madeSound = true;
                 break;
         }
 
@@ -45,6 +48,20 @@ public class SoundManager : MonoBehaviour
         {
             timeWaitedBetweenFootstepSound = 0.0f;
             PlaySound(SoundType.Footstep, volume);
+        }
+    }
+
+    private void Update()
+    {
+        if (madeSound)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= 1f)
+            {
+                madeSound = false;
+                timer = 0f;
+            }
         }
     }
 }
