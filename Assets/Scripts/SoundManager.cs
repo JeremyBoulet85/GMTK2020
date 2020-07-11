@@ -7,11 +7,25 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     private AudioClip sneeze = null;
 
+    [SerializeField]
+    private AudioClip footstep = null;
+
+    private AudioSource audioSource = null;
+
+    public void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void PlaySneezeSound()
     {
-        GameObject sound = new GameObject("Sound");
-        AudioSource audioSource = sound.AddComponent<AudioSource>();
-        audioSource.volume = 0.3f;
+        audioSource.volume = 0.8f;
         audioSource.PlayOneShot(sneeze);
+    }
+
+    public void PlayFootstepSound()
+    {
+        audioSource.volume = 0.4f;
+        audioSource.PlayOneShot(footstep);
     }
 }
