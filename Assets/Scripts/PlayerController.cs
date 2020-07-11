@@ -10,12 +10,15 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private SoundManager soundManager;
+    private Vector3 lastPosition;
 
     private void Start()
     {
         animator     = GetComponent<Animator>();
         rb           = GetComponent<Rigidbody2D>();
         soundManager = GetComponent<SoundManager>();
+
+        lastPosition = transform.position;
     }
 
     public void Sneeze()
@@ -23,24 +26,26 @@ public class PlayerController : MonoBehaviour
         soundManager.PlaySound(SoundType.Sneeze, 0.9f);
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        Vector2 velocity = new Vector3();
+        Vector3 velocity = new Vector3();
 
         velocity.y += Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)    ? 1.0f : 0.0f;
         velocity.x -= Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)  ? 1.0f : 0.0f;
         velocity.y -= Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)  ? 1.0f : 0.0f;
         velocity.x += Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? 1.0f : 0.0f;
 
-        float speedSqrMagnitude = velocity.sqrMagnitude;
-        animator.SetFloat("Speed", speedSqrMagnitude);
-        if (speedSqrMagnitude >= 0.01f)
+        rb.MovePosition(rb.transform.position + velocity.normalized * speed * Time.fixedDeltaTime);
+
+        float distanceTravelled = Vector3.Distance(transform.position, lastPosition);
+        lastPosition = transform.position;
+
+        animator.SetFloat("Speed", distanceTravelled);
+        if (distanceTravelled >= 0.001f)
         {
             animator.SetFloat("Horizontal", velocity.x);
             animator.SetFloat("Vertical", velocity.y);
-            soundManager.PlayFootstepSound();
+            soundManager.PlayFootstepSound(0.34f);
         }
-
-        rb.MovePosition(rb.position + velocity.normalized * speed * Time.fixedDeltaTime);
     }
 }
