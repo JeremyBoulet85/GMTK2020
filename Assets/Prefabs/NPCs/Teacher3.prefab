@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &595809718997877788
 Animator:
   serializedVersion: 3
@@ -234,3 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footstepSound: {fileID: 8300000, guid: 9be7cc8964f74d347a15ba4862c57f72, type: 3}
   sneezeSound: {fileID: 8300000, guid: 85284f8d61ff8cc4e8d604c1e2ab26e0, type: 3}
+  ambiance: {fileID: 0}
+  music: {fileID: 0}
+  bell1: {fileID: 0}
+  bell2: {fileID: 0}
