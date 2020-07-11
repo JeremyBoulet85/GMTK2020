@@ -16,6 +16,11 @@ public class GaugeBarController : MonoBehaviour
     {
         slider.value = value;
     }
+
+    public float GetValue()
+    {
+        return slider.value;
+    }
     
     public void IncreaseValue(int increment)
     {
