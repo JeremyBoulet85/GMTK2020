@@ -8,6 +8,7 @@ public class KeyPickUp : MonoBehaviour
         {
             Destroy(gameObject);
             GameManager.instance.PickUpKey();
+            // play a little ding sound
         }
     }
 }
