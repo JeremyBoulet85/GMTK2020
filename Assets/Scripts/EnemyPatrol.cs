@@ -4,72 +4,78 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    enum PatrolState
-    {
-        Walking,
-        Looking
-    }
-
-    private PatrolState state;
-
     [SerializeField]
-    float speed;
+    Transform pointA;
 
     [SerializeField]
     Transform pointB;
 
-    Transform pointA;
-    Vector3 currentTarget;
+    [SerializeField]
+    float speed = 2f;
 
-    Vector3 direction;
-
+    [SerializeField]
     float waitTime = 2f;
-    float timer = 0f;
-    int lookingCounter = 0;
+
+    enum PatrolState
+    {
+        Walking,
+        Waiting
+    }
+
+    private PatrolState state;
+    private Transform currentTarget;
+    private Vector3 direction;
+    private float timer = 0f;
 
     void Awake()
     {
-        pointA = transform;
-        currentTarget = pointB.position;
-
-        Rotate(currentTarget);
+        currentTarget = pointA;
+        UpdateDirection(currentTarget.position);
     }
 
-    // Update is called once per frame
     private void Update()
     {
-        if (state == PatrolState.Walking)
-        {
-            if (Vector3.Distance(transform.position, currentTarget) < 0.5f)
-            {
-                state = PatrolState.Looking;
-            }
-        }
-        else if (state == PatrolState.Looking)
+        if (state == PatrolState.Waiting)
         {
             timer += Time.deltaTime;
             if (timer > waitTime)
             {
                 timer = 0f;
-                Rotate(Quaternion.AngleAxis(90, Vector3.forward) * direction);
-                lookingCounter++;
-                if (lookingCounter > 2)
-                {
-                    lookingCounter = 0;
-                    currentTarget = currentTarget == pointA.position ? pointB.position : pointA.position;
-                    state = PatrolState.Walking;
-                }
+                SwitchToWalking();
             }
         }
     }
-
     
     private void FixedUpdate()
     {
         if (state == PatrolState.Walking)
         {
-            transform.Translate(speed * direction * Time.deltaTime, Space.World);
+            if (HasReachedTarget())
+            {
+                state = PatrolState.Waiting;
+            }
+            else
+            {
+                Walk();
+            }
         }
+    }
+
+    private void SwitchToWalking()
+    {
+        currentTarget = currentTarget.Equals(pointA) ? pointB : pointA;
+        UpdateDirection(currentTarget.position);
+        state = PatrolState.Walking;
+    }
+
+    private bool HasReachedTarget()
+    {
+        return Vector3.Distance(transform.position, currentTarget.position) < 0.05f;
+    }
+
+    private void Walk()
+    {
+        transform.Translate(speed * direction * Time.deltaTime, Space.World);
     }
 
     private void Rotate(Vector3 target)
@@ -90,7 +96,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         if (state == PatrolState.Walking)
         {
-            state = PatrolState.Looking;
+            state = PatrolState.Waiting;
         }
     }
 }
