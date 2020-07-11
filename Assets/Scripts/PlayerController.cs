@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
         rb           = GetComponent<Rigidbody2D>();
         soundManager = GetComponent<SoundManager>();
 
+        soundManager.PlaySound(SoundType.Music, 0.06f);
+
         lastPosition = transform.position;
     }
 

@@ -5,19 +5,26 @@ using UnityEngine;
 public enum SoundType
 {
     Footstep,
-    Sneeze
+    Sneeze,
+    Music
 }
 
 public class SoundManager : MonoBehaviour
 {
-    private AudioSource audioSource = null;
+    private AudioSource audioSourceFootstep = null;
+    private AudioSource audioSourceSneeze = null;
+    private AudioSource audioSourceMusic = null;
     public AudioClip footstepSound = null;
     public AudioClip sneezeSound = null;
+    public AudioClip music = null;
     private float timeWaitedBetweenFootstepSound;
 
     public void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSourceFootstep = gameObject.AddComponent<AudioSource>();
+        audioSourceSneeze   = gameObject.AddComponent<AudioSource>();
+        audioSourceMusic    = gameObject.AddComponent<AudioSource>();
+
         timeWaitedBetweenFootstepSound = Random.Range(-0.1f, 1.5f);
     }
 
@@ -26,15 +33,20 @@ public class SoundManager : MonoBehaviour
         switch (soundType)
         {
             case SoundType.Footstep:
-                audioSource.volume = volume;
-                audioSource.PlayOneShot(footstepSound);
+                audioSourceFootstep.volume = volume;
+                audioSourceFootstep.PlayOneShot(footstepSound);
                 break;
             case SoundType.Sneeze:
-                audioSource.volume = volume;
-                audioSource.PlayOneShot(sneezeSound);
+                audioSourceSneeze.volume = volume;
+                audioSourceSneeze.PlayOneShot(sneezeSound);
+                break;
+            case SoundType.Music:
+                audioSourceMusic.volume = volume;
+                audioSourceMusic.loop = true;
+                audioSourceMusic.clip = music;
+                audioSourceMusic.Play();
                 break;
         }
-
     }
 
     public void PlayFootstepSound(float timeToWaitBetweenFootstepSound = 2.0f, float volume = 0.3f)
