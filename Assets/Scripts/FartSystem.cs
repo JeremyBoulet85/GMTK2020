@@ -41,7 +41,7 @@ public class FartSystem : MonoBehaviour
         if (fartLevel >= maxFartLevel)
         {
             fartLevel = 0;
-            soundManager.PlaySound(SoundType.Sneeze, 0.9f);
+            //soundManager.PlaySound(SoundType.Sneeze, 0.9f);
             fartBar.isDraining = true;
         }
     }
