@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
@@ -20,6 +17,7 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField]
     GameObject exclamation = null;
     private SoundManager soundManager;
+    private Vector3 soundLocation;
     private float footstepSoundInterval = 0.8f;
     private float footstepSoundDistance = 10.0f;
     private Animator animator;
@@ -40,12 +38,10 @@ public class EnemyPatrol : MonoBehaviour
     private Vector3 direction;
     private float waitTimer = 0f;
     private float foundTimer = 0f;
-    private Transform player;
+    private GameObject player;
     private GameObject exclamationInstance = null;
     private Canvas canvas;
     private Camera cam;
-    private Vector3 soundLocation;
-    private bool alerted = false;
     private Vector3[] directions = { new Vector3(-1, 0, 0), new Vector3(0, 1, 0), new Vector3(1, 0, 0), new Vector3(0, -1, 0) };
     private int lookAroundCounter = 0;
     private float lookAroundTime = 1.5f;
@@ -53,7 +49,7 @@ public class EnemyPatrol : MonoBehaviour
     void Awake()
     {
         canvas = FindObjectOfType<Canvas>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Start()
@@ -69,16 +65,16 @@ public class EnemyPatrol : MonoBehaviour
         switch (state)
         {
             case PatrolState.Waiting:
-                DetectPlayer();
                 Wait();
+                SeePlayer();
                 break;
             case PatrolState.Investigating:
-                DetectPlayer();
                 Investigate();
+                SeePlayer();
                 break;
             case PatrolState.LookAround:
-                DetectPlayer();
                 LookAround();
+                SeePlayer();
                 break;
             case PatrolState.FoundPlayer:
                 FoundPlayer();
@@ -94,12 +90,12 @@ public class EnemyPatrol : MonoBehaviour
         switch (state)
         {
             case PatrolState.Walking:
-                DetectPlayer();
                 Walk();
+                SeePlayer();
                 break;
             case PatrolState.Chase:
-                DetectPlayer();
                 Chase();
+                SeePlayer();
                 break;
         }
     }
@@ -108,8 +104,6 @@ public class EnemyPatrol : MonoBehaviour
     {
         if (state != PatrolState.Waiting)
             return;
-
-        alerted = false;
 
         animator.SetFloat("Speed", 0.0f);
 
@@ -126,8 +120,6 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.Walking)
             return;
 
-        alerted = false;
-
         if (HasReachedTarget(currentTarget.position, 0.5f))
         {
             SwitchToWaiting();
@@ -140,29 +132,17 @@ public class EnemyPatrol : MonoBehaviour
     private void MoveCharacter()
     {
         UpdateAnimationDirection();
-        if (Vector3.Distance(transform.position, player.position) < footstepSoundDistance)
+        if (Vector3.Distance(transform.position, player.transform.position) < footstepSoundDistance)
         {
             soundManager.PlayFootstepSound(footstepSoundInterval, 0.15f);
         }
         transform.Translate(speed * direction * Time.deltaTime, Space.World);
     }
 
-    private void DetectPlayer()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized);
-        Debug.DrawRay(transform.position, direction * 1000);
-        if (hit.collider != null && hit.transform.tag == "Player")
-        {
-            state = PatrolState.FoundPlayer;
-        }
-    }
-
     private void FoundPlayer()
     {
         if (state != PatrolState.FoundPlayer)
             return;
-
-        alerted = false;
 
         if (foundTimer == 0)
         {
@@ -192,8 +172,6 @@ public class EnemyPatrol : MonoBehaviour
     {
         if (state != PatrolState.Stop)
             return;
-
-        alerted = false;
 
         GameManager.instance.StrikeCount++;
         SwitchToWalking();
@@ -253,7 +231,6 @@ public class EnemyPatrol : MonoBehaviour
             else
             {
                 lookAroundCounter = 0;
-                alerted = false;
                 SwitchToWalking();
             }
         }
@@ -289,15 +266,52 @@ public class EnemyPatrol : MonoBehaviour
         UpdateAnimationDirection();
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void SeePlayer()
     {
-        if (collider.CompareTag("Sound") && !alerted)
+        if (PlayerInsideSphere() && IsInsideVisionCone() && CanSeePlayer())
         {
-            alerted = true;
-            soundLocation = collider.gameObject.transform.position;
-            UpdateDirection(soundLocation);
-            state = PatrolState.Investigating;
+            state = PatrolState.FoundPlayer;
         }
+    }
+
+    private bool PlayerInsideSphere()
+    {
+        return Vector3.Distance(player.transform.position, transform.position) < 8f;
+    }
+
+    private bool IsInsideVisionCone()
+    {
+        Vector2 targetDir = player.transform.position - transform.position;
+        Vector2 forward = direction.normalized;
+        
+        return Vector2.Angle(targetDir, forward) < 10f;
+    }
+
+    //private void HearPlayerSound()
+    //{
+    //    if (player.GetComponent<SoundManager>().madeSound && PointInsideSphere(player.transform.position, transform.position, 8f))
+    //    {
+    //        UpdateDirection(player.transform.position);
+    //        if (CanSeePlayer())
+    //        {
+    //            state = PatrolState.FoundPlayer;
+    //        }
+    //        else
+    //        {
+    //            state = PatrolState.LookAround;
+    //        }
+    //    }
+    //}
+
+    private bool CanSeePlayer()
+    {
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position);
+        if (hit.collider != null && hit.collider.CompareTag("Player"))
+        {
+            return true;
+
+        }
+        return hit.collider == null;
     }
 
     private void UpdateAnimationDirection()
