@@ -1,12 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
+
+    [SerializeField]
+    private int totalKeys = 4;
     public int StrikeCount { get; set; }
-    public Transform player;
+    public bool Finished { get; private set; } = false;
+    public int CurrentKeys { get; private set; } = 0;
+    public int TotalKeys { get => totalKeys; }
+
+    private Transform player;
 
     public Transform startingPoint;
 
@@ -30,9 +38,8 @@ public class GameManager : MonoBehaviour
     //Initializes the game for each level.
     void InitGame()
     {
-
-
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -46,5 +53,11 @@ public class GameManager : MonoBehaviour
             player.transform.position = startingPoint.position;
             StrikeCount = 0;
         }
+    }
+
+    public void PickUpKey()
+    {
+        ++CurrentKeys;
+        Finished = CurrentKeys == totalKeys;
     }
 }
