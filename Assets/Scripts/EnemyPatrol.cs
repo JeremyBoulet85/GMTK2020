@@ -18,7 +18,7 @@ public class EnemyPatrol : MonoBehaviour
     float waitTime = 2f;
 
     [SerializeField]
-    GameObject exclamation;
+    GameObject exclamation = null;
     private SoundManager soundManager;
     private float footstepSoundInterval = 0.8f;
     private float footstepSoundDistance = 10.0f;
