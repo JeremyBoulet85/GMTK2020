@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class EnemyPatrol : MonoBehaviour
 {
     [SerializeField]
-    Transform pointA;
+    Transform pointA = null;
 
     [SerializeField]
-    Transform pointB;
+    Transform pointB = null;
 
     [SerializeField]
     float speed = 2f;
@@ -19,6 +19,10 @@ public class EnemyPatrol : MonoBehaviour
 
     [SerializeField]
     GameObject exclamation;
+    private SoundManager soundManager;
+    private float footstepSoundInterval = 0.8f;
+    private float footstepSoundDistance = 10.0f;
+    private Animator animator;
 
     private Animator animator;
     
@@ -46,7 +50,8 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        animator     = GetComponent<Animator>();
+        soundManager = GetComponent<SoundManager>();
     }
 
     private void Update()
@@ -98,6 +103,10 @@ public class EnemyPatrol : MonoBehaviour
         }
 
         UpdateAnimationDirection();
+        if (Vector3.Distance(transform.position, player.position) < footstepSoundDistance)
+        {
+            soundManager.PlayFootstepSound(footstepSoundInterval, 0.15f);
+        }
         transform.Translate(speed * direction * Time.deltaTime, Space.World);
     }
 

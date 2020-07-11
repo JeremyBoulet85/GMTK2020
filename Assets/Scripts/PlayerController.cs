@@ -9,14 +9,20 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
     private Rigidbody2D rb;
+    private SoundManager soundManager;
 
     private void Start()
     {
-        animator  = GetComponent<Animator>();
-        rb        = GetComponent<Rigidbody2D>();
+        animator     = GetComponent<Animator>();
+        rb           = GetComponent<Rigidbody2D>();
+        soundManager = GetComponent<SoundManager>();
     }
 
-    // Update is called once per frame
+    public void Sneeze()
+    {
+        soundManager.PlaySound(SoundType.Sneeze, 0.9f);
+    }
+
     void Update()
     {
         Vector2 velocity = new Vector3();
@@ -32,6 +38,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("Horizontal", velocity.x);
             animator.SetFloat("Vertical", velocity.y);
+            soundManager.PlayFootstepSound();
         }
 
         rb.MovePosition(rb.position + velocity.normalized * speed * Time.fixedDeltaTime);
