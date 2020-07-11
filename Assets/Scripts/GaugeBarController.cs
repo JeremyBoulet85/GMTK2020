@@ -9,6 +9,7 @@ public class GaugeBarController : MonoBehaviour
     public void SetMax(int max)
     {
         slider.maxValue = max;
+        slider.value = 0;
     }
     
     public void IncreaseValue(int increment)
