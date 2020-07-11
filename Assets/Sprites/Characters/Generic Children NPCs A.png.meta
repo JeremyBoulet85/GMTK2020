@@ -1,0 +1,6635 @@
+fileFormatVersion: 2
+guid: edcd7ca8113d3144ca15a9432bae8e55
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4479505687380860519
+    second: Generic Children NPCs A_0
+  - first:
+      213: 8638697195714254487
+    second: Generic Children NPCs A_1
+  - first:
+      213: 245964345617290409
+    second: Generic Children NPCs A_2
+  - first:
+      213: -6597126549005431899
+    second: Generic Children NPCs A_3
+  - first:
+      213: 5092506726929243846
+    second: Generic Children NPCs A_4
+  - first:
+      213: 3813429936157623515
+    second: Generic Children NPCs A_5
+  - first:
+      213: 4268161671718302114
+    second: Generic Children NPCs A_6
+  - first:
+      213: -1422076537273630127
+    second: Generic Children NPCs A_7
+  - first:
+      213: 4132565510413897439
+    second: Generic Children NPCs A_8
+  - first:
+      213: -1056312510062174738
+    second: Generic Children NPCs A_9
+  - first:
+      213: -2926527814453605091
+    second: Generic Children NPCs A_10
+  - first:
+      213: -2737271377875779432
+    second: Generic Children NPCs A_11
+  - first:
+      213: -1598706651538200478
+    second: Generic Children NPCs A_12
+  - first:
+      213: 6136332956338881238
+    second: Generic Children NPCs A_13
+  - first:
+      213: -2497469919703363834
+    second: Generic Children NPCs A_14
+  - first:
+      213: 2975621486666908629
+    second: Generic Children NPCs A_15
+  - first:
+      213: 8131909694000442862
+    second: Generic Children NPCs A_16
+  - first:
+      213: -2331468707683852448
+    second: Generic Children NPCs A_17
+  - first:
+      213: 163864837751481025
+    second: Generic Children NPCs A_18
+  - first:
+      213: -3408588597504607152
+    second: Generic Children NPCs A_19
+  - first:
+      213: -4549021412144198756
+    second: Generic Children NPCs A_20
+  - first:
+      213: 5888692711423730769
+    second: Generic Children NPCs A_21
+  - first:
+      213: -8006283099526881491
+    second: Generic Children NPCs A_22
+  - first:
+      213: 5845915749926607563
+    second: Generic Children NPCs A_23
+  - first:
+      213: -7188580316929060089
+    second: Generic Children NPCs A_24
+  - first:
+      213: 5139279578949796987
+    second: Generic Children NPCs A_25
+  - first:
+      213: 8783212134296558483
+    second: Generic Children NPCs A_26
+  - first:
+      213: -9185357178108520065
+    second: Generic Children NPCs A_27
+  - first:
+      213: 6469614455982028103
+    second: Generic Children NPCs A_28
+  - first:
+      213: -1145731484644965409
+    second: Generic Children NPCs A_29
+  - first:
+      213: -2202188637262467945
+    second: Generic Children NPCs A_30
+  - first:
+      213: -4082929069276523949
+    second: Generic Children NPCs A_31
+  - first:
+      213: -6452681124085745970
+    second: Generic Children NPCs A_32
+  - first:
+      213: -9129173211381999830
+    second: Generic Children NPCs A_33
+  - first:
+      213: 6114333116206992313
+    second: Generic Children NPCs A_34
+  - first:
+      213: 5326180237954894315
+    second: Generic Children NPCs A_35
+  - first:
+      213: 1686615923919332436
+    second: Generic Children NPCs A_36
+  - first:
+      213: -6070372023317451696
+    second: Generic Children NPCs A_37
+  - first:
+      213: -2780850088728797605
+    second: Generic Children NPCs A_38
+  - first:
+      213: -6636657914293412864
+    second: Generic Children NPCs A_39
+  - first:
+      213: 1537074665204649919
+    second: Generic Children NPCs A_40
+  - first:
+      213: 2359359162887973545
+    second: Generic Children NPCs A_41
+  - first:
+      213: 3327987173984118109
+    second: Generic Children NPCs A_42
+  - first:
+      213: -1150584076707281641
+    second: Generic Children NPCs A_43
+  - first:
+      213: -3657698417681340649
+    second: Generic Children NPCs A_44
+  - first:
+      213: 8192550615802471630
+    second: Generic Children NPCs A_45
+  - first:
+      213: -3681613009360004690
+    second: Generic Children NPCs A_46
+  - first:
+      213: -2473212528426981353
+    second: Generic Children NPCs A_47
+  - first:
+      213: 7769434531600565262
+    second: Generic Children NPCs A_48
+  - first:
+      213: 2107961252429071441
+    second: Generic Children NPCs A_49
+  - first:
+      213: -788259018507621834
+    second: Generic Children NPCs A_50
+  - first:
+      213: -8343087611363681043
+    second: Generic Children NPCs A_51
+  - first:
+      213: 3381267867118541476
+    second: Generic Children NPCs A_52
+  - first:
+      213: 7076248368115377075
+    second: Generic Children NPCs A_53
+  - first:
+      213: 6738333667223959187
+    second: Generic Children NPCs A_54
+  - first:
+      213: 8353418220740223532
+    second: Generic Children NPCs A_55
+  - first:
+      213: -5672991912926057804
+    second: Generic Children NPCs A_56
+  - first:
+      213: -7642141311699690914
+    second: Generic Children NPCs A_57
+  - first:
+      213: 6920672055958698928
+    second: Generic Children NPCs A_58
+  - first:
+      213: -2662983363361577928
+    second: Generic Children NPCs A_59
+  - first:
+      213: -210093524267300264
+    second: Generic Children NPCs A_60
+  - first:
+      213: -5524179231191938216
+    second: Generic Children NPCs A_61
+  - first:
+      213: -5346966175153671624
+    second: Generic Children NPCs A_62
+  - first:
+      213: -6681110272386963081
+    second: Generic Children NPCs A_63
+  - first:
+      213: 9083144896461464308
+    second: Generic Children NPCs A_64
+  - first:
+      213: -3349874569838577833
+    second: Generic Children NPCs A_65
+  - first:
+      213: 232858350036962809
+    second: Generic Children NPCs A_66
+  - first:
+      213: 6749748552307846336
+    second: Generic Children NPCs A_67
+  - first:
+      213: 1794999092213389701
+    second: Generic Children NPCs A_68
+  - first:
+      213: -6550198612015532973
+    second: Generic Children NPCs A_69
+  - first:
+      213: -323898846865712556
+    second: Generic Children NPCs A_70
+  - first:
+      213: 6902594297722894255
+    second: Generic Children NPCs A_71
+  - first:
+      213: -1356460448589200143
+    second: Generic Children NPCs A_72
+  - first:
+      213: 666040657509606479
+    second: Generic Children NPCs A_73
+  - first:
+      213: -4070053380708128466
+    second: Generic Children NPCs A_74
+  - first:
+      213: 1054601994859541347
+    second: Generic Children NPCs A_75
+  - first:
+      213: -8636255168709462954
+    second: Generic Children NPCs A_76
+  - first:
+      213: 6517926947966501522
+    second: Generic Children NPCs A_77
+  - first:
+      213: 2715359993402035011
+    second: Generic Children NPCs A_78
+  - first:
+      213: 7570020233727628964
+    second: Generic Children NPCs A_79
+  - first:
+      213: 2632815599759861016
+    second: Generic Children NPCs A_80
+  - first:
+      213: -1629043961356285448
+    second: Generic Children NPCs A_81
+  - first:
+      213: -763040342453903920
+    second: Generic Children NPCs A_82
+  - first:
+      213: 2021924381633483074
+    second: Generic Children NPCs A_83
+  - first:
+      213: 1186739735795844295
+    second: Generic Children NPCs A_84
+  - first:
+      213: 5664996016833982147
+    second: Generic Children NPCs A_85
+  - first:
+      213: 3916432078883013719
+    second: Generic Children NPCs A_86
+  - first:
+      213: -330424232203418747
+    second: Generic Children NPCs A_87
+  - first:
+      213: -4619361102361885508
+    second: Generic Children NPCs A_88
+  - first:
+      213: -8000463968159594484
+    second: Generic Children NPCs A_89
+  - first:
+      213: 9016854674362058503
+    second: Generic Children NPCs A_90
+  - first:
+      213: 5620962494542020397
+    second: Generic Children NPCs A_91
+  - first:
+      213: -1954436416542327239
+    second: Generic Children NPCs A_92
+  - first:
+      213: 3087598477349555541
+    second: Generic Children NPCs A_93
+  - first:
+      213: 2613669733092584089
+    second: Generic Children NPCs A_94
+  - first:
+      213: -4930136617285665596
+    second: Generic Children NPCs A_95
+  - first:
+      213: 6134194642895881991
+    second: Generic Children NPCs A_96
+  - first:
+      213: -6640293407877907774
+    second: Generic Children NPCs A_97
+  - first:
+      213: 5203217413299457318
+    second: Generic Children NPCs A_98
+  - first:
+      213: 7359269942482975279
+    second: Generic Children NPCs A_99
+  - first:
+      213: 7668034259299300255
+    second: Generic Children NPCs A_100
+  - first:
+      213: -1199981525153659833
+    second: Generic Children NPCs A_101
+  - first:
+      213: 8624230072931049175
+    second: Generic Children NPCs A_102
+  - first:
+      213: -3488240317488373520
+    second: Generic Children NPCs A_103
+  - first:
+      213: -8671165774218859131
+    second: Generic Children NPCs A_104
+  - first:
+      213: 980517338821143427
+    second: Generic Children NPCs A_105
+  - first:
+      213: -4542559759916932051
+    second: Generic Children NPCs A_106
+  - first:
+      213: 7800411305889698483
+    second: Generic Children NPCs A_107
+  - first:
+      213: 4176150331916777195
+    second: Generic Children NPCs A_108
+  - first:
+      213: -5990731679189478490
+    second: Generic Children NPCs A_109
+  - first:
+      213: 350695568971584976
+    second: Generic Children NPCs A_110
+  - first:
+      213: -4247918988369915255
+    second: Generic Children NPCs A_111
+  - first:
+      213: 2249054626873903368
+    second: Generic Children NPCs A_112
+  - first:
+      213: 958204612563170467
+    second: Generic Children NPCs A_113
+  - first:
+      213: -6777073141064623212
+    second: Generic Children NPCs A_114
+  - first:
+      213: -7282470036306346808
+    second: Generic Children NPCs A_115
+  - first:
+      213: 3035325279813376040
+    second: Generic Children NPCs A_116
+  - first:
+      213: -8626838773916885209
+    second: Generic Children NPCs A_117
+  - first:
+      213: -6759933777180497630
+    second: Generic Children NPCs A_118
+  - first:
+      213: -2487445335098024931
+    second: Generic Children NPCs A_119
+  - first:
+      213: 5853849381315207410
+    second: Generic Children NPCs A_120
+  - first:
+      213: 5693230831707031773
+    second: Generic Children NPCs A_121
+  - first:
+      213: -8773864479826995717
+    second: Generic Children NPCs A_122
+  - first:
+      213: 4529215251656774692
+    second: Generic Children NPCs A_123
+  - first:
+      213: -8147580171436134434
+    second: Generic Children NPCs A_124
+  - first:
+      213: -1045731995664322218
+    second: Generic Children NPCs A_125
+  - first:
+      213: 6052199203114886047
+    second: Generic Children NPCs A_126
+  - first:
+      213: -4003800027296704993
+    second: Generic Children NPCs A_127
+  - first:
+      213: 5647773730097462165
+    second: Generic Children NPCs A_128
+  - first:
+      213: -7657711208948278746
+    second: Generic Children NPCs A_129
+  - first:
+      213: -6444784297178216250
+    second: Generic Children NPCs A_130
+  - first:
+      213: -5929650447264708722
+    second: Generic Children NPCs A_131
+  - first:
+      213: 2258948786084657164
+    second: Generic Children NPCs A_132
+  - first:
+      213: 5807341621154064637
+    second: Generic Children NPCs A_133
+  - first:
+      213: -5198843933660497613
+    second: Generic Children NPCs A_134
+  - first:
+      213: 3844901692790510386
+    second: Generic Children NPCs A_135
+  - first:
+      213: -215915901556619842
+    second: Generic Children NPCs A_136
+  - first:
+      213: -2310714563057294053
+    second: Generic Children NPCs A_137
+  - first:
+      213: 2025176581903020192
+    second: Generic Children NPCs A_138
+  - first:
+      213: 5392565623158005683
+    second: Generic Children NPCs A_139
+  - first:
+      213: 8790801623870155312
+    second: Generic Children NPCs A_140
+  - first:
+      213: -8384482498086665354
+    second: Generic Children NPCs A_141
+  - first:
+      213: -6420627736344127250
+    second: Generic Children NPCs A_142
+  - first:
+      213: 3327735158039509771
+    second: Generic Children NPCs A_143
+  - first:
+      213: -5481497063212788238
+    second: Generic Children NPCs A_144
+  - first:
+      213: -5980280849815589625
+    second: Generic Children NPCs A_145
+  - first:
+      213: 6352909281218542234
+    second: Generic Children NPCs A_146
+  - first:
+      213: -5875751064944752501
+    second: Generic Children NPCs A_147
+  - first:
+      213: -8055663637396066530
+    second: Generic Children NPCs A_148
+  - first:
+      213: 6820582830127842500
+    second: Generic Children NPCs A_149
+  - first:
+      213: 2244458070528458606
+    second: Generic Children NPCs A_150
+  - first:
+      213: -7490307433690187023
+    second: Generic Children NPCs A_151
+  - first:
+      213: -5556657990169543344
+    second: Generic Children NPCs A_152
+  - first:
+      213: 7899202818073475630
+    second: Generic Children NPCs A_153
+  - first:
+      213: 5828731757044839719
+    second: Generic Children NPCs A_154
+  - first:
+      213: -8906421681145969170
+    second: Generic Children NPCs A_155
+  - first:
+      213: -3147838477140399236
+    second: Generic Children NPCs A_156
+  - first:
+      213: 3561002941132010898
+    second: Generic Children NPCs A_157
+  - first:
+      213: -4432478484537124465
+    second: Generic Children NPCs A_158
+  - first:
+      213: 259189498993460734
+    second: Generic Children NPCs A_159
+  - first:
+      213: -6736235646011817546
+    second: Generic Children NPCs A_160
+  - first:
+      213: -4836102819312867770
+    second: Generic Children NPCs A_161
+  - first:
+      213: -8676978923132397269
+    second: Generic Children NPCs A_162
+  - first:
+      213: 3635601777506461379
+    second: Generic Children NPCs A_163
+  - first:
+      213: 7188312989654925997
+    second: Generic Children NPCs A_164
+  - first:
+      213: 9025535515029763072
+    second: Generic Children NPCs A_165
+  - first:
+      213: -2466227039606526165
+    second: Generic Children NPCs A_166
+  - first:
+      213: 4391422338642173230
+    second: Generic Children NPCs A_167
+  - first:
+      213: -4637976336620671657
+    second: Generic Children NPCs A_168
+  - first:
+      213: -6049193419875744136
+    second: Generic Children NPCs A_169
+  - first:
+      213: 2035957004901639619
+    second: Generic Children NPCs A_170
+  - first:
+      213: -3527119206426786188
+    second: Generic Children NPCs A_171
+  - first:
+      213: -2077724266473060624
+    second: Generic Children NPCs A_172
+  - first:
+      213: -5791182519213387701
+    second: Generic Children NPCs A_173
+  - first:
+      213: -1179398567301536275
+    second: Generic Children NPCs A_174
+  - first:
+      213: -922761071519052998
+    second: Generic Children NPCs A_175
+  - first:
+      213: 4049461244103977044
+    second: Generic Children NPCs A_176
+  - first:
+      213: 7279663666601186285
+    second: Generic Children NPCs A_177
+  - first:
+      213: 278426963785200115
+    second: Generic Children NPCs A_178
+  - first:
+      213: -6924071004340378372
+    second: Generic Children NPCs A_179
+  - first:
+      213: -2189017273590171603
+    second: Generic Children NPCs A_180
+  - first:
+      213: -1622244222245151219
+    second: Generic Children NPCs A_181
+  - first:
+      213: 1650118639793157557
+    second: Generic Children NPCs A_182
+  - first:
+      213: -5501074501121281949
+    second: Generic Children NPCs A_183
+  - first:
+      213: -32700351291917700
+    second: Generic Children NPCs A_184
+  - first:
+      213: 6212571199950462582
+    second: Generic Children NPCs A_185
+  - first:
+      213: 2362271527861633220
+    second: Generic Children NPCs A_186
+  - first:
+      213: 8402790383641646713
+    second: Generic Children NPCs A_187
+  - first:
+      213: -5158732869896123195
+    second: Generic Children NPCs A_188
+  - first:
+      213: -7664938871113175824
+    second: Generic Children NPCs A_189
+  - first:
+      213: -4415769509113882146
+    second: Generic Children NPCs A_190
+  - first:
+      213: 4133512073506037984
+    second: Generic Children NPCs A_191
+  - first:
+      213: -1138743247798095421
+    second: Generic Children NPCs A_192
+  - first:
+      213: -9094226303659556147
+    second: Generic Children NPCs A_193
+  - first:
+      213: -7875459578348707318
+    second: Generic Children NPCs A_194
+  - first:
+      213: -1142864894137826240
+    second: Generic Children NPCs A_195
+  - first:
+      213: 1189382083578288937
+    second: Generic Children NPCs A_196
+  - first:
+      213: 1325528044085039966
+    second: Generic Children NPCs A_197
+  - first:
+      213: -5862419580847171928
+    second: Generic Children NPCs A_198
+  - first:
+      213: -7447690396300213908
+    second: Generic Children NPCs A_199
+  - first:
+      213: 7340126218964900974
+    second: Generic Children NPCs A_200
+  - first:
+      213: 7103653501679059656
+    second: Generic Children NPCs A_201
+  - first:
+      213: 8654744454502614025
+    second: Generic Children NPCs A_202
+  - first:
+      213: 8254418236772182403
+    second: Generic Children NPCs A_203
+  - first:
+      213: 3507921116935487136
+    second: Generic Children NPCs A_204
+  - first:
+      213: -9089547124028532836
+    second: Generic Children NPCs A_205
+  - first:
+      213: 2155759157883765016
+    second: Generic Children NPCs A_206
+  - first:
+      213: 2852355888572138897
+    second: Generic Children NPCs A_207
+  - first:
+      213: 6767398560746776219
+    second: Generic Children NPCs A_208
+  - first:
+      213: 3171304260795517199
+    second: Generic Children NPCs A_209
+  - first:
+      213: 1154900824982643606
+    second: Generic Children NPCs A_210
+  - first:
+      213: 6343594037018179873
+    second: Generic Children NPCs A_211
+  - first:
+      213: -8498471663484660767
+    second: Generic Children NPCs A_212
+  - first:
+      213: -4490307303703316880
+    second: Generic Children NPCs A_213
+  - first:
+      213: -1338294554374502412
+    second: Generic Children NPCs A_214
+  - first:
+      213: 9033702435800744458
+    second: Generic Children NPCs A_215
+  - first:
+      213: 4201057477688440243
+    second: Generic Children NPCs A_216
+  - first:
+      213: -8985478261684851692
+    second: Generic Children NPCs A_217
+  - first:
+      213: -9124907162280986096
+    second: Generic Children NPCs A_218
+  - first:
+      213: -4052181067039013676
+    second: Generic Children NPCs A_219
+  - first:
+      213: 4459342780892630251
+    second: Generic Children NPCs A_220
+  - first:
+      213: 8387487825450409152
+    second: Generic Children NPCs A_221
+  - first:
+      213: -5893874250091430384
+    second: Generic Children NPCs A_222
+  - first:
+      213: -3589046651084404739
+    second: Generic Children NPCs A_223
+  - first:
+      213: -9071415334444935732
+    second: Generic Children NPCs A_224
+  - first:
+      213: -1959333773064742683
+    second: Generic Children NPCs A_225
+  - first:
+      213: 747907563453703884
+    second: Generic Children NPCs A_226
+  - first:
+      213: -3868270782896030398
+    second: Generic Children NPCs A_227
+  - first:
+      213: -3973622791461402583
+    second: Generic Children NPCs A_228
+  - first:
+      213: 5800555471580689029
+    second: Generic Children NPCs A_229
+  - first:
+      213: -8068065142723004879
+    second: Generic Children NPCs A_230
+  - first:
+      213: -6093724558919969566
+    second: Generic Children NPCs A_231
+  - first:
+      213: 8651289360017847383
+    second: Generic Children NPCs A_232
+  - first:
+      213: -8206877299700424623
+    second: Generic Children NPCs A_233
+  - first:
+      213: 3651259956085832082
+    second: Generic Children NPCs A_234
+  - first:
+      213: 8863833600287588565
+    second: Generic Children NPCs A_235
+  - first:
+      213: 1403468938689774495
+    second: Generic Children NPCs A_236
+  - first:
+      213: 199424927603877563
+    second: Generic Children NPCs A_237
+  - first:
+      213: 8406774017395672846
+    second: Generic Children NPCs A_238
+  - first:
+      213: -3767266367313122041
+    second: Generic Children NPCs A_239
+  - first:
+      213: -5592384770180442580
+    second: Generic Children NPCs A_240
+  - first:
+      213: -5233182441180450403
+    second: Generic Children NPCs A_241
+  - first:
+      213: -781662991884198384
+    second: Generic Children NPCs A_242
+  - first:
+      213: 3542775749209468656
+    second: Generic Children NPCs A_243
+  - first:
+      213: 8000426718061074549
+    second: Generic Children NPCs A_244
+  - first:
+      213: -5973718871036004541
+    second: Generic Children NPCs A_245
+  - first:
+      213: 7009492068405172227
+    second: Generic Children NPCs A_246
+  - first:
+      213: -4845970309958465130
+    second: Generic Children NPCs A_247
+  - first:
+      213: -7757072936655974222
+    second: Generic Children NPCs A_248
+  - first:
+      213: -1221831025615123262
+    second: Generic Children NPCs A_249
+  - first:
+      213: 5491161330996355083
+    second: Generic Children NPCs A_250
+  - first:
+      213: 1720895284865565311
+    second: Generic Children NPCs A_251
+  - first:
+      213: 6830994024235522858
+    second: Generic Children NPCs A_252
+  - first:
+      213: -4046981937407235485
+    second: Generic Children NPCs A_253
+  - first:
+      213: 5262081532320145298
+    second: Generic Children NPCs A_254
+  - first:
+      213: -565241508024143000
+    second: Generic Children NPCs A_255
+  - first:
+      213: -4339325585655372893
+    second: Generic Children NPCs A_256
+  - first:
+      213: 475848392020615941
+    second: Generic Children NPCs A_257
+  - first:
+      213: 5037494339745617635
+    second: Generic Children NPCs A_258
+  - first:
+      213: 354961978895809240
+    second: Generic Children NPCs A_259
+  - first:
+      213: -300157275428177150
+    second: Generic Children NPCs A_260
+  - first:
+      213: -4672426240384610594
+    second: Generic Children NPCs A_261
+  - first:
+      213: -1033797354804330954
+    second: Generic Children NPCs A_262
+  - first:
+      213: 3479951025838101062
+    second: Generic Children NPCs A_263
+  - first:
+      213: -5978553413325484438
+    second: Generic Children NPCs A_264
+  - first:
+      213: -8919869158068673501
+    second: Generic Children NPCs A_265
+  - first:
+      213: -5587403393984024186
+    second: Generic Children NPCs A_266
+  - first:
+      213: -7940759737296206541
+    second: Generic Children NPCs A_267
+  - first:
+      213: -3196651710998517046
+    second: Generic Children NPCs A_268
+  - first:
+      213: 355737511695442078
+    second: Generic Children NPCs A_269
+  - first:
+      213: -7056568812683203082
+    second: Generic Children NPCs A_270
+  - first:
+      213: 632482841849111085
+    second: Generic Children NPCs A_271
+  - first:
+      213: 7529089741702967576
+    second: Generic Children NPCs A_272
+  - first:
+      213: 6203812010038733340
+    second: Generic Children NPCs A_273
+  - first:
+      213: 6441423259184903192
+    second: Generic Children NPCs A_274
+  - first:
+      213: 690570096404367031
+    second: Generic Children NPCs A_275
+  - first:
+      213: 1060162880721528306
+    second: Generic Children NPCs A_276
+  - first:
+      213: -1676092874821257336
+    second: Generic Children NPCs A_277
+  - first:
+      213: -8567498158770707048
+    second: Generic Children NPCs A_278
+  - first:
+      213: 7991714206524233961
+    second: Generic Children NPCs A_279
+  - first:
+      213: 5243179437565743797
+    second: Generic Children NPCs A_280
+  - first:
+      213: 3722074570337638416
+    second: Generic Children NPCs A_281
+  - first:
+      213: 6868904863115591638
+    second: Generic Children NPCs A_282
+  - first:
+      213: -4264847732366422196
+    second: Generic Children NPCs A_283
+  - first:
+      213: 6000428603266965573
+    second: Generic Children NPCs A_284
+  - first:
+      213: 2494389265687114301
+    second: Generic Children NPCs A_285
+  - first:
+      213: 3819971561960159753
+    second: Generic Children NPCs A_286
+  - first:
+      213: 2818406322358647825
+    second: Generic Children NPCs A_287
+  - first:
+      213: 717868335870755050
+    second: Generic Children NPCs A_288
+  - first:
+      213: -5727799299847455292
+    second: Generic Children NPCs A_289
+  - first:
+      213: 3405469375296505691
+    second: Generic Children NPCs A_290
+  - first:
+      213: 8750593952944405146
+    second: Generic Children NPCs A_291
+  - first:
+      213: -2864289073749949032
+    second: Generic Children NPCs A_292
+  - first:
+      213: 7551851913805062134
+    second: Generic Children NPCs A_293
+  - first:
+      213: 892201098935448363
+    second: Generic Children NPCs A_294
+  - first:
+      213: -6590850708101904933
+    second: Generic Children NPCs A_295
+  - first:
+      213: 1444611132469424583
+    second: Generic Children NPCs A_296
+  - first:
+      213: -6301463111441486588
+    second: Generic Children NPCs A_297
+  - first:
+      213: -6715038007687772
+    second: Generic Children NPCs A_298
+  - first:
+      213: 4555139404569324699
+    second: Generic Children NPCs A_299
+  - first:
+      213: -1791182606700620330
+    second: Generic Children NPCs A_300
+  - first:
+      213: -1623602322517716485
+    second: Generic Children NPCs A_301
+  - first:
+      213: 3044441499422206197
+    second: Generic Children NPCs A_302
+  - first:
+      213: 1042229354777173927
+    second: Generic Children NPCs A_303
+  - first:
+      213: 5011815554120182181
+    second: Generic Children NPCs A_304
+  - first:
+      213: 7855728812905390363
+    second: Generic Children NPCs A_305
+  - first:
+      213: -4704807974562620339
+    second: Generic Children NPCs A_306
+  - first:
+      213: 2719144320560563599
+    second: Generic Children NPCs A_307
+  - first:
+      213: -5804711364675011040
+    second: Generic Children NPCs A_308
+  - first:
+      213: -5900106570638877040
+    second: Generic Children NPCs A_309
+  - first:
+      213: -335579622826468741
+    second: Generic Children NPCs A_310
+  - first:
+      213: -1542925357053153028
+    second: Generic Children NPCs A_311
+  - first:
+      213: -7309887603700076205
+    second: Generic Children NPCs A_312
+  - first:
+      213: 4283379533047013046
+    second: Generic Children NPCs A_313
+  - first:
+      213: 3597114877070409739
+    second: Generic Children NPCs A_314
+  - first:
+      213: -7535614345234379914
+    second: Generic Children NPCs A_315
+  - first:
+      213: 1099946575011057355
+    second: Generic Children NPCs A_316
+  - first:
+      213: 8728702582436772387
+    second: Generic Children NPCs A_317
+  - first:
+      213: -7429013896179075198
+    second: Generic Children NPCs A_318
+  - first:
+      213: 7854655340876358879
+    second: Generic Children NPCs A_319
+  - first:
+      213: 3332381646212132464
+    second: Generic Children NPCs A_320
+  - first:
+      213: 9102602372128716631
+    second: Generic Children NPCs A_321
+  - first:
+      213: 3931932567085354462
+    second: Generic Children NPCs A_322
+  - first:
+      213: 7919629550348633995
+    second: Generic Children NPCs A_323
+  - first:
+      213: 3377796216831068777
+    second: Generic Children NPCs A_324
+  - first:
+      213: 1414519476327054700
+    second: Generic Children NPCs A_325
+  - first:
+      213: -5469892733492717843
+    second: Generic Children NPCs A_326
+  - first:
+      213: 514730155186838005
+    second: Generic Children NPCs A_327
+  - first:
+      213: -6737950320287078848
+    second: Generic Children NPCs A_328
+  - first:
+      213: 5306912537474102198
+    second: Generic Children NPCs A_329
+  - first:
+      213: 6362359372529365807
+    second: Generic Children NPCs A_330
+  - first:
+      213: -85156587635512285
+    second: Generic Children NPCs A_331
+  - first:
+      213: -153539575512337459
+    second: Generic Children NPCs A_332
+  - first:
+      213: 7763350229989942476
+    second: Generic Children NPCs A_333
+  - first:
+      213: 1940842732852742519
+    second: Generic Children NPCs A_334
+  - first:
+      213: 3429381600521974914
+    second: Generic Children NPCs A_335
+  - first:
+      213: 998861194139182918
+    second: Generic Children NPCs A_336
+  - first:
+      213: -7144940903235754982
+    second: Generic Children NPCs A_337
+  - first:
+      213: 8154188251353793806
+    second: Generic Children NPCs A_338
+  - first:
+      213: -7215894848088764142
+    second: Generic Children NPCs A_339
+  - first:
+      213: 2927517332455882213
+    second: Generic Children NPCs A_340
+  - first:
+      213: 3912338438481020819
+    second: Generic Children NPCs A_341
+  - first:
+      213: 8685748590419322111
+    second: Generic Children NPCs A_342
+  - first:
+      213: 1546355566908162527
+    second: Generic Children NPCs A_343
+  - first:
+      213: 1283939413276913220
+    second: Generic Children NPCs A_344
+  - first:
+      213: -2164385168893941281
+    second: Generic Children NPCs A_345
+  - first:
+      213: -7437164260765530389
+    second: Generic Children NPCs A_346
+  - first:
+      213: 2022410318919059302
+    second: Generic Children NPCs A_347
+  - first:
+      213: -6532783312620238320
+    second: Generic Children NPCs A_348
+  - first:
+      213: -4948816214035399024
+    second: Generic Children NPCs A_349
+  - first:
+      213: -658539343528474478
+    second: Generic Children NPCs A_350
+  - first:
+      213: -1934988551939024606
+    second: Generic Children NPCs A_351
+  - first:
+      213: 8276480440671563180
+    second: Generic Children NPCs A_352
+  - first:
+      213: 7692106903870656183
+    second: Generic Children NPCs A_353
+  - first:
+      213: 4646311019961072981
+    second: Generic Children NPCs A_354
+  - first:
+      213: 4775378319247957964
+    second: Generic Children NPCs A_355
+  - first:
+      213: -6513690224338610497
+    second: Generic Children NPCs A_356
+  - first:
+      213: -2743903474324790296
+    second: Generic Children NPCs A_357
+  - first:
+      213: -6015537590477350659
+    second: Generic Children NPCs A_358
+  - first:
+      213: 6869107882374251142
+    second: Generic Children NPCs A_359
+  - first:
+      213: -8833594922488782667
+    second: Generic Children NPCs A_360
+  - first:
+      213: 9181192085324273463
+    second: Generic Children NPCs A_361
+  - first:
+      213: 1210942355836432039
+    second: Generic Children NPCs A_362
+  - first:
+      213: 23664167352593766
+    second: Generic Children NPCs A_363
+  - first:
+      213: -3497520510573097958
+    second: Generic Children NPCs A_364
+  - first:
+      213: 7893256727986085903
+    second: Generic Children NPCs A_365
+  - first:
+      213: 4205804195838266407
+    second: Generic Children NPCs A_366
+  - first:
+      213: -4831143286590975280
+    second: Generic Children NPCs A_367
+  - first:
+      213: -4330062408747615643
+    second: Generic Children NPCs A_368
+  - first:
+      213: 2218110670169368181
+    second: Generic Children NPCs A_369
+  - first:
+      213: -880865456805359205
+    second: Generic Children NPCs A_370
+  - first:
+      213: -6399696763305269343
+    second: Generic Children NPCs A_371
+  - first:
+      213: 37705598633227416
+    second: Generic Children NPCs A_372
+  - first:
+      213: 673360108262525972
+    second: Generic Children NPCs A_373
+  - first:
+      213: -2682151435188330649
+    second: Generic Children NPCs A_374
+  - first:
+      213: 889355145520775453
+    second: Generic Children NPCs A_375
+  - first:
+      213: -8407039697164704747
+    second: Generic Children NPCs A_376
+  - first:
+      213: -4927719238465161059
+    second: Generic Children NPCs A_377
+  - first:
+      213: 2386565056711339932
+    second: Generic Children NPCs A_378
+  - first:
+      213: -7712832530163942105
+    second: Generic Children NPCs A_379
+  - first:
+      213: 8576322109817160883
+    second: Generic Children NPCs A_380
+  - first:
+      213: 1200474794798872188
+    second: Generic Children NPCs A_381
+  - first:
+      213: 712201211109714486
+    second: Generic Children NPCs A_382
+  - first:
+      213: -7176388811117424131
+    second: Generic Children NPCs A_383
+  - first:
+      213: 3815891527504168120
+    second: Generic Children NPCs A_384
+  - first:
+      213: -7485450098350245144
+    second: Generic Children NPCs A_385
+  - first:
+      213: 5716217033179738957
+    second: Generic Children NPCs A_386
+  - first:
+      213: -3836006487961849773
+    second: Generic Children NPCs A_387
+  - first:
+      213: -7096732635662618324
+    second: Generic Children NPCs A_388
+  - first:
+      213: -2580044875699564766
+    second: Generic Children NPCs A_389
+  - first:
+      213: -1184282815223173313
+    second: Generic Children NPCs A_390
+  - first:
+      213: -6223714297729099586
+    second: Generic Children NPCs A_391
+  - first:
+      213: 6547370519583231436
+    second: Generic Children NPCs A_392
+  - first:
+      213: 2382149144532540707
+    second: Generic Children NPCs A_393
+  - first:
+      213: 901974993283987267
+    second: Generic Children NPCs A_394
+  - first:
+      213: 5948169855939259875
+    second: Generic Children NPCs A_395
+  - first:
+      213: 4334483511812081679
+    second: Generic Children NPCs A_396
+  - first:
+      213: -3688330980919543463
+    second: Generic Children NPCs A_397
+  - first:
+      213: 604973937799762639
+    second: Generic Children NPCs A_398
+  - first:
+      213: 8175412437733064258
+    second: Generic Children NPCs A_399
+  - first:
+      213: 1344140651939723548
+    second: Generic Children NPCs A_400
+  - first:
+      213: -8575894422747582474
+    second: Generic Children NPCs A_401
+  - first:
+      213: -1240497463362968418
+    second: Generic Children NPCs A_402
+  - first:
+      213: -2135581351939032406
+    second: Generic Children NPCs A_403
+  - first:
+      213: 7980844489134109286
+    second: Generic Children NPCs A_404
+  - first:
+      213: -4761886910227634859
+    second: Generic Children NPCs A_405
+  - first:
+      213: 6330063909389139325
+    second: Generic Children NPCs A_406
+  - first:
+      213: -6994780932148532024
+    second: Generic Children NPCs A_407
+  - first:
+      213: 5665571629261965406
+    second: Generic Children NPCs A_408
+  - first:
+      213: -3766217640758035014
+    second: Generic Children NPCs A_409
+  - first:
+      213: 5158755107718644919
+    second: Generic Children NPCs A_410
+  - first:
+      213: -7411667327540586782
+    second: Generic Children NPCs A_411
+  - first:
+      213: -4254884239288462371
+    second: Generic Children NPCs A_412
+  - first:
+      213: 4120854073967758826
+    second: Generic Children NPCs A_413
+  - first:
+      213: 3058865507780102933
+    second: Generic Children NPCs A_414
+  - first:
+      213: -2077627142441784854
+    second: Generic Children NPCs A_415
+  - first:
+      213: 6994638993795848574
+    second: Generic Children NPCs A_416
+  - first:
+      213: 2374322713681888138
+    second: Generic Children NPCs A_417
+  - first:
+      213: -2962330921784399764
+    second: Generic Children NPCs A_418
+  - first:
+      213: 4625419544273693257
+    second: Generic Children NPCs A_419
+  - first:
+      213: -8171554585980404898
+    second: Generic Children NPCs A_420
+  - first:
+      213: -6338714826422153062
+    second: Generic Children NPCs A_421
+  - first:
+      213: 3875805451682203834
+    second: Generic Children NPCs A_422
+  - first:
+      213: -647993859333720992
+    second: Generic Children NPCs A_423
+  - first:
+      213: 1039554229935465274
+    second: Generic Children NPCs A_424
+  - first:
+      213: 3406317920585925601
+    second: Generic Children NPCs A_425
+  - first:
+      213: -4099025322924864314
+    second: Generic Children NPCs A_426
+  - first:
+      213: -4391776107250203486
+    second: Generic Children NPCs A_427
+  - first:
+      213: 4571246456098068230
+    second: Generic Children NPCs A_428
+  - first:
+      213: 1882700950366213073
+    second: Generic Children NPCs A_429
+  - first:
+      213: -3273797109724334618
+    second: Generic Children NPCs A_430
+  - first:
+      213: 8601764045353367106
+    second: Generic Children NPCs A_431
+  - first:
+      213: -184668464921246622
+    second: Generic Children NPCs A_432
+  - first:
+      213: 8510733501913348347
+    second: Generic Children NPCs A_433
+  - first:
+      213: -3211232948758063280
+    second: Generic Children NPCs A_434
+  - first:
+      213: -5837151690845030500
+    second: Generic Children NPCs A_435
+  - first:
+      213: -799331948799634261
+    second: Generic Children NPCs A_436
+  - first:
+      213: -5211025701602798860
+    second: Generic Children NPCs A_437
+  - first:
+      213: -1071612480323754317
+    second: Generic Children NPCs A_438
+  - first:
+      213: 7845873842028434006
+    second: Generic Children NPCs A_439
+  - first:
+      213: 5276840790839702609
+    second: Generic Children NPCs A_440
+  - first:
+      213: -2577360461270717405
+    second: Generic Children NPCs A_441
+  - first:
+      213: 9202202350079480175
+    second: Generic Children NPCs A_442
+  - first:
+      213: 2980898117956733196
+    second: Generic Children NPCs A_443
+  - first:
+      213: 3686049898453007488
+    second: Generic Children NPCs A_444
+  - first:
+      213: 2087596636802299238
+    second: Generic Children NPCs A_445
+  - first:
+      213: -5258724348201141695
+    second: Generic Children NPCs A_446
+  - first:
+      213: -428723711840264862
+    second: Generic Children NPCs A_447
+  - first:
+      213: -2104188505324119971
+    second: Generic Children NPCs A_448
+  - first:
+      213: -5909456458714071859
+    second: Generic Children NPCs A_449
+  - first:
+      213: -730374454799220227
+    second: Generic Children NPCs A_450
+  - first:
+      213: -3692669637395622861
+    second: Generic Children NPCs A_451
+  - first:
+      213: -3389253710094036124
+    second: Generic Children NPCs A_452
+  - first:
+      213: -3254500863385759653
+    second: Generic Children NPCs A_453
+  - first:
+      213: -4400733088802610915
+    second: Generic Children NPCs A_454
+  - first:
+      213: -1515242723896092011
+    second: Generic Children NPCs A_455
+  - first:
+      213: -3102799144513086458
+    second: Generic Children NPCs A_456
+  - first:
+      213: -2404846542186403290
+    second: Generic Children NPCs A_457
+  - first:
+      213: 213970606767996150
+    second: Generic Children NPCs A_458
+  - first:
+      213: 2071743543446579984
+    second: Generic Children NPCs A_459
+  - first:
+      213: -495055567959716995
+    second: Generic Children NPCs A_460
+  - first:
+      213: 5166943557639485689
+    second: Generic Children NPCs A_461
+  - first:
+      213: 6398756577567618058
+    second: Generic Children NPCs A_462
+  - first:
+      213: -1189591311829121570
+    second: Generic Children NPCs A_463
+  - first:
+      213: -6993157153008597695
+    second: Generic Children NPCs A_464
+  - first:
+      213: -4319558297560722584
+    second: Generic Children NPCs A_465
+  - first:
+      213: 3455083667297078879
+    second: Generic Children NPCs A_466
+  - first:
+      213: -6403647463074806133
+    second: Generic Children NPCs A_467
+  - first:
+      213: -1379052316510626478
+    second: Generic Children NPCs A_468
+  - first:
+      213: 6278480376909893805
+    second: Generic Children NPCs A_469
+  - first:
+      213: -3843969704113161251
+    second: Generic Children NPCs A_470
+  - first:
+      213: 9057676919320792282
+    second: Generic Children NPCs A_471
+  - first:
+      213: -5651548776159278975
+    second: Generic Children NPCs A_472
+  - first:
+      213: 3465041469886378284
+    second: Generic Children NPCs A_473
+  - first:
+      213: 5974419621873208797
+    second: Generic Children NPCs A_474
+  - first:
+      213: 9140932774608176864
+    second: Generic Children NPCs A_475
+  - first:
+      213: -8517876885287428845
+    second: Generic Children NPCs A_476
+  - first:
+      213: -6605439396820528515
+    second: Generic Children NPCs A_477
+  - first:
+      213: 7645250382160154156
+    second: Generic Children NPCs A_478
+  - first:
+      213: 9162239614099062001
+    second: Generic Children NPCs A_479
+  - first:
+      213: -5805837618700963337
+    second: Generic Children NPCs A_480
+  - first:
+      213: 8480984032409901012
+    second: Generic Children NPCs A_481
+  - first:
+      213: -4772179603087425047
+    second: Generic Children NPCs A_482
+  - first:
+      213: 3649216867732662625
+    second: Generic Children NPCs A_483
+  - first:
+      213: 4200479258676251459
+    second: Generic Children NPCs A_484
+  - first:
+      213: -2100790866884539162
+    second: Generic Children NPCs A_485
+  - first:
+      213: -3962224448341248685
+    second: Generic Children NPCs A_486
+  - first:
+      213: 732430415955018551
+    second: Generic Children NPCs A_487
+  - first:
+      213: 1977701639043499152
+    second: Generic Children NPCs A_488
+  - first:
+      213: 1575221702850993250
+    second: Generic Children NPCs A_489
+  - first:
+      213: 5377510520434203310
+    second: Generic Children NPCs A_490
+  - first:
+      213: 8898563079842329535
+    second: Generic Children NPCs A_491
+  - first:
+      213: -5337868759415282028
+    second: Generic Children NPCs A_492
+  - first:
+      213: -8579805579403676481
+    second: Generic Children NPCs A_493
+  - first:
+      213: -2497307856845973228
+    second: Generic Children NPCs A_494
+  - first:
+      213: 5919307893751584533
+    second: Generic Children NPCs A_495
+  - first:
+      213: -7698040007304292772
+    second: Generic Children NPCs A_496
+  - first:
+      213: 2794631243692908783
+    second: Generic Children NPCs A_497
+  - first:
+      213: 3616675490195236745
+    second: Generic Children NPCs A_498
+  - first:
+      213: 4330651331556589884
+    second: Generic Children NPCs A_499
+  - first:
+      213: 3039844944309205292
+    second: Generic Children NPCs A_500
+  - first:
+      213: 3162258746744593532
+    second: Generic Children NPCs A_501
+  - first:
+      213: -8268281530996466118
+    second: Generic Children NPCs A_502
+  - first:
+      213: 3627993590577785396
+    second: Generic Children NPCs A_503
+  - first:
+      213: -502110452556109743
+    second: Generic Children NPCs A_504
+  - first:
+      213: -5667869992386279224
+    second: Generic Children NPCs A_505
+  - first:
+      213: -8379126462068105340
+    second: Generic Children NPCs A_506
+  - first:
+      213: 6673865630345107346
+    second: Generic Children NPCs A_507
+  - first:
+      213: -7121882661575101414
+    second: Generic Children NPCs A_508
+  - first:
+      213: 4376520767957077943
+    second: Generic Children NPCs A_509
+  - first:
+      213: 7341534441604719893
+    second: Generic Children NPCs A_510
+  - first:
+      213: -3531831583444362384
+    second: Generic Children NPCs A_511
+  - first:
+      213: 8907786401599418023
+    second: Generic Children NPCs A_512
+  - first:
+      213: 1228382532710329001
+    second: Generic Children NPCs A_513
+  - first:
+      213: 3436161239268830823
+    second: Generic Children NPCs A_514
+  - first:
+      213: 7312277797037240893
+    second: Generic Children NPCs A_515
+  - first:
+      213: -7725754297758931501
+    second: Generic Children NPCs A_516
+  - first:
+      213: 2849453281343299285
+    second: Generic Children NPCs A_517
+  - first:
+      213: 1640984529926106374
+    second: Generic Children NPCs A_518
+  - first:
+      213: 1113716323824279628
+    second: Generic Children NPCs A_519
+  - first:
+      213: 8707974565674124162
+    second: Generic Children NPCs A_520
+  - first:
+      213: 8138743330496889477
+    second: Generic Children NPCs A_521
+  - first:
+      213: 8396662577810581965
+    second: Generic Children NPCs A_522
+  - first:
+      213: 1230138841235666351
+    second: Generic Children NPCs A_523
+  - first:
+      213: 5255496936756807037
+    second: Generic Children NPCs A_524
+  - first:
+      213: 5681796560912521170
+    second: Generic Children NPCs A_525
+  - first:
+      213: -6120424290032716127
+    second: Generic Children NPCs A_526
+  - first:
+      213: -111327200625986760
+    second: Generic Children NPCs A_527
+  - first:
+      213: 8419758687496321258
+    second: Generic Children NPCs A_528
+  - first:
+      213: -4433801846696040923
+    second: Generic Children NPCs A_529
+  - first:
+      213: -5357765300963564902
+    second: Generic Children NPCs A_530
+  - first:
+      213: 3373442128812987064
+    second: Generic Children NPCs A_531
+  - first:
+      213: -1709752706232905793
+    second: Generic Children NPCs A_532
+  - first:
+      213: -6985105171309696592
+    second: Generic Children NPCs A_533
+  - first:
+      213: -8520541467102835238
+    second: Generic Children NPCs A_534
+  - first:
+      213: -6268331388938917617
+    second: Generic Children NPCs A_535
+  - first:
+      213: -8967999113016814588
+    second: Generic Children NPCs A_536
+  - first:
+      213: 4978453072640981471
+    second: Generic Children NPCs A_537
+  - first:
+      213: -4793977060496568909
+    second: Generic Children NPCs A_538
+  - first:
+      213: -6574273255654447359
+    second: Generic Children NPCs A_539
+  - first:
+      213: 1326325777276343393
+    second: Generic Children NPCs A_540
+  - first:
+      213: 6857903958331914728
+    second: Generic Children NPCs A_541
+  - first:
+      213: -4481769261744291857
+    second: Generic Children NPCs A_542
+  - first:
+      213: 3863041796049105134
+    second: Generic Children NPCs A_543
+  - first:
+      213: 6642723105886627932
+    second: Generic Children NPCs A_544
+  - first:
+      213: 7042666422565681362
+    second: Generic Children NPCs A_545
+  - first:
+      213: -101760889154285459
+    second: Generic Children NPCs A_546
+  - first:
+      213: -8417625848032595699
+    second: Generic Children NPCs A_547
+  - first:
+      213: 3663769890655838697
+    second: Generic Children NPCs A_548
+  - first:
+      213: 350201898723074355
+    second: Generic Children NPCs A_549
+  - first:
+      213: 1407947404761717043
+    second: Generic Children NPCs A_550
+  - first:
+      213: -1614906745935763078
+    second: Generic Children NPCs A_551
+  - first:
+      213: 5536137234533345301
+    second: Generic Children NPCs A_552
+  - first:
+      213: -6137531838615898971
+    second: Generic Children NPCs A_553
+  - first:
+      213: -945731390770937717
+    second: Generic Children NPCs A_554
+  - first:
+      213: -5670793838853385999
+    second: Generic Children NPCs A_555
+  - first:
+      213: -8268666110398674853
+    second: Generic Children NPCs A_556
+  - first:
+      213: 2637490984201153397
+    second: Generic Children NPCs A_557
+  - first:
+      213: -1619964463094089836
+    second: Generic Children NPCs A_558
+  - first:
+      213: 235890263155404746
+    second: Generic Children NPCs A_559
+  - first:
+      213: 5389396447540172774
+    second: Generic Children NPCs A_560
+  - first:
+      213: 7916802379588859991
+    second: Generic Children NPCs A_561
+  - first:
+      213: 5207863430849528148
+    second: Generic Children NPCs A_562
+  - first:
+      213: -6302421902337258350
+    second: Generic Children NPCs A_563
+  - first:
+      213: 8913220204935841318
+    second: Generic Children NPCs A_564
+  - first:
+      213: 85956232251631993
+    second: Generic Children NPCs A_565
+  - first:
+      213: -4415483033185725560
+    second: Generic Children NPCs A_566
+  - first:
+      213: -7420946243872573482
+    second: Generic Children NPCs A_567
+  - first:
+      213: 1063339153542558387
+    second: Generic Children NPCs A_568
+  - first:
+      213: 4891860109579470524
+    second: Generic Children NPCs A_569
+  - first:
+      213: -5301959957151907520
+    second: Generic Children NPCs A_570
+  - first:
+      213: -4452856577683017201
+    second: Generic Children NPCs A_571
+  - first:
+      213: 4159181263278200865
+    second: Generic Children NPCs A_572
+  - first:
+      213: 8272814265025034702
+    second: Generic Children NPCs A_573
+  - first:
+      213: -7561249548882107203
+    second: Generic Children NPCs A_574
+  - first:
+      213: -1982510568440585381
+    second: Generic Children NPCs A_575
+  - first:
+      213: 2416898171079098235
+    second: Generic Children NPCs A_576
+  - first:
+      213: 6349699790495854178
+    second: Generic Children NPCs A_577
+  - first:
+      213: 308576151508786225
+    second: Generic Children NPCs A_578
+  - first:
+      213: -6895276057031728094
+    second: Generic Children NPCs A_579
+  - first:
+      213: -7322739193389701500
+    second: Generic Children NPCs A_580
+  - first:
+      213: 8745937370665149021
+    second: Generic Children NPCs A_581
+  - first:
+      213: 2007866119807412144
+    second: Generic Children NPCs A_582
+  - first:
+      213: -3166219361380539940
+    second: Generic Children NPCs A_583
+  - first:
+      213: -4220194635612171037
+    second: Generic Children NPCs A_584
+  - first:
+      213: 7440664596364069302
+    second: Generic Children NPCs A_585
+  - first:
+      213: -51276151238721041
+    second: Generic Children NPCs A_586
+  - first:
+      213: 5610142537984615516
+    second: Generic Children NPCs A_587
+  - first:
+      213: 3364159156589486036
+    second: Generic Children NPCs A_588
+  - first:
+      213: 1594853008211966800
+    second: Generic Children NPCs A_589
+  - first:
+      213: -5972628275990784567
+    second: Generic Children NPCs A_590
+  - first:
+      213: 731937161240394462
+    second: Generic Children NPCs A_591
+  - first:
+      213: -3580248817376511324
+    second: Generic Children NPCs A_592
+  - first:
+      213: -1011723995726626334
+    second: Generic Children NPCs A_593
+  - first:
+      213: 8949620033607040589
+    second: Generic Children NPCs A_594
+  - first:
+      213: -4582277567676354181
+    second: Generic Children NPCs A_595
+  - first:
+      213: 442292043741024828
+    second: Generic Children NPCs A_596
+  - first:
+      213: 6690114737797931426
+    second: Generic Children NPCs A_597
+  - first:
+      213: -5473805833284193742
+    second: Generic Children NPCs A_598
+  - first:
+      213: -1780633910891455394
+    second: Generic Children NPCs A_599
+  - first:
+      213: -2265107528747768954
+    second: Generic Children NPCs A_600
+  - first:
+      213: -854691528987687545
+    second: Generic Children NPCs A_601
+  - first:
+      213: 3997237815412848598
+    second: Generic Children NPCs A_602
+  - first:
+      213: 1909085395068985532
+    second: Generic Children NPCs A_603
+  - first:
+      213: -6948051580359373443
+    second: Generic Children NPCs A_604
+  - first:
+      213: 8410705806113748089
+    second: Generic Children NPCs A_605
+  - first:
+      213: -3863080435891498409
+    second: Generic Children NPCs A_606
+  - first:
+      213: 3392574283939312209
+    second: Generic Children NPCs A_607
+  - first:
+      213: 8912367489504593036
+    second: Generic Children NPCs A_608
+  - first:
+      213: -2608707771867916487
+    second: Generic Children NPCs A_609
+  - first:
+      213: -3942868985936405807
+    second: Generic Children NPCs A_610
+  - first:
+      213: 6093497935071927525
+    second: Generic Children NPCs A_611
+  - first:
+      213: 7561462369463395540
+    second: Generic Children NPCs A_612
+  - first:
+      213: -7143367017120217358
+    second: Generic Children NPCs A_613
+  - first:
+      213: -416482471034541148
+    second: Generic Children NPCs A_614
+  - first:
+      213: 920205836894721102
+    second: Generic Children NPCs A_615
+  - first:
+      213: -1802897574852786225
+    second: Generic Children NPCs A_616
+  - first:
+      213: 3993663921355411691
+    second: Generic Children NPCs A_617
+  - first:
+      213: 6379867994939651095
+    second: Generic Children NPCs A_618
+  - first:
+      213: 6908340507787047282
+    second: Generic Children NPCs A_619
+  - first:
+      213: 7073659539110762910
+    second: Generic Children NPCs A_620
+  - first:
+      213: -116577299535492451
+    second: Generic Children NPCs A_621
+  - first:
+      213: 7587746900332055508
+    second: Generic Children NPCs A_622
+  - first:
+      213: 771221107113809108
+    second: Generic Children NPCs A_623
+  - first:
+      213: 1012800335504835364
+    second: Generic Children NPCs A_624
+  - first:
+      213: -7414353999654856806
+    second: Generic Children NPCs A_625
+  - first:
+      213: -7474144654871622671
+    second: Generic Children NPCs A_626
+  - first:
+      213: -61002723129294724
+    second: Generic Children NPCs A_627
+  - first:
+      213: -1060357591004202295
+    second: Generic Children NPCs A_628
+  - first:
+      213: 1033181519934429399
+    second: Generic Children NPCs A_629
+  - first:
+      213: -8550123944568461274
+    second: Generic Children NPCs A_630
+  - first:
+      213: -4259449168400735024
+    second: Generic Children NPCs A_631
+  - first:
+      213: -323706722169547486
+    second: Generic Children NPCs A_632
+  - first:
+      213: 4378012353919793804
+    second: Generic Children NPCs A_633
+  - first:
+      213: -169362839780899591
+    second: Generic Children NPCs A_634
+  - first:
+      213: -8889140157859793020
+    second: Generic Children NPCs A_635
+  - first:
+      213: -7716975511240023618
+    second: Generic Children NPCs A_636
+  - first:
+      213: 8971665350364268705
+    second: Generic Children NPCs A_637
+  - first:
+      213: -2044728660965884217
+    second: Generic Children NPCs A_638
+  - first:
+      213: 5780861791404904214
+    second: Generic Children NPCs A_639
+  - first:
+      213: -6455433585283811396
+    second: Generic Children NPCs A_640
+  - first:
+      213: 3190585662600795109
+    second: Generic Children NPCs A_641
+  - first:
+      213: 2089583656831344358
+    second: Generic Children NPCs A_642
+  - first:
+      213: 3836298381687410621
+    second: Generic Children NPCs A_643
+  - first:
+      213: -6180792973722896208
+    second: Generic Children NPCs A_644
+  - first:
+      213: 5286901883178597571
+    second: Generic Children NPCs A_645
+  - first:
+      213: 5739853386227320040
+    second: Generic Children NPCs A_646
+  - first:
+      213: 2508117664167647629
+    second: Generic Children NPCs A_647
+  - first:
+      213: -5528629453260862482
+    second: Generic Children NPCs A_648
+  - first:
+      213: 3180870258275891895
+    second: Generic Children NPCs A_649
+  - first:
+      213: 9026970601720350229
+    second: Generic Children NPCs A_650
+  - first:
+      213: -669115867808942507
+    second: Generic Children NPCs A_651
+  - first:
+      213: -554645781646219498
+    second: Generic Children NPCs A_652
+  - first:
+      213: -3178157739006345104
+    second: Generic Children NPCs A_653
+  - first:
+      213: -3077335619456116328
+    second: Generic Children NPCs A_654
+  - first:
+      213: -7789088840601715292
+    second: Generic Children NPCs A_655
+  - first:
+      213: 4243183674169590989
+    second: Generic Children NPCs A_656
+  - first:
+      213: 8043699101684361493
+    second: Generic Children NPCs A_657
+  - first:
+      213: 1201819249305913446
+    second: Generic Children NPCs A_658
+  - first:
+      213: -106230285534845622
+    second: Generic Children NPCs A_659
+  - first:
+      213: 5982801958485944867
+    second: Generic Children NPCs A_660
+  - first:
+      213: 204363914379778432
+    second: Generic Children NPCs A_661
+  - first:
+      213: -2554124364447210503
+    second: Generic Children NPCs A_662
+  - first:
+      213: -6300435292194829882
+    second: Generic Children NPCs A_663
+  - first:
+      213: -8413535328546140147
+    second: Generic Children NPCs A_664
+  - first:
+      213: 2375414810738550627
+    second: Generic Children NPCs A_665
+  - first:
+      213: 1230447982733383167
+    second: Generic Children NPCs A_666
+  - first:
+      213: -27094297633568843
+    second: Generic Children NPCs A_667
+  - first:
+      213: 91298877449934953
+    second: Generic Children NPCs A_668
+  - first:
+      213: -3429063781750006050
+    second: Generic Children NPCs A_669
+  - first:
+      213: 450316583398367435
+    second: Generic Children NPCs A_670
+  - first:
+      213: -7649597050517949313
+    second: Generic Children NPCs A_671
+  - first:
+      213: -8012089147103293268
+    second: Generic Children NPCs A_672
+  - first:
+      213: 2529015669310393006
+    second: Generic Children NPCs A_673
+  - first:
+      213: -7899348010701730447
+    second: Generic Children NPCs A_674
+  - first:
+      213: 5720732508639150206
+    second: Generic Children NPCs A_675
+  - first:
+      213: 5370491051550927318
+    second: Generic Children NPCs A_676
+  - first:
+      213: 8787943829666163760
+    second: Generic Children NPCs A_677
+  - first:
+      213: 3007074230596694111
+    second: Generic Children NPCs A_678
+  - first:
+      213: -5007535948055632241
+    second: Generic Children NPCs A_679
+  - first:
+      213: -9192131466618635053
+    second: Generic Children NPCs A_680
+  - first:
+      213: -3305029536674427430
+    second: Generic Children NPCs A_681
+  - first:
+      213: 6274629571955054212
+    second: Generic Children NPCs A_682
+  - first:
+      213: 4974170526263771566
+    second: Generic Children NPCs A_683
+  - first:
+      213: 4997363304053453893
+    second: Generic Children NPCs A_684
+  - first:
+      213: -1283195837035163655
+    second: Generic Children NPCs A_685
+  - first:
+      213: -1831256798656951270
+    second: Generic Children NPCs A_686
+  - first:
+      213: -1504465910078185866
+    second: Generic Children NPCs A_687
+  - first:
+      213: 7751752233521986609
+    second: Generic Children NPCs A_688
+  - first:
+      213: 4659993298230140318
+    second: Generic Children NPCs A_689
+  - first:
+      213: -378513073752782951
+    second: Generic Children NPCs A_690
+  - first:
+      213: 4056322933951635024
+    second: Generic Children NPCs A_691
+  - first:
+      213: 5923862765033040043
+    second: Generic Children NPCs A_692
+  - first:
+      213: 5985360032801526892
+    second: Generic Children NPCs A_693
+  - first:
+      213: 2957434272800595900
+    second: Generic Children NPCs A_694
+  - first:
+      213: 2727837917274557148
+    second: Generic Children NPCs A_695
+  - first:
+      213: 3564490896715657358
+    second: Generic Children NPCs A_696
+  - first:
+      213: -57667314919173556
+    second: Generic Children NPCs A_697
+  - first:
+      213: -4351933971771473291
+    second: Generic Children NPCs A_698
+  - first:
+      213: -9178029259408448459
+    second: Generic Children NPCs A_699
+  - first:
+      213: -8713617627176150659
+    second: Generic Children NPCs A_700
+  - first:
+      213: -8365100725058497414
+    second: Generic Children NPCs A_701
+  - first:
+      213: 2880620576588202110
+    second: Generic Children NPCs A_702
+  - first:
+      213: -8962197756864902401
+    second: Generic Children NPCs A_703
+  - first:
+      213: 8775390286819790631
+    second: Generic Children NPCs A_704
+  - first:
+      213: 5367143057014042331
+    second: Generic Children NPCs A_705
+  - first:
+      213: -4634114565865275949
+    second: Generic Children NPCs A_706
+  - first:
+      213: -4473984487329169294
+    second: Generic Children NPCs A_707
+  - first:
+      213: 6298478832541069076
+    second: Generic Children NPCs A_708
+  - first:
+      213: -960371410265101867
+    second: Generic Children NPCs A_709
+  - first:
+      213: 4196854141600286995
+    second: Generic Children NPCs A_710
+  - first:
+      213: -7153263762796448215
+    second: Generic Children NPCs A_711
+  - first:
+      213: -4682107611702101443
+    second: Generic Children NPCs A_712
+  - first:
+      213: 3910420541323090763
+    second: Generic Children NPCs A_713
+  - first:
+      213: -5635799426235165634
+    second: Generic Children NPCs A_714
+  - first:
+      213: -912220164227692245
+    second: Generic Children NPCs A_715
+  - first:
+      213: 6964336101510966918
+    second: Generic Children NPCs A_716
+  - first:
+      213: -4311355819990717721
+    second: Generic Children NPCs A_717
+  - first:
+      213: 3262495154317072504
+    second: Generic Children NPCs A_718
+  - first:
+      213: -8311935672033137307
+    second: Generic Children NPCs A_719
+  - first:
+      213: -7920553757685436967
+    second: Generic Children NPCs A_720
+  - first:
+      213: 2133854892165257297
+    second: Generic Children NPCs A_721
+  - first:
+      213: 1771477998629011237
+    second: Generic Children NPCs A_722
+  - first:
+      213: -6411649010374224184
+    second: Generic Children NPCs A_723
+  - first:
+      213: 2753692013783630547
+    second: Generic Children NPCs A_724
+  - first:
+      213: 2344944667872543387
+    second: Generic Children NPCs A_725
+  - first:
+      213: 7758812881571847770
+    second: Generic Children NPCs A_726
+  - first:
+      213: 557063993289055138
+    second: Generic Children NPCs A_727
+  - first:
+      213: -7036667872049631964
+    second: Generic Children NPCs A_728
+  - first:
+      213: -4680548221405276790
+    second: Generic Children NPCs A_729
+  - first:
+      213: 5726995390661765521
+    second: Generic Children NPCs A_730
+  - first:
+      213: 1598816380015556271
+    second: Generic Children NPCs A_731
+  - first:
+      213: -4630177821844648162
+    second: Generic Children NPCs A_732
+  - first:
+      213: 2254798297670227905
+    second: Generic Children NPCs A_733
+  - first:
+      213: 481349613583806987
+    second: Generic Children NPCs A_734
+  - first:
+      213: -2697422816667032838
+    second: Generic Children NPCs A_735
+  - first:
+      213: -5047125710100552299
+    second: Generic Children NPCs A_736
+  - first:
+      213: -7969427950066165691
+    second: Generic Children NPCs A_737
+  - first:
+      213: -5042342351096646682
+    second: Generic Children NPCs A_738
+  - first:
+      213: 4498552982510907996
+    second: Generic Children NPCs A_739
+  - first:
+      213: 8952102728694160400
+    second: Generic Children NPCs A_740
+  - first:
+      213: 7606420377854963142
+    second: Generic Children NPCs A_741
+  - first:
+      213: 4805775466233385462
+    second: Generic Children NPCs A_742
+  - first:
+      213: -4434242036639491735
+    second: Generic Children NPCs A_743
+  - first:
+      213: -4784047024891877940
+    second: Generic Children NPCs A_744
+  - first:
+      213: 2922760627346420192
+    second: Generic Children NPCs A_745
+  - first:
+      213: 2170895756723303708
+    second: Generic Children NPCs A_746
+  - first:
+      213: 6473772401955560128
+    second: Generic Children NPCs A_747
+  - first:
+      213: 9223062492274462729
+    second: Generic Children NPCs A_748
+  - first:
+      213: 563414540958996564
+    second: Generic Children NPCs A_749
+  - first:
+      213: 4484435861076160887
+    second: Generic Children NPCs A_750
+  - first:
+      213: -2791051637902439117
+    second: Generic Children NPCs A_751
+  - first:
+      213: -7403551209766213424
+    second: Generic Children NPCs A_752
+  - first:
+      213: -7693328564270000744
+    second: Generic Children NPCs A_753
+  - first:
+      213: 2044541457508977535
+    second: Generic Children NPCs A_754
+  - first:
+      213: 6150745004037089301
+    second: Generic Children NPCs A_755
+  - first:
+      213: 1542246354636250379
+    second: Generic Children NPCs A_756
+  - first:
+      213: -3546763798677841712
+    second: Generic Children NPCs A_757
+  - first:
+      213: -8478558584906302676
+    second: Generic Children NPCs A_758
+  - first:
+      213: -1750752889805907452
+    second: Generic Children NPCs A_759
+  - first:
+      213: -2200111373454033273
+    second: Generic Children NPCs A_760
+  - first:
+      213: 4074011831644956882
+    second: Generic Children NPCs A_761
+  - first:
+      213: 5834502138237956405
+    second: Generic Children NPCs A_762
+  - first:
+      213: -6912761441154377181
+    second: Generic Children NPCs A_763
+  - first:
+      213: 8151195937634055694
+    second: Generic Children NPCs A_764
+  - first:
+      213: -8034519614919697679
+    second: Generic Children NPCs A_765
+  - first:
+      213: 4278150576704423611
+    second: Generic Children NPCs A_766
+  - first:
+      213: -3833273673518286288
+    second: Generic Children NPCs A_767
+  - first:
+      213: 3643814393454914832
+    second: Generic Children NPCs A_768
+  - first:
+      213: -7452804931259425165
+    second: Generic Children NPCs A_769
+  - first:
+      213: 6492592342636715030
+    second: Generic Children NPCs A_770
+  - first:
+      213: 1153940617858358741
+    second: Generic Children NPCs A_771
+  - first:
+      213: -3983014109275239582
+    second: Generic Children NPCs A_772
+  - first:
+      213: -7962536127328309748
+    second: Generic Children NPCs A_773
+  - first:
+      213: 6073251481191939043
+    second: Generic Children NPCs A_774
+  - first:
+      213: -3469398038726003294
+    second: Generic Children NPCs A_775
+  - first:
+      213: -2245919862464765684
+    second: Generic Children NPCs A_776
+  - first:
+      213: 6875629699639544445
+    second: Generic Children NPCs A_777
+  - first:
+      213: 2253659202657615095
+    second: Generic Children NPCs A_778
+  - first:
+      213: -6493876666021942630
+    second: Generic Children NPCs A_779
+  - first:
+      213: 1112071399612994161
+    second: Generic Children NPCs A_780
+  - first:
+      213: -4830105951367014611
+    second: Generic Children NPCs A_781
+  - first:
+      213: -4297054024754077870
+    second: Generic Children NPCs A_782
+  - first:
+      213: -7635607757458070635
+    second: Generic Children NPCs A_783
+  - first:
+      213: -1555605397164678218
+    second: Generic Children NPCs A_784
+  - first:
+      213: 4545041554973723144
+    second: Generic Children NPCs A_785
+  - first:
+      213: -2504655630544596202
+    second: Generic Children NPCs A_786
+  - first:
+      213: 8661296771171165057
+    second: Generic Children NPCs A_787
+  - first:
+      213: 6035799422800553487
+    second: Generic Children NPCs A_788
+  - first:
+      213: 5625584666065863999
+    second: Generic Children NPCs A_789
+  - first:
+      213: -6272947788388709946
+    second: Generic Children NPCs A_790
+  - first:
+      213: -8857463121316935118
+    second: Generic Children NPCs A_791
+  - first:
+      213: -1234282263206195303
+    second: Generic Children NPCs A_792
+  - first:
+      213: -5434482509022551588
+    second: Generic Children NPCs A_793
+  - first:
+      213: 984328825006640257
+    second: Generic Children NPCs A_794
+  - first:
+      213: -3487309850293313272
+    second: Generic Children NPCs A_795
+  - first:
+      213: 2633142670470243767
+    second: Generic Children NPCs A_796
+  - first:
+      213: 8610363211446177631
+    second: Generic Children NPCs A_797
+  - first:
+      213: 6394336098090960538
+    second: Generic Children NPCs A_798
+  - first:
+      213: -3918962636424239824
+    second: Generic Children NPCs A_799
+  - first:
+      213: -1777841785421118781
+    second: Generic Children NPCs A_800
+  - first:
+      213: 2620348484917602005
+    second: Generic Children NPCs A_801
+  - first:
+      213: -7107573897376860172
+    second: Generic Children NPCs A_802
+  - first:
+      213: -3943605287960268004
+    second: Generic Children NPCs A_803
+  - first:
+      213: -7921064235976050905
+    second: Generic Children NPCs A_804
+  - first:
+      213: 3350999572245334112
+    second: Generic Children NPCs A_805
+  - first:
+      213: 8214488016858761750
+    second: Generic Children NPCs A_806
+  - first:
+      213: 5474187983729223272
+    second: Generic Children NPCs A_807
+  - first:
+      213: 5201081377027693347
+    second: Generic Children NPCs A_808
+  - first:
+      213: -198651121120723748
+    second: Generic Children NPCs A_809
+  - first:
+      213: 6797107761675346934
+    second: Generic Children NPCs A_810
+  - first:
+      213: -6246586292145258447
+    second: Generic Children NPCs A_811
+  - first:
+      213: -6812926625165192141
+    second: Generic Children NPCs A_812
+  - first:
+      213: -4916919924521606989
+    second: Generic Children NPCs A_813
+  - first:
+      213: 4204898730507139468
+    second: Generic Children NPCs A_814
+  - first:
+      213: 6856847377149614491
+    second: Generic Children NPCs A_815
+  - first:
+      213: 6845901296583120760
+    second: Generic Children NPCs A_816
+  - first:
+      213: 5064791301898908966
+    second: Generic Children NPCs A_817
+  - first:
+      213: -9067060167612097410
+    second: Generic Children NPCs A_818
+  - first:
+      213: -3296013461551989250
+    second: Generic Children NPCs A_819
+  - first:
+      213: 1160317759548452844
+    second: Generic Children NPCs A_820
+  - first:
+      213: -4299720876549648936
+    second: Generic Children NPCs A_821
+  - first:
+      213: -8528939309651975196
+    second: Generic Children NPCs A_822
+  - first:
+      213: -7635378097838312861
+    second: Generic Children NPCs A_823
+  - first:
+      213: -6164059269845467052
+    second: Generic Children NPCs A_824
+  - first:
+      213: 4689663130968487170
+    second: Generic Children NPCs A_825
+  - first:
+      213: 4218054769751056942
+    second: Generic Children NPCs A_826
+  - first:
+      213: -7963575718738905972
+    second: Generic Children NPCs A_827
+  - first:
+      213: -8922203415495868964
+    second: Generic Children NPCs A_828
+  - first:
+      213: -1972374185721660185
+    second: Generic Children NPCs A_829
+  - first:
+      213: 5422952984077336427
+    second: Generic Children NPCs A_830
+  - first:
+      213: 5796818064238326498
+    second: Generic Children NPCs A_831
+  - first:
+      213: 2054793287910430723
+    second: Generic Children NPCs A_832
+  - first:
+      213: -451557024386255785
+    second: Generic Children NPCs A_833
+  - first:
+      213: -4142988994086955176
+    second: Generic Children NPCs A_834
+  - first:
+      213: -2617736104784641374
+    second: Generic Children NPCs A_835
+  - first:
+      213: -8494541446816189620
+    second: Generic Children NPCs A_836
+  - first:
+      213: -4587648247250784274
+    second: Generic Children NPCs A_837
+  - first:
+      213: 3987501001311124536
+    second: Generic Children NPCs A_838
+  - first:
+      213: -4030188422048829336
+    second: Generic Children NPCs A_839
+  - first:
+      213: 5092917990766731253
+    second: Generic Children NPCs A_840
+  - first:
+      213: 8957767856522667350
+    second: Generic Children NPCs A_841
+  - first:
+      213: -6099229917685934183
+    second: Generic Children NPCs A_842
+  - first:
+      213: -5350033023097351770
+    second: Generic Children NPCs A_843
+  - first:
+      213: -270946987071848546
+    second: Generic Children NPCs A_844
+  - first:
+      213: -8300290600670161143
+    second: Generic Children NPCs A_845
+  - first:
+      213: 7549255186997882578
+    second: Generic Children NPCs A_846
+  - first:
+      213: -8137491289003971339
+    second: Generic Children NPCs A_847
+  - first:
+      213: -3992552510588694306
+    second: Generic Children NPCs A_848
+  - first:
+      213: -251926998128724367
+    second: Generic Children NPCs A_849
+  - first:
+      213: 5176821663016716372
+    second: Generic Children NPCs A_850
+  - first:
+      213: 2190618458215286959
+    second: Generic Children NPCs A_851
+  - first:
+      213: 5680852882660143701
+    second: Generic Children NPCs A_852
+  - first:
+      213: -5009150149619026725
+    second: Generic Children NPCs A_853
+  - first:
+      213: 3513059452699449083
+    second: Generic Children NPCs A_854
+  - first:
+      213: -8575117808919398187
+    second: Generic Children NPCs A_855
+  - first:
+      213: -5307990042616531337
+    second: Generic Children NPCs A_856
+  - first:
+      213: -4704386056753399569
+    second: Generic Children NPCs A_857
+  - first:
+      213: -7325121167914901672
+    second: Generic Children NPCs A_858
+  - first:
+      213: -3329820262090008333
+    second: Generic Children NPCs A_859
+  - first:
+      213: 3794115975185947158
+    second: Generic Children NPCs A_860
+  - first:
+      213: -5257368002771896535
+    second: Generic Children NPCs A_861
+  - first:
+      213: -2661445803943667564
+    second: Generic Children NPCs A_862
+  - first:
+      213: -5237884156223776683
+    second: Generic Children NPCs A_863
+  - first:
+      213: 9150746566047342036
+    second: Generic Children NPCs A_864
+  - first:
+      213: 4794269167633124356
+    second: Generic Children NPCs A_865
+  - first:
+      213: -2798218543443068304
+    second: Generic Children NPCs A_866
+  - first:
+      213: 4448490105142323983
+    second: Generic Children NPCs A_867
+  - first:
+      213: -2001793486462174747
+    second: Generic Children NPCs A_868
+  - first:
+      213: -5077114567975038239
+    second: Generic Children NPCs A_869
+  - first:
+      213: 2360359240416505483
+    second: Generic Children NPCs A_870
+  - first:
+      213: 5138758774899623238
+    second: Generic Children NPCs A_871
+  - first:
+      213: -8567302973506837252
+    second: Generic Children NPCs A_872
+  - first:
+      213: 8728846069476642286
+    second: Generic Children NPCs A_873
+  - first:
+      213: -1285804893488780229
+    second: Generic Children NPCs A_874
+  - first:
+      213: 6315180197948562601
+    second: Generic Children NPCs A_875
+  - first:
+      213: -4846142622856035425
+    second: Generic Children NPCs A_876
+  - first:
+      213: 548524036623219390
+    second: Generic Children NPCs A_877
+  - first:
+      213: 5843101591003031973
+    second: Generic Children NPCs A_878
+  - first:
+      213: 7332091051362365037
+    second: Generic Children NPCs A_879
+  - first:
+      213: 6100389617646699822
+    second: Generic Children NPCs A_880
+  - first:
+      213: 4439698345667642954
+    second: Generic Children NPCs A_881
+  - first:
+      213: 6227153902927711298
+    second: Generic Children NPCs A_882
+  - first:
+      213: -1031923233815181051
+    second: Generic Children NPCs A_883
+  - first:
+      213: 7876496037085857426
+    second: Generic Children NPCs A_884
+  - first:
+      213: -7492184609521562887
+    second: Generic Children NPCs A_885
+  - first:
+      213: -7152002218691552414
+    second: Generic Children NPCs A_886
+  - first:
+      213: -3296530869640670229
+    second: Generic Children NPCs A_887
+  - first:
+      213: -507520504886872865
+    second: Generic Children NPCs A_888
+  - first:
+      213: 8476033343901107074
+    second: Generic Children NPCs A_889
+  - first:
+      213: -4394845985509002325
+    second: Generic Children NPCs A_890
+  - first:
+      213: -7931169709374688812
+    second: Generic Children NPCs A_891
+  - first:
+      213: -3531692586913746863
+    second: Generic Children NPCs A_892
+  - first:
+      213: -9076284058463724189
+    second: Generic Children NPCs A_893
+  - first:
+      213: -4457139860921404081
+    second: Generic Children NPCs A_894
+  - first:
+      213: 7878410357215264948
+    second: Generic Children NPCs A_895
+  - first:
+      213: -5398716096507707062
+    second: Generic Children NPCs A_896
+  - first:
+      213: 2221094975067978693
+    second: Generic Children NPCs A_897
+  - first:
+      213: -5451089741464887699
+    second: Generic Children NPCs A_898
+  - first:
+      213: 1713630432073314799
+    second: Generic Children NPCs A_899
+  - first:
+      213: -4038505975371561540
+    second: Generic Children NPCs A_900
+  - first:
+      213: -4229332635663028208
+    second: Generic Children NPCs A_901
+  - first:
+      213: -5378460099730133066
+    second: Generic Children NPCs A_902
+  - first:
+      213: 4362167768518297607
+    second: Generic Children NPCs A_903
+  - first:
+      213: -8884966152958126781
+    second: Generic Children NPCs A_904
+  - first:
+      213: 341503522179691261
+    second: Generic Children NPCs A_905
+  - first:
+      213: 2051948313986855020
+    second: Generic Children NPCs A_906
+  - first:
+      213: 5233874551550674929
+    second: Generic Children NPCs A_907
+  - first:
+      213: -221905624383962613
+    second: Generic Children NPCs A_908
+  - first:
+      213: 8671923989012186421
+    second: Generic Children NPCs A_909
+  - first:
+      213: -5410339477889047980
+    second: Generic Children NPCs A_910
+  - first:
+      213: -7967247737987222914
+    second: Generic Children NPCs A_911
+  - first:
+      213: -2141921997385049948
+    second: Generic Children NPCs A_912
+  - first:
+      213: 1723525760767371804
+    second: Generic Children NPCs A_913
+  - first:
+      213: -1690926043578527072
+    second: Generic Children NPCs A_914
+  - first:
+      213: -8560750994437132986
+    second: Generic Children NPCs A_915
+  - first:
+      213: 6625769363489965251
+    second: Generic Children NPCs A_916
+  - first:
+      213: -8338664752779132095
+    second: Generic Children NPCs A_917
+  - first:
+      213: -519734019330789881
+    second: Generic Children NPCs A_918
+  - first:
+      213: 6122162789241125412
+    second: Generic Children NPCs A_919
+  - first:
+      213: -8443095063921346651
+    second: Generic Children NPCs A_920
+  - first:
+      213: 4911535539486725699
+    second: Generic Children NPCs A_921
+  - first:
+      213: 3839412097766520695
+    second: Generic Children NPCs A_922
+  - first:
+      213: -6946971177579744269
+    second: Generic Children NPCs A_923
+  - first:
+      213: -4180365841583790485
+    second: Generic Children NPCs A_924
+  - first:
+      213: 8099577383388853057
+    second: Generic Children NPCs A_925
+  - first:
+      213: 9191087284471003420
+    second: Generic Children NPCs A_926
+  - first:
+      213: 3361465984035849701
+    second: Generic Children NPCs A_927
+  - first:
+      213: 4318223589555324622
+    second: Generic Children NPCs A_928
+  - first:
+      213: -439281504929162701
+    second: Generic Children NPCs A_929
+  - first:
+      213: -7825634041857253101
+    second: Generic Children NPCs A_930
+  - first:
+      213: -8477841486086341224
+    second: Generic Children NPCs A_931
+  - first:
+      213: -6351591251524300384
+    second: Generic Children NPCs A_932
+  - first:
+      213: 3101223765072467331
+    second: Generic Children NPCs A_933
+  - first:
+      213: 7245781078235464354
+    second: Generic Children NPCs A_934
+  - first:
+      213: 2788597261449849801
+    second: Generic Children NPCs A_935
+  - first:
+      213: -4635822338251511158
+    second: Generic Children NPCs A_936
+  - first:
+      213: -7906378959828482054
+    second: Generic Children NPCs A_937
+  - first:
+      213: -4794251092503180711
+    second: Generic Children NPCs A_938
+  - first:
+      213: 2867960873824639809
+    second: Generic Children NPCs A_939
+  - first:
+      213: -8999434827089185669
+    second: Generic Children NPCs A_940
+  - first:
+      213: -1793410405759813926
+    second: Generic Children NPCs A_941
+  - first:
+      213: -2511178695660767918
+    second: Generic Children NPCs A_942
+  - first:
+      213: -3218331583507904438
+    second: Generic Children NPCs A_943
+  - first:
+      213: -8199516807480280541
+    second: Generic Children NPCs A_944
+  - first:
+      213: 985234756353189000
+    second: Generic Children NPCs A_945
+  - first:
+      213: 176134466582196080
+    second: Generic Children NPCs A_946
+  - first:
+      213: -8013818277301734102
+    second: Generic Children NPCs A_947
+  - first:
+      213: -2102485031730929747
+    second: Generic Children NPCs A_948
+  - first:
+      213: -42813635498558124
+    second: Generic Children NPCs A_949
+  - first:
+      213: 1546555944128638588
+    second: Generic Children NPCs A_950
+  - first:
+      213: 5417618905897404371
+    second: Generic Children NPCs A_951
+  - first:
+      213: 5716227510585326186
+    second: Generic Children NPCs A_952
+  - first:
+      213: 1516967619090176551
+    second: Generic Children NPCs A_953
+  - first:
+      213: 8732620005526962366
+    second: Generic Children NPCs A_954
+  - first:
+      213: 2442762760907305272
+    second: Generic Children NPCs A_955
+  - first:
+      213: -5110901553349183838
+    second: Generic Children NPCs A_956
+  - first:
+      213: -1983632485804961530
+    second: Generic Children NPCs A_957
+  - first:
+      213: -4190040797181760605
+    second: Generic Children NPCs A_958
+  - first:
+      213: -6321728432734506165
+    second: Generic Children NPCs A_959
+  - first:
+      213: -9071920178516064874
+    second: Generic Children NPCs A_960
+  - first:
+      213: -4744308229235196641
+    second: Generic Children NPCs A_961
+  - first:
+      213: 1571244720177058644
+    second: Generic Children NPCs A_962
+  - first:
+      213: -7246764214351261958
+    second: Generic Children NPCs A_963
+  - first:
+      213: -3024584024087962214
+    second: Generic Children NPCs A_964
+  - first:
+      213: -5231752876358692862
+    second: Generic Children NPCs A_965
+  - first:
+      213: 776080359104289382
+    second: Generic Children NPCs A_966
+  - first:
+      213: -4131269052717495601
+    second: Generic Children NPCs A_967
+  - first:
+      213: -1489726749412850864
+    second: Generic Children NPCs A_968
+  - first:
+      213: -4917644725388747494
+    second: Generic Children NPCs A_969
+  - first:
+      213: -4710881696728477765
+    second: Generic Children NPCs A_970
+  - first:
+      213: 3546702572667566044
+    second: Generic Children NPCs A_971
+  - first:
+      213: 6890099712130016744
+    second: Generic Children NPCs A_972
+  - first:
+      213: -4580845637865381718
+    second: Generic Children NPCs A_973
+  - first:
+      213: 8766094420084289879
+    second: Generic Children NPCs A_974
+  - first:
+      213: -5349616647532565274
+    second: Generic Children NPCs A_975
+  - first:
+      213: -971100978920588609
+    second: Generic Children NPCs A_976
+  - first:
+      213: 3651528478074846904
+    second: Generic Children NPCs A_977
+  - first:
+      213: -7374847548156299213
+    second: Generic Children NPCs A_978
+  - first:
+      213: -6227497001677116798
+    second: Generic Children NPCs A_979
+  - first:
+      213: 4047089576394343313
+    second: Generic Children NPCs A_980
+  - first:
+      213: -644629216900738981
+    second: Generic Children NPCs A_981
+  - first:
+      213: -3667766811371001108
+    second: Generic Children NPCs A_982
+  - first:
+      213: -7102998097184249492
+    second: Generic Children NPCs A_983
+  - first:
+      213: -7685657686220652243
+    second: Generic Children NPCs A_984
+  - first:
+      213: 3927093989096687028
+    second: Generic Children NPCs A_985
+  - first:
+      213: 7536877177441531189
+    second: Generic Children NPCs A_986
+  - first:
+      213: -1996521584937839638
+    second: Generic Children NPCs A_987
+  - first:
+      213: 953220231867741591
+    second: Generic Children NPCs A_988
+  - first:
+      213: 271730742480059444
+    second: Generic Children NPCs A_989
+  - first:
+      213: 5558916557276268920
+    second: Generic Children NPCs A_990
+  - first:
+      213: -4966815350554959329
+    second: Generic Children NPCs A_991
+  - first:
+      213: -1033469709626894953
+    second: Generic Children NPCs A_992
+  - first:
+      213: -8467029101870383513
+    second: Generic Children NPCs A_993
+  - first:
+      213: 3370340966296844137
+    second: Generic Children NPCs A_994
+  - first:
+      213: -6120262819182040572
+    second: Generic Children NPCs A_995
+  - first:
+      213: -7369414503192890202
+    second: Generic Children NPCs A_996
+  - first:
+      213: -1437303744627463421
+    second: Generic Children NPCs A_997
+  - first:
+      213: 7052981411759877000
+    second: Generic Children NPCs A_998
+  - first:
+      213: 8680404285961352163
+    second: Generic Children NPCs A_999
+  - first:
+      213: -4992651061719974919
+    second: Generic Children NPCs A_1000
+  - first:
+      213: -4708106475145695218
+    second: Generic Children NPCs A_1001
+  - first:
+      213: -7115178454360729656
+    second: Generic Children NPCs A_1002
+  - first:
+      213: -1560686975130624955
+    second: Generic Children NPCs A_1003
+  - first:
+      213: -7778166539467226488
+    second: Generic Children NPCs A_1004
+  - first:
+      213: -2719463175333885621
+    second: Generic Children NPCs A_1005
+  - first:
+      213: 1611708160195868426
+    second: Generic Children NPCs A_1006
+  - first:
+      213: -3545381871596901304
+    second: Generic Children NPCs A_1007
+  - first:
+      213: 3029862031699900546
+    second: Generic Children NPCs A_1008
+  - first:
+      213: 2005368672304653355
+    second: Generic Children NPCs A_1009
+  - first:
+      213: 9051079171253005210
+    second: Generic Children NPCs A_1010
+  - first:
+      213: 1398356634983408341
+    second: Generic Children NPCs A_1011
+  - first:
+      213: 6687093078060191088
+    second: Generic Children NPCs A_1012
+  - first:
+      213: -2714071186974746669
+    second: Generic Children NPCs A_1013
+  - first:
+      213: -497507107083804000
+    second: Generic Children NPCs A_1014
+  - first:
+      213: -1645556143642761523
+    second: Generic Children NPCs A_1015
+  - first:
+      213: -8480951373893304625
+    second: Generic Children NPCs A_1016
+  - first:
+      213: -6848859005216830033
+    second: Generic Children NPCs A_1017
+  - first:
+      213: 5711262149938373844
+    second: Generic Children NPCs A_1018
+  - first:
+      213: 6224732394348707235
+    second: Generic Children NPCs A_1019
+  - first:
+      213: 146696325009215016
+    second: Generic Children NPCs A_1020
+  - first:
+      213: 3924072215302533781
+    second: Generic Children NPCs A_1021
+  - first:
+      213: 3610709703271497041
+    second: Generic Children NPCs A_1022
+  - first:
+      213: -4420107978361960178
+    second: Generic Children NPCs A_1023
+  - first:
+      213: -9205974143620774612
+    second: Generic Children NPCs A_1024
+  - first:
+      213: -6209647320739492376
+    second: Generic Children NPCs A_1025
+  - first:
+      213: 5574565444209872015
+    second: Generic Children NPCs A_1026
+  - first:
+      213: 6992643400721146119
+    second: Generic Children NPCs A_1027
+  - first:
+      213: 8586097401593498813
+    second: Generic Children NPCs A_1028
+  - first:
+      213: 2100238254715223123
+    second: Generic Children NPCs A_1029
+  - first:
+      213: 2758392148529098597
+    second: Generic Children NPCs A_1030
+  - first:
+      213: 2563754775877868198
+    second: Generic Children NPCs A_1031
+  - first:
+      213: -6134963023688771470
+    second: Generic Children NPCs A_1032
+  - first:
+      213: -1989007356120163020
+    second: Generic Children NPCs A_1033
+  - first:
+      213: -1005734923943107029
+    second: Generic Children NPCs A_1034
+  - first:
+      213: -6938691353148110620
+    second: Generic Children NPCs A_1035
+  - first:
+      213: -7774957299234963558
+    second: Generic Children NPCs A_1036
+  - first:
+      213: 3555879506255314358
+    second: Generic Children NPCs A_1037
+  - first:
+      213: -3984300108278988283
+    second: Generic Children NPCs A_1038
+  - first:
+      213: -2821504783038311508
+    second: Generic Children NPCs A_1039
+  - first:
+      213: -4802918728250097687
+    second: Generic Children NPCs A_1040
+  - first:
+      213: -3035723906080824751
+    second: Generic Children NPCs A_1041
+  - first:
+      213: 2164436673031497721
+    second: Generic Children NPCs A_1042
+  - first:
+      213: -6782639065983089469
+    second: Generic Children NPCs A_1043
+  - first:
+      213: 7965408632337484013
+    second: Generic Children NPCs A_1044
+  - first:
+      213: 4738430481245306945
+    second: Generic Children NPCs A_1045
+  - first:
+      213: 8100809210709268294
+    second: Generic Children NPCs A_1046
+  - first:
+      213: -4357758746791043802
+    second: Generic Children NPCs A_1047
+  - first:
+      213: 2128478479302521963
+    second: Generic Children NPCs A_1048
+  - first:
+      213: 961810912347343334
+    second: Generic Children NPCs A_1049
+  - first:
+      213: -9102274169774077542
+    second: Generic Children NPCs A_1050
+  - first:
+      213: 3668597642528351373
+    second: Generic Children NPCs A_1051
+  - first:
+      213: 4265319154546295842
+    second: Generic Children NPCs A_1052
+  - first:
+      213: -5002482253060270096
+    second: Generic Children NPCs A_1053
+  - first:
+      213: 8088625000948031929
+    second: Generic Children NPCs A_1054
+  - first:
+      213: 1664992940659728136
+    second: Generic Children NPCs A_1055
+  - first:
+      213: 8646673864835410958
+    second: Generic Children NPCs A_1056
+  - first:
+      213: -8374616513316941376
+    second: Generic Children NPCs A_1057
+  - first:
+      213: -2713044075874259016
+    second: Generic Children NPCs A_1058
+  - first:
+      213: -143771274020892078
+    second: Generic Children NPCs A_1059
+  - first:
+      213: -6336393154706273877
+    second: Generic Children NPCs A_1060
+  - first:
+      213: -1537651564422921446
+    second: Generic Children NPCs A_1061
+  - first:
+      213: -8633799120244223304
+    second: Generic Children NPCs A_1062
+  - first:
+      213: -8910646494009515519
+    second: Generic Children NPCs A_1063
+  - first:
+      213: -6119670733069708217
+    second: Generic Children NPCs A_1064
+  - first:
+      213: 644179577110547482
+    second: Generic Children NPCs A_1065
+  - first:
+      213: 111826154328034594
+    second: Generic Children NPCs A_1066
+  - first:
+      213: 3823153375205408556
+    second: Generic Children NPCs A_1067
+  - first:
+      213: -1948793706709327190
+    second: Generic Children NPCs A_1068
+  - first:
+      213: -1548742833857040439
+    second: Generic Children NPCs A_1069
+  - first:
+      213: -4785778500311803419
+    second: Generic Children NPCs A_1070
+  - first:
+      213: 6785282902138067954
+    second: Generic Children NPCs A_1071
+  - first:
+      213: -3587516331976064108
+    second: Generic Children NPCs A_1072
+  - first:
+      213: 8719901548469268631
+    second: Generic Children NPCs A_1073
+  - first:
+      213: -6673558238115490968
+    second: Generic Children NPCs A_1074
+  - first:
+      213: 85706596648496575
+    second: Generic Children NPCs A_1075
+  - first:
+      213: 2276404838755686352
+    second: Generic Children NPCs A_1076
+  - first:
+      213: -7841296162295689994
+    second: Generic Children NPCs A_1077
+  - first:
+      213: -2467201176377667212
+    second: Generic Children NPCs A_1078
+  - first:
+      213: 479091204464929056
+    second: Generic Children NPCs A_1079
+  - first:
+      213: -8575868352709076283
+    second: Generic Children NPCs A_1080
+  - first:
+      213: 5412240732390242117
+    second: Generic Children NPCs A_1081
+  - first:
+      213: 1920770842449991865
+    second: Generic Children NPCs A_1082
+  - first:
+      213: -1795827598965495773
+    second: Generic Children NPCs A_1083
+  - first:
+      213: 3410432543811054359
+    second: Generic Children NPCs A_1084
+  - first:
+      213: -4957755763427215694
+    second: Generic Children NPCs A_1085
+  - first:
+      213: 6538008570762409599
+    second: Generic Children NPCs A_1086
+  - first:
+      213: 5572516666063884066
+    second: Generic Children NPCs A_1087
+  - first:
+      213: 7191443655715708577
+    second: Generic Children NPCs A_1088
+  - first:
+      213: 2593097186615049272
+    second: Generic Children NPCs A_1089
+  - first:
+      213: 5627718171869052849
+    second: Generic Children NPCs A_1090
+  - first:
+      213: -8182666811937023252
+    second: Generic Children NPCs A_1091
+  - first:
+      213: -2162878876542444055
+    second: Generic Children NPCs A_1092
+  - first:
+      213: 2085379975069785639
+    second: Generic Children NPCs A_1093
+  - first:
+      213: 7094380705849967235
+    second: Generic Children NPCs A_1094
+  - first:
+      213: 8148784717858814822
+    second: Generic Children NPCs A_1095
+  - first:
+      213: 3044345742829703586
+    second: Generic Children NPCs A_1096
+  - first:
+      213: 7049789459943049605
+    second: Generic Children NPCs A_1097
+  - first:
+      213: 5638190041442606590
+    second: Generic Children NPCs A_1098
+  - first:
+      213: -7504077802661965269
+    second: Generic Children NPCs A_1099
+  - first:
+      213: -4032806449486242325
+    second: Generic Children NPCs A_1100
+  - first:
+      213: -2517215321131535887
+    second: Generic Children NPCs A_1101
+  - first:
+      213: 4755825550680797261
+    second: Generic Children NPCs A_1102
+  - first:
+      213: -3775404877015621957
+    second: Generic Children NPCs A_1103
+  - first:
+      213: 6332031771158171217
+    second: Generic Children NPCs A_1104
+  - first:
+      213: -7884171217042844458
+    second: Generic Children NPCs A_1105
+  - first:
+      213: -5002922382843275867
+    second: Generic Children NPCs A_1106
+  - first:
+      213: 1443308840742104314
+    second: Generic Children NPCs A_1107
+  - first:
+      213: 2594158887445497777
+    second: Generic Children NPCs A_1108
+  - first:
+      213: 5380891569712913317
+    second: Generic Children NPCs A_1109
+  - first:
+      213: 7263100664515113757
+    second: Generic Children NPCs A_1110
+  - first:
+      213: 2555157887324147122
+    second: Generic Children NPCs A_1111
+  - first:
+      213: -2449639397965029267
+    second: Generic Children NPCs A_1112
+  - first:
+      213: -2623655991813150794
+    second: Generic Children NPCs A_1113
+  - first:
+      213: -8554561710114696713
+    second: Generic Children NPCs A_1114
+  - first:
+      213: 4562237624673896054
+    second: Generic Children NPCs A_1115
+  - first:
+      213: -1491376684681402536
+    second: Generic Children NPCs A_1116
+  - first:
+      213: -7137472778567768931
+    second: Generic Children NPCs A_1117
+  - first:
+      213: -2803140316319279740
+    second: Generic Children NPCs A_1118
+  - first:
+      213: 6738297696975541106
+    second: Generic Children NPCs A_1119
+  - first:
+      213: -6726469691499882573
+    second: Generic Children NPCs A_1120
+  - first:
+      213: -609402730034017908
+    second: Generic Children NPCs A_1121
+  - first:
+      213: 6520569948806734001
+    second: Generic Children NPCs A_1122
+  - first:
+      213: -2727834947982740584
+    second: Generic Children NPCs A_1123
+  - first:
+      213: 365158972696300471
+    second: Generic Children NPCs A_1124
+  - first:
+      213: -9121443762767209270
+    second: Generic Children NPCs A_1125
+  - first:
+      213: 7247805075990286946
+    second: Generic Children NPCs A_1126
+  - first:
+      213: 4470041628190929607
+    second: Generic Children NPCs A_1127
+  - first:
+      213: 2917215698887113270
+    second: Generic Children NPCs A_1128
+  - first:
+      213: -896151246767592324
+    second: Generic Children NPCs A_1129
+  - first:
+      213: -255528471394227256
+    second: Generic Children NPCs A_1130
+  - first:
+      213: -547009071240447304
+    second: Generic Children NPCs A_1131
+  - first:
+      213: 6542086504416498451
+    second: Generic Children NPCs A_1132
+  - first:
+      213: -4102866624727059672
+    second: Generic Children NPCs A_1133
+  - first:
+      213: 2061255405933774164
+    second: Generic Children NPCs A_1134
+  - first:
+      213: 8803476976386670051
+    second: Generic Children NPCs A_1135
+  - first:
+      213: -7553022564159960688
+    second: Generic Children NPCs A_1136
+  - first:
+      213: -8440835974063044085
+    second: Generic Children NPCs A_1137
+  - first:
+      213: 7380910799392696962
+    second: Generic Children NPCs A_1138
+  - first:
+      213: -9108151969919976212
+    second: Generic Children NPCs A_1139
+  - first:
+      213: -4919419499950365670
+    second: Generic Children NPCs A_1140
+  - first:
+      213: -4615637653646971294
+    second: Generic Children NPCs A_1141
+  - first:
+      213: -7488902371543921358
+    second: Generic Children NPCs A_1142
+  - first:
+      213: 407729717543611245
+    second: Generic Children NPCs A_1143
+  - first:
+      213: -2739688654536912868
+    second: Generic Children NPCs A_1144
+  - first:
+      213: -3827116313331334767
+    second: Generic Children NPCs A_1145
+  - first:
+      213: -1825031063869412493
+    second: Generic Children NPCs A_1146
+  - first:
+      213: -3240136295181554467
+    second: Generic Children NPCs A_1147
+  - first:
+      213: -2473764062936972339
+    second: Generic Children NPCs A_1148
+  - first:
+      213: 3958997814301262792
+    second: Generic Children NPCs A_1149
+  - first:
+      213: 1456257622934519597
+    second: Generic Children NPCs A_1150
+  - first:
+      213: 2487824412214332022
+    second: Generic Children NPCs A_1151
+  - first:
+      213: -4766055780545993896
+    second: Generic Children NPCs A_1152
+  - first:
+      213: -5358531023281664551
+    second: Generic Children NPCs A_1153
+  - first:
+      213: 683983611494061099
+    second: Generic Children NPCs A_1154
+  - first:
+      213: -6297659724423011916
+    second: Generic Children NPCs A_1155
+  - first:
+      213: -3838102154655750353
+    second: Generic Children NPCs A_1156
+  - first:
+      213: 4234021589783380576
+    second: Generic Children NPCs A_1157
+  - first:
+      213: -3148486680201369216
+    second: Generic Children NPCs A_1158
+  - first:
+      213: -1327421522351457846
+    second: Generic Children NPCs A_1159
+  - first:
+      213: -4843962223720373976
+    second: Generic Children NPCs A_1160
+  - first:
+      213: -3797527706418507798
+    second: Generic Children NPCs A_1161
+  - first:
+      213: -5539088537961792205
+    second: Generic Children NPCs A_1162
+  - first:
+      213: -7163349766531203613
+    second: Generic Children NPCs A_1163
+  - first:
+      213: -3192470815408654502
+    second: Generic Children NPCs A_1164
+  - first:
+      213: -6835342906483267501
+    second: Generic Children NPCs A_1165
+  - first:
+      213: 8172465727684743527
+    second: Generic Children NPCs A_1166
+  - first:
+      213: 4398386662666355909
+    second: Generic Children NPCs A_1167
+  - first:
+      213: 4441143715514051416
+    second: Generic Children NPCs A_1168
+  - first:
+      213: 1734263765672520348
+    second: Generic Children NPCs A_1169
+  - first:
+      213: 7687717596806887010
+    second: Generic Children NPCs A_1170
+  - first:
+      213: 7418827183024397731
+    second: Generic Children NPCs A_1171
+  - first:
+      213: 2503700638406324906
+    second: Generic Children NPCs A_1172
+  - first:
+      213: -3706931981324983522
+    second: Generic Children NPCs A_1173
+  - first:
+      213: 8691183100092800672
+    second: Generic Children NPCs A_1174
+  - first:
+      213: 987522663845278775
+    second: Generic Children NPCs A_1175
+  - first:
+      213: -6773218578094355618
+    second: Generic Children NPCs A_1176
+  - first:
+      213: 7786138592655120527
+    second: Generic Children NPCs A_1177
+  - first:
+      213: 1322304977102552616
+    second: Generic Children NPCs A_1178
+  - first:
+      213: 4152900148213795773
+    second: Generic Children NPCs A_1179
+  - first:
+      213: 5168927424149759553
+    second: Generic Children NPCs A_1180
+  - first:
+      213: 5812371623314837636
+    second: Generic Children NPCs A_1181
+  - first:
+      213: -5982269216765933741
+    second: Generic Children NPCs A_1182
+  - first:
+      213: 730834282342456406
+    second: Generic Children NPCs A_1183
+  - first:
+      213: -5185524955942496678
+    second: Generic Children NPCs A_1184
+  - first:
+      213: 5436300758807327456
+    second: Generic Children NPCs A_1185
+  - first:
+      213: 114029839770482194
+    second: Generic Children NPCs A_1186
+  - first:
+      213: 3897001917435355582
+    second: Generic Children NPCs A_1187
+  - first:
+      213: -1009361292075114937
+    second: Generic Children NPCs A_1188
+  - first:
+      213: -3404900673057750477
+    second: Generic Children NPCs A_1189
+  - first:
+      213: -4080482502438403114
+    second: Generic Children NPCs A_1190
+  - first:
+      213: -6543632792765539045
+    second: Generic Children NPCs A_1191
+  - first:
+      213: -9163074245586724596
+    second: Generic Children NPCs A_1192
+  - first:
+      213: 6105918330715126724
+    second: Generic Children NPCs A_1193
+  - first:
+      213: 1526450334205140313
+    second: Generic Children NPCs A_1194
+  - first:
+      213: 7891056948141832995
+    second: Generic Children NPCs A_1195
+  - first:
+      213: 3931113338989190456
+    second: Generic Children NPCs A_1196
+  - first:
+      213: -1805723043212585483
+    second: Generic Children NPCs A_1197
+  - first:
+      213: -7876846044213273694
+    second: Generic Children NPCs A_1198
+  - first:
+      213: -5281461663712381470
+    second: Generic Children NPCs A_1199
+  - first:
+      213: -6057471059329345667
+    second: Generic Children NPCs A_1200
+  - first:
+      213: 2835338692189279320
+    second: Generic Children NPCs A_1201
+  - first:
+      213: -459843228093584656
+    second: Generic Children NPCs A_1202
+  - first:
+      213: -177393368865987204
+    second: Generic Children NPCs A_1203
+  - first:
+      213: -6811619386316856145
+    second: Generic Children NPCs A_1204
+  - first:
+      213: -3046838483811456647
+    second: Generic Children NPCs A_1205
+  - first:
+      213: 4145700502081140675
+    second: Generic Children NPCs A_1206
+  - first:
+      213: -7802455210288492328
+    second: Generic Children NPCs A_1207
+  - first:
+      213: 3366668701888948371
+    second: Generic Children NPCs A_1208
+  - first:
+      213: -535671227620241437
+    second: Generic Children NPCs A_1209
+  - first:
+      213: 5765788613494446794
+    second: Generic Children NPCs A_1210
+  - first:
+      213: -1157959018874564130
+    second: Generic Children NPCs A_1211
+  - first:
+      213: -1696657162685390432
+    second: Generic Children NPCs A_1212
+  - first:
+      213: 1727254173738124912
+    second: Generic Children NPCs A_1213
+  - first:
+      213: 3095870517874693082
+    second: Generic Children NPCs A_1214
+  - first:
+      213: 1024494340349225625
+    second: Generic Children NPCs A_1215
+  - first:
+      213: 7300026294793740749
+    second: Generic Children NPCs A_1216
+  - first:
+      213: -1889707950307239546
+    second: Generic Children NPCs A_1217
+  - first:
+      213: 2174965120861087798
+    second: Generic Children NPCs A_1218
+  - first:
+      213: 8965023072380185457
+    second: Generic Children NPCs A_1219
+  - first:
+      213: 6474579753117524217
+    second: Generic Children NPCs A_1220
+  - first:
+      213: 5550376144321198311
+    second: Generic Children NPCs A_1221
+  - first:
+      213: -7095013279271544612
+    second: Generic Children NPCs A_1222
+  - first:
+      213: -8516932064901150779
+    second: Generic Children NPCs A_1223
+  - first:
+      213: 7676755207158245075
+    second: Generic Children NPCs A_1224
+  - first:
+      213: 7279625473700117182
+    second: Generic Children NPCs A_1225
+  - first:
+      213: -2582181150081022136
+    second: Generic Children NPCs A_1226
+  - first:
+      213: -4381094910945784078
+    second: Generic Children NPCs A_1227
+  - first:
+      213: -8940294178889021724
+    second: Generic Children NPCs A_1228
+  - first:
+      213: -1049034238975415597
+    second: Generic Children NPCs A_1229
+  - first:
+      213: 7160930871947956152
+    second: Generic Children NPCs A_1230
+  - first:
+      213: -7254178743599070514
+    second: Generic Children NPCs A_1231
+  - first:
+      213: 3366677302135596192
+    second: Generic Children NPCs A_1232
+  - first:
+      213: 4278280596666029965
+    second: Generic Children NPCs A_1233
+  - first:
+      213: 669589522648554997
+    second: Generic Children NPCs A_1234
+  - first:
+      213: 3147545980781124664
+    second: Generic Children NPCs A_1235
+  - first:
+      213: 3685917626248729891
+    second: Generic Children NPCs A_1236
+  - first:
+      213: 1390940968852642422
+    second: Generic Children NPCs A_1237
+  - first:
+      213: 8087520852101391960
+    second: Generic Children NPCs A_1238
+  - first:
+      213: -3361742935500080161
+    second: Generic Children NPCs A_1239
+  - first:
+      213: 2886082052376595111
+    second: Generic Children NPCs A_1240
+  - first:
+      213: 6807293815745902673
+    second: Generic Children NPCs A_1241
+  - first:
+      213: 8456396195045201995
+    second: Generic Children NPCs A_1242
+  - first:
+      213: 2208281065871359888
+    second: Generic Children NPCs A_1243
+  - first:
+      213: 2464234080189172007
+    second: Generic Children NPCs A_1244
+  - first:
+      213: 6634717286061579208
+    second: Generic Children NPCs A_1245
+  - first:
+      213: 8790739137130105775
+    second: Generic Children NPCs A_1246
+  - first:
+      213: 9097755772069944336
+    second: Generic Children NPCs A_1247
+  - first:
+      213: 2592556713682683094
+    second: Generic Children NPCs A_1248
+  - first:
+      213: 2380743381621362251
+    second: Generic Children NPCs A_1249
+  - first:
+      213: -8868780080903639483
+    second: Generic Children NPCs A_1250
+  - first:
+      213: 5518907362541426419
+    second: Generic Children NPCs A_1251
+  - first:
+      213: -4059536682917821260
+    second: Generic Children NPCs A_1252
+  - first:
+      213: 6758981416937870662
+    second: Generic Children NPCs A_1253
+  - first:
+      213: -8115956710226816224
+    second: Generic Children NPCs A_1254
+  - first:
+      213: -5097113870897896785
+    second: Generic Children NPCs A_1255
+  - first:
+      213: -5121066429932899987
+    second: Generic Children NPCs A_1256
+  - first:
+      213: -5820746509389691856
+    second: Generic Children NPCs A_1257
+  - first:
+      213: 3442186218684879506
+    second: Generic Children NPCs A_1258
+  - first:
+      213: -3316394603393034124
+    second: Generic Children NPCs A_1259
+  - first:
+      213: -4331937523922416678
+    second: Generic Children NPCs A_1260
+  - first:
+      213: 4292561374915394080
+    second: Generic Children NPCs A_1261
+  - first:
+      213: -3576154402072705602
+    second: Generic Children NPCs A_1262
+  - first:
+      213: -7004631405774870664
+    second: Generic Children NPCs A_1263
+  - first:
+      213: -8056711614868801121
+    second: Generic Children NPCs A_1264
+  - first:
+      213: -6364485937843596985
+    second: Generic Children NPCs A_1265
+  - first:
+      213: 5741392266076147081
+    second: Generic Children NPCs A_1266
+  - first:
+      213: 5152200803728011311
+    second: Generic Children NPCs A_1267
+  - first:
+      213: 6288412718822779711
+    second: Generic Children NPCs A_1268
+  - first:
+      213: 1908095050313614209
+    second: Generic Children NPCs A_1269
+  - first:
+      213: -1288194875239399286
+    second: Generic Children NPCs A_1270
+  - first:
+      213: 1088158682510315698
+    second: Generic Children NPCs A_1271
+  - first:
+      213: -4243514572224509678
+    second: Generic Children NPCs A_1272
+  - first:
+      213: -2720042561526203409
+    second: Generic Children NPCs A_1273
+  - first:
+      213: -249988661423600474
+    second: Generic Children NPCs A_1274
+  - first:
+      213: 8742306120439729923
+    second: Generic Children NPCs A_1275
+  - first:
+      213: 3410292263057859117
+    second: Generic Children NPCs A_1276
+  - first:
+      213: 2118836564943217221
+    second: Generic Children NPCs A_1277
+  - first:
+      213: -7069567399547982729
+    second: Generic Children NPCs A_1278
+  - first:
+      213: 7380867449463694641
+    second: Generic Children NPCs A_1279
+  - first:
+      213: 719199497828237854
+    second: Generic Children NPCs A_1280
+  - first:
+      213: -1265734051718368311
+    second: Generic Children NPCs A_1281
+  - first:
+      213: -4435883261234094036
+    second: Generic Children NPCs A_1282
+  - first:
+      213: 2603154429061920827
+    second: Generic Children NPCs A_1283
+  - first:
+      213: 4366188345811651484
+    second: Generic Children NPCs A_1284
+  - first:
+      213: 4246665084518512086
+    second: Generic Children NPCs A_1285
+  - first:
+      213: -239673671336166810
+    second: Generic Children NPCs A_1286
+  - first:
+      213: -7920595136103719935
+    second: Generic Children NPCs A_1287
+  - first:
+      213: -5338443899132542657
+    second: Generic Children NPCs A_1288
+  - first:
+      213: -3219548318240816933
+    second: Generic Children NPCs A_1289
+  - first:
+      213: 8027303779892877715
+    second: Generic Children NPCs A_1290
+  - first:
+      213: 5842101235308736339
+    second: Generic Children NPCs A_1291
+  - first:
+      213: 8662539615491471204
+    second: Generic Children NPCs A_1292
+  - first:
+      213: -8028415286151984666
+    second: Generic Children NPCs A_1293
+  - first:
+      213: -3626744550760830636
+    second: Generic Children NPCs A_1294
+  - first:
+      213: -2098097480919661832
+    second: Generic Children NPCs A_1295
+  - first:
+      213: -7321793591436662279
+    second: Generic Children NPCs A_1296
+  - first:
+      213: 8136016512326696876
+    second: Generic Children NPCs A_1297
+  - first:
+      213: -2506745064783962882
+    second: Generic Children NPCs A_1298
+  - first:
+      213: -9148410491619356819
+    second: Generic Children NPCs A_1299
+  - first:
+      213: 1281282042537429996
+    second: Generic Children NPCs A_1300
+  - first:
+      213: -7260737259509933611
+    second: Generic Children NPCs A_1301
+  - first:
+      213: 8048673984134159777
+    second: Generic Children NPCs A_1302
+  - first:
+      213: -8019112017544311065
+    second: Generic Children NPCs A_1303
+  - first:
+      213: 3410145376290817860
+    second: Generic Children NPCs A_1304
+  - first:
+      213: -4766654747867928187
+    second: Generic Children NPCs A_1305
+  - first:
+      213: 2614119295849589628
+    second: Generic Children NPCs A_1306
+  - first:
+      213: -2986082415471208683
+    second: Generic Children NPCs A_1307
+  - first:
+      213: -5117732755333460305
+    second: Generic Children NPCs A_1308
+  - first:
+      213: 6065144948642551802
+    second: Generic Children NPCs A_1309
+  - first:
+      213: 5069580049472925338
+    second: Generic Children NPCs A_1310
+  - first:
+      213: 5764059674690437340
+    second: Generic Children NPCs A_1311
+  - first:
+      213: 8907444777680154210
+    second: Generic Children NPCs A_1312
+  - first:
+      213: 3504669945221645572
+    second: Generic Children NPCs A_1313
+  - first:
+      213: -364927043346043271
+    second: Generic Children NPCs A_1314
+  - first:
+      213: 1257296222803499793
+    second: Generic Children NPCs A_1315
+  - first:
+      213: 3738868680155864239
+    second: Generic Children NPCs A_1316
+  - first:
+      213: 6665766278729987662
+    second: Generic Children NPCs A_1317
+  - first:
+      213: -8213745723194134159
+    second: Generic Children NPCs A_1318
+  - first:
+      213: -2649166485504729171
+    second: Generic Children NPCs A_1319
+  - first:
+      213: 1434745890036680018
+    second: Generic Children NPCs A_1320
+  - first:
+      213: -4349786549605082109
+    second: Generic Children NPCs A_1321
+  - first:
+      213: -4476966968446942384
+    second: Generic Children NPCs A_1322
+  - first:
+      213: 4628513865744098661
+    second: Generic Children NPCs A_1323
+  - first:
+      213: -126910485354984067
+    second: Generic Children NPCs A_1324
+  - first:
+      213: 7887637505126680151
+    second: Generic Children NPCs A_1325
+  - first:
+      213: -2477628984879819021
+    second: Generic Children NPCs A_1326
+  - first:
+      213: -2309404758230475806
+    second: Generic Children NPCs A_1327
+  - first:
+      213: 838663279712375814
+    second: Generic Children NPCs A_1328
+  - first:
+      213: -3998113478596495832
+    second: Generic Children NPCs A_1329
+  - first:
+      213: -8161636276703632946
+    second: Generic Children NPCs A_1330
+  - first:
+      213: -2189643917500430050
+    second: Generic Children NPCs A_1331
+  - first:
+      213: -1264559439333004369
+    second: Generic Children NPCs A_1332
+  - first:
+      213: 5357478850703502429
+    second: Generic Children NPCs A_1333
+  - first:
+      213: 5188454675211464128
+    second: Generic Children NPCs A_1334
+  - first:
+      213: -6331197639141849588
+    second: Generic Children NPCs A_1335
+  - first:
+      213: -6931370239905849446
+    second: Generic Children NPCs A_1336
+  - first:
+      213: 4231770673212581643
+    second: Generic Children NPCs A_1337
+  - first:
+      213: -2915855254621102704
+    second: Generic Children NPCs A_1338
+  - first:
+      213: -4718992840671413171
+    second: Generic Children NPCs A_1339
+  - first:
+      213: 4795518869485664270
+    second: Generic Children NPCs A_1340
+  - first:
+      213: 4432461593313859631
+    second: Generic Children NPCs A_1341
+  - first:
+      213: 5417712722932309738
+    second: Generic Children NPCs A_1342
+  - first:
+      213: -8363994739661434096
+    second: Generic Children NPCs A_1343
+  - first:
+      213: 5267017090858132805
+    second: Generic Children NPCs A_1344
+  - first:
+      213: -5361634832394867560
+    second: Generic Children NPCs A_1345
+  - first:
+      213: -5589564767897417190
+    second: Generic Children NPCs A_1346
+  - first:
+      213: -2814257101911619545
+    second: Generic Children NPCs A_1347
+  - first:
+      213: -3109528189734708038
+    second: Generic Children NPCs A_1348
+  - first:
+      213: 9111524338913733332
+    second: Generic Children NPCs A_1349
+  - first:
+      213: 2502096419437723420
+    second: Generic Children NPCs A_1350
+  - first:
+      213: 1229649133380216407
+    second: Generic Children NPCs A_1351
+  - first:
+      213: 3731009613099728526
+    second: Generic Children NPCs A_1352
+  - first:
+      213: 1363693072334517664
+    second: Generic Children NPCs A_1353
+  - first:
+      213: -8307719035549625349
+    second: Generic Children NPCs A_1354
+  - first:
+      213: -1642238181372183431
+    second: Generic Children NPCs A_1355
+  - first:
+      213: 7640682082936857388
+    second: Generic Children NPCs A_1356
+  - first:
+      213: 184880763273984726
+    second: Generic Children NPCs A_1357
+  - first:
+      213: 1045829756100187926
+    second: Generic Children NPCs A_1358
+  - first:
+      213: -6733361118132420324
+    second: Generic Children NPCs A_1359
+  - first:
+      213: -4783077446268257207
+    second: Generic Children NPCs A_1360
+  - first:
+      213: 6162250832964173298
+    second: Generic Children NPCs A_1361
+  - first:
+      213: -7113688105241122046
+    second: Generic Children NPCs A_1362
+  - first:
+      213: -226771552941834865
+    second: Generic Children NPCs A_1363
+  - first:
+      213: 5766034640068475352
+    second: Generic Children NPCs A_1364
+  - first:
+      213: -5957688334863780238
+    second: Generic Children NPCs A_1365
+  - first:
+      213: 8280351145777750758
+    second: Generic Children NPCs A_1366
+  - first:
+      213: -6059132769459000811
+    second: Generic Children NPCs A_1367
+  - first:
+      213: -264583542800728414
+    second: Generic Children NPCs A_1368
+  - first:
+      213: -3108303881365787974
+    second: Generic Children NPCs A_1369
+  - first:
+      213: -5834134397395527626
+    second: Generic Children NPCs A_1370
+  - first:
+      213: -5065674481717635926
+    second: Generic Children NPCs A_1371
+  - first:
+      213: -1564458795310861485
+    second: Generic Children NPCs A_1372
+  - first:
+      213: -4086735978586795380
+    second: Generic Children NPCs A_1373
+  - first:
+      213: -3224687557990064664
+    second: Generic Children NPCs A_1374
+  - first:
+      213: -2954625913523401778
+    second: Generic Children NPCs A_1375
+  - first:
+      213: -6902900345925613404
+    second: Generic Children NPCs A_1376
+  - first:
+      213: -2465656410446597576
+    second: Generic Children NPCs A_1377
+  - first:
+      213: -5333961087682192434
+    second: Generic Children NPCs A_1378
+  - first:
+      213: 1067155527066006818
+    second: Generic Children NPCs A_1379
+  - first:
+      213: -7030104038092691239
+    second: Generic Children NPCs A_1380
+  - first:
+      213: 8657582319911236617
+    second: Generic Children NPCs A_1381
+  - first:
+      213: 5565752364589010320
+    second: Generic Children NPCs A_1382
+  - first:
+      213: -322700170062415587
+    second: Generic Children NPCs A_1383
+  - first:
+      213: -8373284856339869809
+    second: Generic Children NPCs A_1384
+  - first:
+      213: -4998131931766138996
+    second: Generic Children NPCs A_1385
+  - first:
+      213: 1420224346330764995
+    second: Generic Children NPCs A_1386
+  - first:
+      213: 4341046226690041797
+    second: Generic Children NPCs A_1387
+  - first:
+      213: -8187779444178275761
+    second: Generic Children NPCs A_1388
+  - first:
+      213: -3316837930644431192
+    second: Generic Children NPCs A_1389
+  - first:
+      213: -3937860224715377254
+    second: Generic Children NPCs A_1390
+  - first:
+      213: -5564064312684932015
+    second: Generic Children NPCs A_1391
+  - first:
+      213: -8604451595299070523
+    second: Generic Children NPCs A_1392
+  - first:
+      213: -6643769769112318073
+    second: Generic Children NPCs A_1393
+  - first:
+      213: -6152163429929665849
+    second: Generic Children NPCs A_1394
+  - first:
+      213: 5558170363208153056
+    second: Generic Children NPCs A_1395
+  - first:
+      213: 367819725037345765
+    second: Generic Children NPCs A_1396
+  - first:
+      213: 4250129834069334001
+    second: Generic Children NPCs A_1397
+  - first:
+      213: -3470976748091102152
+    second: Generic Children NPCs A_1398
+  - first:
+      213: 577618818679623823
+    second: Generic Children NPCs A_1399
+  - first:
+      213: -5233999030911532315
+    second: Generic Children NPCs A_1400
+  - first:
+      213: 1552215760532587280
+    second: Generic Children NPCs A_1401
+  - first:
+      213: 2833904421229721162
+    second: Generic Children NPCs A_1402
+  - first:
+      213: -5192063685884892802
+    second: Generic Children NPCs A_1403
+  - first:
+      213: -3430653153754641609
+    second: Generic Children NPCs A_1404
+  - first:
+      213: -8226790533586187412
+    second: Generic Children NPCs A_1405
+  - first:
+      213: 3943378154199367578
+    second: Generic Children NPCs A_1406
+  - first:
+      213: 3136040657104475722
+    second: Generic Children NPCs A_1407
+  - first:
+      213: 2788850438917768299
+    second: Generic Children NPCs A_1408
+  - first:
+      213: -9123049024241158954
+    second: Generic Children NPCs A_1409
+  - first:
+      213: 1163530857900958475
+    second: Generic Children NPCs A_1410
+  - first:
+      213: -7396989542458278920
+    second: Generic Children NPCs A_1411
+  - first:
+      213: 8084375623401198399
+    second: Generic Children NPCs A_1412
+  - first:
+      213: -5961154683121378900
+    second: Generic Children NPCs A_1413
+  - first:
+      213: 7232452314114573776
+    second: Generic Children NPCs A_1414
+  - first:
+      213: 75252464438617726
+    second: Generic Children NPCs A_1415
+  - first:
+      213: -6848501654866920259
+    second: Generic Children NPCs A_1416
+  - first:
+      213: -6868784146245098329
+    second: Generic Children NPCs A_1417
+  - first:
+      213: 4379630101346545331
+    second: Generic Children NPCs A_1418
+  - first:
+      213: 1485063315336357309
+    second: Generic Children NPCs A_1419
+  - first:
+      213: 7079731272639303780
+    second: Generic Children NPCs A_1420
+  - first:
+      213: 3248486387679526133
+    second: Generic Children NPCs A_1421
+  - first:
+      213: -7838985596846583918
+    second: Generic Children NPCs A_1422
+  - first:
+      213: -7212688110320800202
+    second: Generic Children NPCs A_1423
+  - first:
+      213: -3559646923394540699
+    second: Generic Children NPCs A_1424
+  - first:
+      213: -8794184479115823609
+    second: Generic Children NPCs A_1425
+  - first:
+      213: -2486274687008485433
+    second: Generic Children NPCs A_1426
+  - first:
+      213: -4050613109547490176
+    second: Generic Children NPCs A_1427
+  - first:
+      213: -6618632852872591223
+    second: Generic Children NPCs A_1428
+  - first:
+      213: 7032349266976659990
+    second: Generic Children NPCs A_1429
+  - first:
+      213: -1533696630318928654
+    second: Generic Children NPCs A_1430
+  - first:
+      213: -5069421989179096230
+    second: Generic Children NPCs A_1431
+  - first:
+      213: -7765586759058531507
+    second: Generic Children NPCs A_1432
+  - first:
+      213: 8948832360631442016
+    second: Generic Children NPCs A_1433
+  - first:
+      213: -4085616081455048614
+    second: Generic Children NPCs A_1434
+  - first:
+      213: 7269932891585421161
+    second: Generic Children NPCs A_1435
+  - first:
+      213: 4867244088572836622
+    second: Generic Children NPCs A_1436
+  - first:
+      213: -6251958597765656114
+    second: Generic Children NPCs A_1437
+  - first:
+      213: 3997173498547578816
+    second: Generic Children NPCs A_1438
+  - first:
+      213: -2897843105890181271
+    second: Generic Children NPCs A_1439
+  - first:
+      213: -5061080376845042986
+    second: Generic Children NPCs A_1440
+  - first:
+      213: -676160359847967927
+    second: Generic Children NPCs A_1441
+  - first:
+      213: 477945200381759706
+    second: Generic Children NPCs A_1442
+  - first:
+      213: -543654298426669174
+    second: Generic Children NPCs A_1443
+  - first:
+      213: -6798746253186104315
+    second: Generic Children NPCs A_1444
+  - first:
+      213: 1020360940976377896
+    second: Generic Children NPCs A_1445
+  - first:
+      213: -7175620621734166616
+    second: Generic Children NPCs A_1446
+  - first:
+      213: -7930396974307345508
+    second: Generic Children NPCs A_1447
+  - first:
+      213: -8580234169362561669
+    second: Generic Children NPCs A_1448
+  - first:
+      213: 1260045769534001946
+    second: Generic Children NPCs A_1449
+  - first:
+      213: -928098240408189299
+    second: Generic Children NPCs A_1450
+  - first:
+      213: 7615841445806872483
+    second: Generic Children NPCs A_1451
+  - first:
+      213: 6947634196020795752
+    second: Generic Children NPCs A_1452
+  - first:
+      213: 8480105886866347207
+    second: Generic Children NPCs A_1453
+  - first:
+      213: 5249485049370804016
+    second: Generic Children NPCs A_1454
+  - first:
+      213: -6784728687904614009
+    second: Generic Children NPCs A_1455
+  - first:
+      213: -3329908478402582169
+    second: Generic Children NPCs A_1456
+  - first:
+      213: -1760893349681603518
+    second: Generic Children NPCs A_1457
+  - first:
+      213: 6495386553312116184
+    second: Generic Children NPCs A_1458
+  - first:
+      213: 5184120044594421267
+    second: Generic Children NPCs A_1459
+  - first:
+      213: 4087482177694381816
+    second: Generic Children NPCs A_1460
+  - first:
+      213: 5375104428910984415
+    second: Generic Children NPCs A_1461
+  - first:
+      213: 6725065013858253133
+    second: Generic Children NPCs A_1462
+  - first:
+      213: 5922377883071004775
+    second: Generic Children NPCs A_1463
+  - first:
+      213: 5691961945410764858
+    second: Generic Children NPCs A_1464
+  - first:
+      213: 5747301554285793593
+    second: Generic Children NPCs A_1465
+  - first:
+      213: -626532768952800355
+    second: Generic Children NPCs A_1466
+  - first:
+      213: 4156786149268145299
+    second: Generic Children NPCs A_1467
+  - first:
+      213: 6296062322577399512
+    second: Generic Children NPCs A_1468
+  - first:
+      213: 906195808669744896
+    second: Generic Children NPCs A_1469
+  - first:
+      213: -7989873166379558754
+    second: Generic Children NPCs A_1470
+  - first:
+      213: 172694707715617555
+    second: Generic Children NPCs A_1471
+  - first:
+      213: -3844706319299538984
+    second: Generic Children NPCs A_1472
+  - first:
+      213: 3353295128042269755
+    second: Generic Children NPCs A_1473
+  - first:
+      213: 6316847312288696727
+    second: Generic Children NPCs A_1474
+  - first:
+      213: 3033982124024701799
+    second: Generic Children NPCs A_1475
+  - first:
+      213: -8558509968807560265
+    second: Generic Children NPCs A_1476
+  - first:
+      213: -5189930061158934552
+    second: Generic Children NPCs A_1477
+  - first:
+      213: -8535712293945605095
+    second: Generic Children NPCs A_1478
+  - first:
+      213: -9124829577135348174
+    second: Generic Children NPCs A_1479
+  - first:
+      213: -6778517139409021060
+    second: Generic Children NPCs A_1480
+  - first:
+      213: 5790146480488789182
+    second: Generic Children NPCs A_1481
+  - first:
+      213: 6205191530196903675
+    second: Generic Children NPCs A_1482
+  - first:
+      213: -2495596691567256814
+    second: Generic Children NPCs A_1483
+  - first:
+      213: -186118229147090309
+    second: Generic Children NPCs A_1484
+  - first:
+      213: 8458103909486723360
+    second: Generic Children NPCs A_1485
+  - first:
+      213: 1754551145995578256
+    second: Generic Children NPCs A_1486
+  - first:
+      213: 7943386621033611766
+    second: Generic Children NPCs A_1487
+  - first:
+      213: -6141348905883555274
+    second: Generic Children NPCs A_1488
+  - first:
+      213: -7272809459597443855
+    second: Generic Children NPCs A_1489
+  - first:
+      213: -1144961206724853911
+    second: Generic Children NPCs A_1490
+  - first:
+      213: -5483350387308677660
+    second: Generic Children NPCs A_1491
+  - first:
+      213: -5341222331310945975
+    second: Generic Children NPCs A_1492
+  - first:
+      213: -8583548176615761315
+    second: Generic Children NPCs A_1493
+  - first:
+      213: -5122321086605327030
+    second: Generic Children NPCs A_1494
+  - first:
+      213: -6222350880354693997
+    second: Generic Children NPCs A_1495
+  - first:
+      213: -493349192751931663
+    second: Generic Children NPCs A_1496
+  - first:
+      213: 1907915376940251554
+    second: Generic Children NPCs A_1497
+  - first:
+      213: 3014989731412900207
+    second: Generic Children NPCs A_1498
+  - first:
+      213: 6611387936942762191
+    second: Generic Children NPCs A_1499
+  - first:
+      213: 4140872401152681524
+    second: Generic Children NPCs A_1500
+  - first:
+      213: -1847280021331845067
+    second: Generic Children NPCs A_1501
+  - first:
+      213: 3938471840690007363
+    second: Generic Children NPCs A_1502
+  - first:
+      213: 6556838187603866174
+    second: Generic Children NPCs A_1503
+  - first:
+      213: -7061207822955767839
+    second: Generic Children NPCs A_1504
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Generic Children NPCs A_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e9da170b66a2e30800000000000000
+      internalID: 4479505687380860519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79616b86451d2e770800000000000000
+      internalID: 8638697195714254487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a41ee7e447d96300800000000000000
+      internalID: 245964345617290409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab8b345b5c4274a0800000000000000
+      internalID: -6597126549005431899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce97ea03e73ca640800000000000000
+      internalID: 5092506726929243846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4048092560ce430800000000000000
+      internalID: 3813429936157623515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1f4be3d6e8b3b30800000000000000
+      internalID: 4268161671718302114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15243608ce4c34ce0800000000000000
+      internalID: -1422076537273630127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde404bbf62d95930800000000000000
+      internalID: 4132565510413897439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed51f16e593751f0800000000000000
+      internalID: -1056312510062174738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d413a4572e267d0800000000000000
+      internalID: -2926527814453605091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_11
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 840
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890cedb3f22430ad0800000000000000
+      internalID: -2737271377875779432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268e20f45c040d9e0800000000000000
+      internalID: -1598706651538200478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d20a16ef42a82550800000000000000
+      internalID: 6136332956338881238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f8bd61754375dd0800000000000000
+      internalID: -2497469919703363834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d30dc20af78b4920800000000000000
+      internalID: 2975621486666908629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_16
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeda37038c85ad070800000000000000
+      internalID: 8131909694000442862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f90912095f4afd0800000000000000
+      internalID: -2331468707683852448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_18
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2aa55a33a264200800000000000000
+      internalID: 163864837751481025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_19
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c7a44eab242b0d0800000000000000
+      internalID: -3408588597504607152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bcf7d9021aed0c0800000000000000
+      internalID: -4549021412144198756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_21
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154e7d742d6d8b150800000000000000
+      internalID: 5888692711423730769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f9c79a0f7f3e090800000000000000
+      internalID: -8006283099526881491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_23
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 720
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca9c3dc66dd02150800000000000000
+      internalID: 5845915749926607563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703141ad9480d3c90800000000000000
+      internalID: -7188580316929060089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74c8b84c83625740800000000000000
+      internalID: 5139279578949796987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b95a396ec34e970800000000000000
+      internalID: 8783212134296558483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_27
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79d1c7005e078080800000000000000
+      internalID: -9185357178108520065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7457a8af110b8c950800000000000000
+      internalID: 6469614455982028103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_29
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd381c9f84b8910f0800000000000000
+      internalID: -1145731484644965409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_30
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ca1932a114071e0800000000000000
+      internalID: -2202188637262467945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_31
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35218aec4a58657c0800000000000000
+      internalID: -4082929069276523949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6300694b87376a0800000000000000
+      internalID: -6452681124085745970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_33
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27509a2559ae4180800000000000000
+      internalID: -9129173211381999830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bbcce5f2997ad450800000000000000
+      internalID: 6114333116206992313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_35
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 600
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9c10505b46ae940800000000000000
+      internalID: 5326180237954894315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454aab92f30186710800000000000000
+      internalID: 1686615923919332436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ca1b79ec4b1cba0800000000000000
+      internalID: -6070372023317451696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_38
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ed4bfe39f6869d0800000000000000
+      internalID: -2780850088728797605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_39
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c91ca1acad5e3a0800000000000000
+      internalID: -6636657914293412864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_40
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf86c4a349c45510800000000000000
+      internalID: 1537074665204649919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_41
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa208188a02eb020800000000000000
+      internalID: 2359359162887973545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_42
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55216ac3b26f2e20800000000000000
+      internalID: 3327987173984118109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_43
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71544a7d0ed4800f0800000000000000
+      internalID: -1150584076707281641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_44
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717689e1bae3d3dc0800000000000000
+      internalID: -3657698417681340649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_45
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4605b0169c1b170800000000000000
+      internalID: 8192550615802471630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_46
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9d3a8597848ecc0800000000000000
+      internalID: -3681613009360004690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_47
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 480
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718601d1f426dadd0800000000000000
+      internalID: -2473212528426981353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0484b1da8392db60800000000000000
+      internalID: 7769434531600565262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_49
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1548253379bf04d10800000000000000
+      internalID: 2107961252429071441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63aeada599a8f05f0800000000000000
+      internalID: -788259018507621834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_51
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec94b26506673c80800000000000000
+      internalID: -8343087611363681043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_52
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa1b0ed53dacee20800000000000000
+      internalID: 3381267867118541476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b364f33662e33260800000000000000
+      internalID: 7076248368115377075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_54
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39670f4e4ce538d50800000000000000
+      internalID: 6738333667223959187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_55
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c222f7b0d9d4de370800000000000000
+      internalID: 8353418220740223532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_56
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bae06879eb7541b0800000000000000
+      internalID: -5672991912926057804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_57
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a5dc087f8a1f590800000000000000
+      internalID: -7642141311699690914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_58
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbf36e419a2b0060800000000000000
+      internalID: 6920672055958698928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_59
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 360
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834ee087dbe2b0bd0800000000000000
+      internalID: -2662983363361577928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a00748d09951df0800000000000000
+      internalID: -210093524267300264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_61
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bc631f14c2653b0800000000000000
+      internalID: -5524179231191938216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_62
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832bfe7d792cbc5b0800000000000000
+      internalID: -5346966175153671624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7796925fa9de743a0800000000000000
+      internalID: -6681110272386963081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_64
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2ecf4a820dd0e70800000000000000
+      internalID: 9083144896461464308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_65
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75738aeb3dad281d0800000000000000
+      internalID: -3349874569838577833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_66
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdcfe48f674b3300800000000000000
+      internalID: 232858350036962809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_67
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc248feb8cebad50800000000000000
+      internalID: 6749748552307846336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_68
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589178ff92e19e810800000000000000
+      internalID: 1794999092213389701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_69
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354be8a11150915a0800000000000000
+      internalID: -6550198612015532973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_70
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a196107b7418bf0800000000000000
+      internalID: -323898846865712556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_71
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 240
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7f86831f0facf50800000000000000
+      internalID: 6902594297722894255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f449f9a862ec2de0800000000000000
+      internalID: -1356460448589200143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_73
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44e3dcf2704e3900800000000000000
+      internalID: 666040657509606479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_74
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29a30aa3044487c0800000000000000
+      internalID: -4070053380708128466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_75
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36375034de2b2ae00800000000000000
+      internalID: 1054601994859541347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_76
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654f07f4eabd52880800000000000000
+      internalID: -8636255168709462954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_77
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2924d759604547a50800000000000000
+      internalID: 6517926947966501522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_78
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b09040785eea520800000000000000
+      internalID: 2715359993402035011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_79
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6dadd7b4d1e0960800000000000000
+      internalID: 7570020233727628964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_80
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8152bc6b6d3a98420800000000000000
+      internalID: 2632815599759861016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_81
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f90ddfe5297469e0800000000000000
+      internalID: -1629043961356285448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_82
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd1ebee9d22965f0800000000000000
+      internalID: -763040342453903920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_83
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 120
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24117f133815f0c10800000000000000
+      internalID: 2021924381633483074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4c3f88085287010800000000000000
+      internalID: 1186739735795844295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce6465ecdb1e9e40800000000000000
+      internalID: 5664996016833982147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_86
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75444c0c936f95630800000000000000
+      internalID: 3916432078883013719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_87
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583855659e81a6bf0800000000000000
+      internalID: -330424232203418747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_88
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb486744d8bb4efb0800000000000000
+      internalID: -4619361102361885508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_89
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c080983c864a8f090800000000000000
+      internalID: -8000463968159594484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_90
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707cba09d8d422d70800000000000000
+      internalID: 9016854674362058503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_91
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f78fe8b9ba10e40800000000000000
+      internalID: 5620962494542020397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_92
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e38e72f6270e4e0800000000000000
+      internalID: -1954436416542327239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_93
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d0573d47a59da20800000000000000
+      internalID: 3087598477349555541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_94
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a6c2146ce954420800000000000000
+      internalID: 2613669733092584089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generic Children NPCs A_95
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 80
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ccba881ed2a49bb0800000000000000
+      internalID: -4930136617285665596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
