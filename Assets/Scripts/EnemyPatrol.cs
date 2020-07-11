@@ -78,15 +78,6 @@ public class EnemyPatrol : MonoBehaviour
         transform.Translate(speed * direction * Time.deltaTime, Space.World);
     }
 
-    private void Rotate(Vector3 target)
-    {
-        UpdateDirection(target);
-
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
-        direction = direction.normalized;
-    }
-
     private void UpdateDirection(Vector3 target)
     {
         direction = target - transform.position;
