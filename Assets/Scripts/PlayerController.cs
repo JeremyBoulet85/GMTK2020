@@ -9,11 +9,18 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
     private Rigidbody2D rb;
+    private SoundManager soundManager;
 
     private void Start()
     {
-        animator  = GetComponent<Animator>();
-        rb        = GetComponent<Rigidbody2D>();
+        animator     = GetComponent<Animator>();
+        rb           = GetComponent<Rigidbody2D>();
+        soundManager = GetComponent<SoundManager>();
+    }
+
+    public void Sneeze()
+    {
+        soundManager.PlaySneezeSound();
     }
 
     // Update is called once per frame
