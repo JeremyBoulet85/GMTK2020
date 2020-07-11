@@ -171,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footstepSound: {fileID: 8300000, guid: 9be7cc8964f74d347a15ba4862c57f72, type: 3}
   sneezeSound: {fileID: 8300000, guid: 85284f8d61ff8cc4e8d604c1e2ab26e0, type: 3}
+  keyCollect: {fileID: 8300000, guid: a5eeb4f01ef780c489b4602774059f23, type: 3}
   ambiance: {fileID: 8300000, guid: 2a32b675a603be64aacc995c4c29c454, type: 3}
   music: {fileID: 8300000, guid: 0bf41d80d3c44a74faa1695dd71a30ac, type: 3}
   bell1: {fileID: 8300000, guid: d72206b08db716544a4153b048ec4048, type: 3}
