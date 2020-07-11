@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyPatrol : MonoBehaviour
 {
@@ -16,13 +17,17 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField]
     float waitTime = 2f;
 
-    private Animator animator;
+    [SerializeField]
+    GameObject exclamation;
 
+    private Animator animator;
+    
     enum PatrolState
     {
         Walking,
         Waiting,
-        Chase
+        Chase,
+        Stop
     }
 
     private PatrolState state;
@@ -30,6 +35,7 @@ public class EnemyPatrol : MonoBehaviour
     private Vector3 direction;
     private float timer = 0f;
     private Transform player;
+    private GameObject exclamationInstance;
 
     void Awake()
     {
@@ -45,23 +51,27 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Update()
     {
-        switch(state)
+        switch (state)
         {
             case PatrolState.Waiting:
                 Wait();
+                break;
+            case PatrolState.Stop:
+                Stop();
                 break;
         }
     }
     
     private void FixedUpdate()
     {
-        DetectPlayer();
         switch (state)
         {
             case PatrolState.Walking:
+                DetectPlayer();
                 Walk();
                 break;
             case PatrolState.Chase:
+                DetectPlayer();
                 ChasePlayer();
                 break;
         }
@@ -105,8 +115,26 @@ public class EnemyPatrol : MonoBehaviour
     {
         // For now... Exclamation!
         UpdateAnimationDirection();
+
         animator.SetFloat("Speed", 0.0f);
+
+        if (timer == 0)
+        {
+            exclamationInstance = Instantiate(exclamation, FindObjectOfType<Canvas>().transform);
+            exclamationInstance.transform.position = new Vector2(transform.position.x, transform.position.y + 1.7f);
+        }
+
+        timer += Time.deltaTime;
+        if (timer > waitTime)
+        {
+            Destroy(exclamationInstance);
+            timer = 0f;
+
+            state = PatrolState.Stop;
+        }
     }
+
+    private void Stop() { }
 
     private void SwitchToWaiting()
     {

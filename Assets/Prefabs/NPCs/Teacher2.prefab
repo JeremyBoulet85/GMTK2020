@@ -100,6 +100,8 @@ MonoBehaviour:
   pointB: {fileID: 0}
   speed: 2
   waitTime: 2
+  exclamation: {fileID: 7709414971744559717, guid: 5d35babf1a0dcef46be13329fb294ce8,
+    type: 3}
 --- !u!95 &1877948538764498664
 Animator:
   serializedVersion: 3
