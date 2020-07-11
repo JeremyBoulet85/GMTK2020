@@ -16,6 +16,8 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField]
     float waitTime = 2f;
 
+    private Animator animator;
+
     enum PatrolState
     {
         Walking,
@@ -33,10 +35,17 @@ public class EnemyPatrol : MonoBehaviour
         UpdateDirection(currentTarget.position);
     }
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     private void Update()
     {
         if (state == PatrolState.Waiting)
         {
+            animator.SetFloat("Speed", 0.0f);
+
             timer += Time.deltaTime;
             if (timer > waitTime)
             {
@@ -75,6 +84,14 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Walk()
     {
+        float directionSqrMagnitude = direction.sqrMagnitude;
+        animator.SetFloat("Speed", directionSqrMagnitude);
+        if (directionSqrMagnitude >= 0.01f)
+        {
+            animator.SetFloat("Horizontal", direction.x);
+            animator.SetFloat("Vertical", direction.y);
+        }
+
         transform.Translate(speed * direction * Time.deltaTime, Space.World);
     }
 
