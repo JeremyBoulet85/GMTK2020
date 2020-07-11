@@ -5,10 +5,10 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     [SerializeField]
-    Transform pointA;
+    Transform pointA = null;
 
     [SerializeField]
-    Transform pointB;
+    Transform pointB = null;
 
     [SerializeField]
     float speed = 2f;
