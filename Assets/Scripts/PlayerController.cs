@@ -8,16 +8,18 @@ public class PlayerController : MonoBehaviour
     private float speed = 2.0f;
 
     private Animator animator;
+    private Rigidbody2D rb;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        animator  = GetComponent<Animator>();
+        rb        = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 velocity = new Vector3();
+        Vector2 velocity = new Vector3();
 
         velocity.y += Input.GetKey(KeyCode.W) ? 1.0f : 0.0f;
         velocity.x -= Input.GetKey(KeyCode.A) ? 1.0f : 0.0f;
@@ -32,6 +34,6 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Vertical", velocity.y);
         }
 
-        transform.Translate(velocity.normalized * speed * Time.deltaTime);
+        rb.MovePosition(rb.position + velocity.normalized * speed * Time.fixedDeltaTime);
     }
 }
