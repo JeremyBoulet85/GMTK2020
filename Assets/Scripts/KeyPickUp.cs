@@ -8,6 +8,7 @@ public class KeyPickUp : MonoBehaviour
         {
             Destroy(gameObject);
             GameManager.instance.PickUpKey();
+            (collision.GetComponentInParent<PlayerController>() as PlayerController).CollectKey();
         }
     }
 }
