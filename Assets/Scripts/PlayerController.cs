@@ -21,10 +21,10 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 velocity = new Vector3();
 
-        velocity.y += Input.GetKey(KeyCode.W) ? 1.0f : 0.0f;
-        velocity.x -= Input.GetKey(KeyCode.A) ? 1.0f : 0.0f;
-        velocity.y -= Input.GetKey(KeyCode.S) ? 1.0f : 0.0f;
-        velocity.x += Input.GetKey(KeyCode.D) ? 1.0f : 0.0f;
+        velocity.y += Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)    ? 1.0f : 0.0f;
+        velocity.x -= Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)  ? 1.0f : 0.0f;
+        velocity.y -= Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)  ? 1.0f : 0.0f;
+        velocity.x += Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? 1.0f : 0.0f;
 
         float speedSqrMagnitude = velocity.sqrMagnitude;
         animator.SetFloat("Speed", speedSqrMagnitude);

@@ -158,6 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1153348264117961634}
   - component: {fileID: 585880493827255231}
+  - component: {fileID: 5763662235319009081}
   m_Layer: 5
   m_Name: HungerBar
   m_TagString: Untagged
@@ -237,6 +238,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5763662235319009081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240834778238653202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d988616c6ef9b82449ed7e29869249ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
 --- !u!1 &5117054736858866983
 GameObject:
   m_ObjectHideFlags: 0
