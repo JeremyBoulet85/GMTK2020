@@ -16,6 +16,9 @@ GameObject:
   - component: {fileID: 7545652427308757456}
   - component: {fileID: 5554519438171719550}
   - component: {fileID: 1757092791154853441}
+  - component: {fileID: -5603782894479208293}
+  - component: {fileID: 3087624371309693272}
+  - component: {fileID: 482441491418853227}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -273,3 +276,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5603782894479208293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4209804859553748388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b565e2d1f10ed7e4e8d00d597a3b3878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sneezeBar: {fileID: 0}
+--- !u!114 &3087624371309693272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4209804859553748388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fd3a1e07e9d834a886154475d93e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hungerBar: {fileID: 0}
+  hungerLevel: 0
+--- !u!114 &482441491418853227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4209804859553748388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e745dcb35726947438cc430655bd387d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
