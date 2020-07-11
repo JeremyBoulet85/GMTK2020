@@ -9,17 +9,17 @@ public class CameraManager : MonoBehaviour
     public float minX;
     public float minY;
 
-    private Camera camera = null;
+    private Camera cam = null;
     private Transform playerTransform = null;
 
     void Start()
     {
-        camera = GetComponent<Camera>();
+        cam = GetComponent<Camera>();
 
-        camera.tag = "MainCamera";
-        camera.orthographic = true;
-        camera.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y, - 100.0f);
-        camera.orthographicSize = 5;
+        cam.tag = "MainCamera";
+        cam.orthographic = true;
+        cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, - 100.0f);
+        cam.orthographicSize = 5;
     }
 
     void Awake()
