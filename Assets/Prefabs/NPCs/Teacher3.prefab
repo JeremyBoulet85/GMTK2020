@@ -117,5 +117,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 0}
   pointB: {fileID: 0}
-  speed: 0.5
+  speed: 1
   waitTime: 2

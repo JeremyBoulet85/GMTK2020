@@ -11,7 +11,7 @@ public class EnemyPatrol : MonoBehaviour
     Transform pointB = null;
 
     [SerializeField]
-    float speed = 1f;
+    float speed = 2f;
 
     [SerializeField]
     float waitTime = 2f;
@@ -21,16 +21,19 @@ public class EnemyPatrol : MonoBehaviour
     enum PatrolState
     {
         Walking,
-        Waiting
+        Waiting,
+        Chase
     }
 
     private PatrolState state;
     private Transform currentTarget;
     private Vector3 direction;
     private float timer = 0f;
+    private Transform player;
 
     void Awake()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         currentTarget = pointA;
         UpdateDirection(currentTarget.position);
     }
@@ -42,47 +45,95 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Update()
     {
-        if (state == PatrolState.Waiting)
+        switch(state)
         {
-            animator.SetFloat("Speed", 0.0f);
-
-            timer += Time.deltaTime;
-            if (timer > waitTime)
-            {
-                timer = 0f;
-                SwitchToWalking();
-            }
+            case PatrolState.Waiting:
+                Wait();
+                break;
         }
     }
     
     private void FixedUpdate()
     {
-        if (state == PatrolState.Walking)
+        DetectPlayer();
+        switch (state)
         {
-            if (HasReachedTarget())
-            {
-                state = PatrolState.Waiting;
-            }
-            else
-            {
+            case PatrolState.Walking:
                 Walk();
-            }
+                break;
+            case PatrolState.Chase:
+                ChasePlayer();
+                break;
         }
     }
 
-    private void SwitchToWalking()
+    private void Wait()
     {
-        currentTarget = currentTarget.Equals(pointA) ? pointB : pointA;
-        UpdateDirection(currentTarget.position);
-        state = PatrolState.Walking;
-    }
+        animator.SetFloat("Speed", 0.0f);
 
-    private bool HasReachedTarget()
-    {
-        return Vector3.Distance(transform.position, currentTarget.position) < 0.05f;
+        timer += Time.deltaTime;
+        if (timer > waitTime)
+        {
+            timer = 0f;
+            state = PatrolState.Walking;
+        }
     }
 
     private void Walk()
+    {
+        if (HasReachedTarget(currentTarget.position, 0.5f))
+        {
+            SwitchToWaiting();
+            return;
+        }
+
+        UpdateAnimationDirection();
+        transform.Translate(speed * direction * Time.deltaTime, Space.World);
+    }
+
+    private void DetectPlayer()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized);
+        if (hit.collider != null && hit.transform.tag == "Player")
+        {
+            UpdateDirection(player.position);
+            state = PatrolState.Chase;
+        }
+    }
+
+    private void ChasePlayer()
+    {
+        // For now... Exclamation!
+        UpdateAnimationDirection();
+        animator.SetFloat("Speed", 0.0f);
+    }
+
+    private void SwitchToWaiting()
+    {
+        currentTarget = currentTarget.Equals(pointA) ? pointB : pointA;
+        UpdateDirection(currentTarget.position);
+        state = PatrolState.Waiting;
+    }
+
+    private bool HasReachedTarget(Vector3 target, float distance)
+    {
+        return Vector3.Distance(transform.position, target) < distance;
+    }
+
+    private void UpdateDirection(Vector3 target)
+    {
+        direction = (target - transform.position).normalized;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (state == PatrolState.Walking)
+        {
+            SwitchToWaiting();
+        }
+    }
+
+    private void UpdateAnimationDirection()
     {
         float directionSqrMagnitude = direction.sqrMagnitude;
         animator.SetFloat("Speed", directionSqrMagnitude);
@@ -90,21 +141,6 @@ public class EnemyPatrol : MonoBehaviour
         {
             animator.SetFloat("Horizontal", direction.x);
             animator.SetFloat("Vertical", direction.y);
-        }
-
-        transform.Translate(speed * direction * Time.deltaTime, Space.World);
-    }
-
-    private void UpdateDirection(Vector3 target)
-    {
-        direction = target - transform.position;
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (state == PatrolState.Walking)
-        {
-            state = PatrolState.Waiting;
         }
     }
 }
