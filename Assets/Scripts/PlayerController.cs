@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 4.0f;
+    private float normalSpeed = 4.0f;
 
     [SerializeField]
     private float runningSpeed = 8.0f;
@@ -31,8 +31,15 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        var effectiveSpeed = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.LeftShift)
-            ? runningSpeed : speed;
+        float effectiveSpeed = normalSpeed;
+
+        if (Input.GetKey(KeyCode.LeftShift)) {
+            animator.speed = 2.0f;
+            effectiveSpeed = runningSpeed;
+        } else
+        {
+            animator.speed = 1.0f;
+        }
 
         Vector3 velocity = new Vector3();
 
