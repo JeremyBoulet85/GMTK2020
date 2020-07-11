@@ -25,7 +25,6 @@ public class SneezeSystem : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(sneezeLevel);
         if (isSneezing)
         {
             Sneezing();
@@ -34,7 +33,7 @@ public class SneezeSystem : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        if (timer >= fillingDelayAmount && !isSneezing)
+        if (timer >= fillingDelayAmount)
         {
             timer = 0f;
             IncreaseSneezeLevel();
