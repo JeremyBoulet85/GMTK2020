@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 2.0f;
+    private float speed = 4.0f;
+
+    [SerializeField]
+    private float runningSpeed = 8.0f;
 
     private Animator animator;
     private Rigidbody2D rb;
@@ -25,6 +28,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        var effectiveSpeed = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.LeftShift)
+            ? runningSpeed : speed;
+
         Vector2 velocity = new Vector3();
 
         velocity.y += Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)    ? 1.0f : 0.0f;
@@ -41,6 +47,6 @@ public class PlayerController : MonoBehaviour
             soundManager.PlayFootstepSound();
         }
 
-        rb.MovePosition(rb.position + velocity.normalized * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + velocity.normalized * effectiveSpeed * Time.fixedDeltaTime);
     }
 }
