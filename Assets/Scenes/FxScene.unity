@@ -223,6 +223,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+--- !u!95 &555058383
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555058381}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 70c50fa6e88fdeb44bbad6aaf24f4c57, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4209804860075250025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -293,12 +312,43 @@ PrefabInstance:
     - target: {fileID: 4209804859553748390, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4209804859553748390, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209804859553748391, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10467390011550021, guid: 91af9ca7a5c8e6748b112201db2d78dd,
+        type: 3}
+    - target: {fileID: 4209804859553748391, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209804859553748391, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209804859553748391, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209804859553748391, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209804859553748391, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6abc19ef5e39dbf489eb7b631a6bd070, type: 3}
