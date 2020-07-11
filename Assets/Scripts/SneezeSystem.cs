@@ -9,7 +9,7 @@ public class SneezeSystem : MonoBehaviour
     int sneezeLevel;
     bool isSneezing;
     const int maxSneezeLevel = 50;
-    const float fillingDelayAmount = 0.5f; // seconds
+    const float fillingDelayAmount = 0.05f; // seconds
     const float drainingDelayAmount = 0.01f; // seconds
 
     protected float timer;

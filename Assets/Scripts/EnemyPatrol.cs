@@ -16,6 +16,10 @@ public class EnemyPatrol : MonoBehaviour
 
     [SerializeField]
     GameObject exclamation = null;
+
+    [SerializeField]
+    float soundDetectionRadius = 5f;
+
     private SoundManager soundManager;
     private Vector3 soundLocation;
     private float footstepSoundInterval = 0.8f;
@@ -272,15 +276,15 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
-        if (PointInsideSphere(player.transform.position) && IsInsideVisionCone() && CanSeePlayer())
+        if (PointInsideSphere(player.transform.position, 8f) && IsInsideVisionCone() && CanSeePlayer())
         {
             state = PatrolState.FoundPlayer;
         }
     }
 
-    private bool PointInsideSphere(Vector2 point)
+    private bool PointInsideSphere(Vector2 point, float radius)
     {
-        return Vector2.Distance(point, transform.position) < 8f;
+        return Vector2.Distance(point, transform.position) < radius;
     }
 
     private bool IsInsideVisionCone()
@@ -298,7 +302,7 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
-        if (player.GetComponent<SoundManager>().madeSound && PointInsideSphere(player.transform.position))
+        if (player.GetComponent<SoundManager>().madeSound && PointInsideSphere(player.transform.position, soundDetectionRadius))
         {
             soundLocation = player.transform.position;
 
