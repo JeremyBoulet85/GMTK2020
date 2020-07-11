@@ -233,14 +233,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MOVE: WASD or Arrow Keys
+  m_Text: 'Quiet Walk: Wasd or Arrow Keys
+
+    <color=maroon>Noisy</color> RUN: Hold
+    Shift
+
+    <color=green>"Gassy"</color> DASH: Press Space
+
+    Goal: Collect
+    all <color=yellow>4 keys</color>, then go to the exit
 
 
-    Goal: Collect all 4 keys, then go to the
-    exit
-
-
-    P.s. Try to control your urges...'
+    P.s. Try to control
+    your urges...'
 --- !u!1 &4477943150596584131
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +272,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4477943150596584131}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

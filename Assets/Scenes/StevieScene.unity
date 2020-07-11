@@ -641,26 +641,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854975570}
     m_Modifications:
-    - target: {fileID: 6101890740644599634, guid: a50dce453d906b648a64bbc0f95d5b38,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b,
-        type: 2}
-    - target: {fileID: 6101890740644599634, guid: a50dce453d906b648a64bbc0f95d5b38,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101890740644599635, guid: a50dce453d906b648a64bbc0f95d5b38,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 169
-      objectReference: {fileID: 0}
     - target: {fileID: 6101890740644599635, guid: a50dce453d906b648a64bbc0f95d5b38,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 405.2
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6101890740644599635, guid: a50dce453d906b648a64bbc0f95d5b38,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 142
       objectReference: {fileID: 0}
     - target: {fileID: 6655404700507694109, guid: a50dce453d906b648a64bbc0f95d5b38,
         type: 3}
@@ -720,22 +709,22 @@ PrefabInstance:
     - target: {fileID: 6655404700507694109, guid: a50dce453d906b648a64bbc0f95d5b38,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 535.01044
       objectReference: {fileID: 0}
     - target: {fileID: 6655404700507694109, guid: a50dce453d906b648a64bbc0f95d5b38,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 193.1
       objectReference: {fileID: 0}
     - target: {fileID: 6655404700507694109, guid: a50dce453d906b648a64bbc0f95d5b38,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -1070.0364
       objectReference: {fileID: 0}
     - target: {fileID: 6655404700507694109, guid: a50dce453d906b648a64bbc0f95d5b38,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -386.16898
       objectReference: {fileID: 0}
     - target: {fileID: 6655404700507694109, guid: a50dce453d906b648a64bbc0f95d5b38,
         type: 3}
@@ -19042,6 +19031,16 @@ PrefabInstance:
       propertyPath: runningSpeed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4916836271472681534, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
+        type: 3}
+      propertyPath: dashDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545652427308757456, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6abc19ef5e39dbf489eb7b631a6bd070, type: 3}
 --- !u!1001 &1451875106
@@ -21734,6 +21733,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854975570}
     m_Modifications:
+    - target: {fileID: 4477943150197614422, guid: da4ea6fd42f3b4b4693e0683671ec8ef,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Quiet Walk: Wasd or Arrow Keys
+
+        <color=maroon>Noisy</color>
+        RUN: Hold Shift
+
+        <color=green>"Gassy"</color> DASH: Press Space
+
+        Goal:
+        Collect all <color=yellow>4 keys</color>, then go to the exit
+
+
+        P.s.
+        Try to control your urges...'
+      objectReference: {fileID: 0}
     - target: {fileID: 4477943150596584130, guid: da4ea6fd42f3b4b4693e0683671ec8ef,
         type: 3}
       propertyPath: m_LocalPosition.x
