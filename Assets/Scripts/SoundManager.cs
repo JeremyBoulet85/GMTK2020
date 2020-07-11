@@ -1,24 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public enum SoundType
 {
+    KeyCollect,
+    Ambiance,
     Footstep,
+    Hungry,
     Sneeze,
     Music,
-    Ambiance,
-    KeyCollect
+    Fart
 }
 
 public class SoundManager : MonoBehaviour
 {
+    private AudioSource audioSourceCollectKey = null;
     private AudioSource audioSourceFootstep = null;
     private AudioSource audioSourceAmbiance = null;
     private AudioSource audioSourceSneeze = null;
+    private AudioSource audioSourceHungry = null;
     private AudioSource audioSourceMusic = null;
+    private AudioSource audioSourceFart = null;
     private AudioSource audioSourceBell = null;
-    private AudioSource audioSourceCollectKey = null;
     public AudioClip footstepSound = null;
     public AudioClip sneezeSound = null;
     public AudioClip keyCollect = null;
@@ -36,7 +38,9 @@ public class SoundManager : MonoBehaviour
         audioSourceAmbiance   = gameObject.AddComponent<AudioSource>();
         audioSourceFootstep   = gameObject.AddComponent<AudioSource>();
         audioSourceSneeze     = gameObject.AddComponent<AudioSource>();
+        audioSourceHungry     = gameObject.AddComponent<AudioSource>();
         audioSourceMusic      = gameObject.AddComponent<AudioSource>();
+        audioSourceFart       = gameObject.AddComponent<AudioSource>();
         audioSourceBell       = gameObject.AddComponent<AudioSource>();
 
         timeWaitedBetweenFootstepSound = Random.Range(-0.1f, 1.5f);
@@ -75,6 +79,14 @@ public class SoundManager : MonoBehaviour
             case SoundType.Sneeze:
                 audioSourceSneeze.volume = volume;
                 audioSourceSneeze.PlayOneShot(sneezeSound);
+                break;
+            case SoundType.Hungry:
+                audioSourceHungry.volume = volume;
+                audioSourceHungry.PlayOneShot(sneezeSound);
+                break;
+            case SoundType.Fart:
+                audioSourceFart.volume = volume;
+                audioSourceFart.PlayOneShot(sneezeSound);
                 break;
             case SoundType.KeyCollect:
                 audioSourceCollectKey.volume = volume;
