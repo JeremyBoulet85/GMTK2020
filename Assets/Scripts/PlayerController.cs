@@ -118,9 +118,6 @@ public class PlayerController : MonoBehaviour
         isDashing = dashTime > 0;
         if (!isDashing) 
             dashTime = startDashTime;
-
-        print("fixed: " + Time.fixedDeltaTime);
-        print("delt: " + Time.deltaTime);
     }
 
     private void MovePosition(float effectiveSpeed, float effectiveTimeBetweenFootstepSound) 
