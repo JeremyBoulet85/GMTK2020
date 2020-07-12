@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4157582732657803424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4157582732657803430}
+  - component: {fileID: 4157582732657803425}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4157582732657803430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4157582732657803424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4157582732657803425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4157582732657803424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdf930d777a5c044386340009f1bb212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Hungry
+    clip: {fileID: 8300000, guid: 425c4c85e24c86d46bb48a2f7cdeafee, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Fart
+    clip: {fileID: 8300000, guid: a6b3b2cb7511f5d4f854329ca04540d7, type: 3}
+    volume: 0.9
+    pitch: 1
+    source: {fileID: 0}
+  - name: Sneeze
+    clip: {fileID: 8300000, guid: 85284f8d61ff8cc4e8d604c1e2ab26e0, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Footstep
+    clip: {fileID: 8300000, guid: 9be7cc8964f74d347a15ba4862c57f72, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - name: FootstepEnemy
+    clip: {fileID: 8300000, guid: 9be7cc8964f74d347a15ba4862c57f72, type: 3}
+    volume: 0.15
+    pitch: 1
+    source: {fileID: 0}
+  - name: Bell1
+    clip: {fileID: 8300000, guid: d72206b08db716544a4153b048ec4048, type: 3}
+    volume: 0.06
+    pitch: 1
+    source: {fileID: 0}
+  - name: Bell2
+    clip: {fileID: 8300000, guid: 81ac653e1fbb31349b96316d347fbd7f, type: 3}
+    volume: 0.06
+    pitch: 1
+    source: {fileID: 0}
+  - name: Ambiance
+    clip: {fileID: 8300000, guid: 2a32b675a603be64aacc995c4c29c454, type: 3}
+    volume: 0.1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Music
+    clip: {fileID: 8300000, guid: 0bf41d80d3c44a74faa1695dd71a30ac, type: 3}
+    volume: 0.06
+    pitch: 1
+    source: {fileID: 0}
+  - name: KeyCollect
+    clip: {fileID: 8300000, guid: a5eeb4f01ef780c489b4602774059f23, type: 3}
+    volume: 0.7
+    pitch: 1
+    source: {fileID: 0}
+  - name: Dash
+    clip: {fileID: 8300000, guid: bf3ab57b26260ac45a3cfc7a7ce9b616, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  madeSound: 0

@@ -48,6 +48,8 @@ public class HungerSystem : MonoBehaviour
         if (hungerLevel == maxHungerLevel)
         {
             hungerLevel = 0;
+            FindObjectOfType<AudioManager>().Play("Hungry");
+
             hungerBar.isDraining = true;
         }
 
