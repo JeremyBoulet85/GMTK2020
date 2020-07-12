@@ -94,7 +94,7 @@ Animator:
   m_GameObject: {fileID: 4959789138019095283}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30496a7636d24f844a53f774f36a9074, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
   isMale: 1
   pointA: {fileID: 0}
   pointB: {fileID: 0}
-  speed: 0.8
+  speed: 0.5
   waitTime: 2
   exclamation: {fileID: 2344749319038539405, guid: 5d35babf1a0dcef46be13329fb294ce8,
     type: 3}
