@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Sound
   - KeySpawn
-  - mode
   layers:
   - Default
   - TransparentFX
