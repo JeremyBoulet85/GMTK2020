@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float startDashTime = 0.07f;
 
     [SerializeField]
-    public float dashCooldownTime = 10.0f;
+    public float dashCooldownTime = 5.0f;
 
     private Animator animator;
     private Rigidbody2D rb;
