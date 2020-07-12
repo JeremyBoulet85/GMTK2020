@@ -93,7 +93,7 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = Array.Find(sounds, sound => sound.name == type);
 
-        s.source.time = 7.0f + UnityEngine.Random.Range(-1.0f, 1.0f);
+        s.source.time = 6.5f + UnityEngine.Random.Range(-1.0f, 1.0f);
         s.source.Play();
     }
 }

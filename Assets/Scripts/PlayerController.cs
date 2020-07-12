@@ -82,6 +82,38 @@ public class PlayerController : MonoBehaviour
         FindObjectOfType<AudioManager>().PlayAmbiance();
     }
 
+    public void EnteringZone(ZoneType zoneType)
+    {
+        switch (zoneType)
+        {
+            case ZoneType.Bathroom:
+                GetComponent<FartSystem>().EnterBathroom();
+                break;
+            case ZoneType.Alley:
+                GetComponent<SneezeSystem>().EnterAlley();
+                break;
+            case ZoneType.Cafetaria:
+                GetComponent<HungerSystem>().EnterCafetaria();
+                break;
+        }
+    }
+
+    public void ExitingZone(ZoneType zoneType)
+    {
+        switch (zoneType)
+        {
+            case ZoneType.Bathroom:
+                GetComponent<FartSystem>().ExitBathroom();
+                break;
+            case ZoneType.Alley:
+                GetComponent<SneezeSystem>().ExitAlley();
+                break;
+            case ZoneType.Cafetaria:
+                GetComponent<HungerSystem>().ExitCafetaria();
+                break;
+        }
+    }
+
     void FixedUpdate()
     {
         if (IsFrozen)
