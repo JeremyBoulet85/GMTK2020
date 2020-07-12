@@ -19,8 +19,6 @@ public class GameManager : MonoBehaviour
 
     public int StrikeCount { get; private set; } = 0;
     public int TotalStrikes { get => totalStrikes; }
-    private float timer = 0f;
-    private float maxTimer = 2f;
 
     private Transform player;
 
