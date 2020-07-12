@@ -30,7 +30,7 @@ public class TextPanels : MonoBehaviour
             m_GameStarted = true;
             m_Panels[m_currentPanelIndex].SetActive(false);
             GameManager.instance.StartGame();
-
+            GameManager.instance.IsInstructionPannelShown = false;
             return;
         }
 

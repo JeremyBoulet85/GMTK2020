@@ -1,11 +1,13 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     // 60f -> 60 seconds
     private const float TOTAL_GAME_TIME = 60f;
+    private const string MENU_SCENE = "MainMenu";
 
     public static GameManager instance = null;
 
@@ -17,10 +19,12 @@ public class GameManager : MonoBehaviour
 
     public bool Finished { get; private set; } = false;
     public bool IsGameOver { get; private set; } = false;
+    public bool IsGamePaused { get; private set; } = false;
     public int CurrentKeys { get; private set; } = 0;
     public int TotalKeys { get => totalKeys; }
     public int StrikeCount { get; private set; } = 0;
     public int TotalStrikes { get => totalStrikes; }
+    public bool IsInstructionPannelShown { get; set; } = true;
 
     public bool IsHardMode { get; set; } = false;
 
@@ -28,6 +32,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject keyPrefab;
 
+    private GameObject pauseMenu;
     private GameObject m_Player;
     private Transform m_PlayerSpawnTransform;
     private Transform m_GameOverSpawnTransform;
@@ -60,6 +65,14 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P)) && !IsInstructionPannelShown)
+        {
+            if (IsGamePaused)
+                Resume();
+            else
+                Pause();
+        }
+
         if (showGameOverPanel)
         {
             gameOverTimer += Time.deltaTime;
@@ -150,6 +163,34 @@ public class GameManager : MonoBehaviour
     {
         ++CurrentKeys;
         Finished = CurrentKeys == totalKeys;
+    }
+
+    public void Resume()
+    {
+        pauseMenu = GameObject.Find("HudCanvas").transform.Find("PauseMenu").gameObject;
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+        IsGamePaused = false;
+    }
+
+    public void LoadMenu()
+    {
+        IsInstructionPannelShown = true;
+        SceneManager.LoadScene(MENU_SCENE);
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit!");
+        Application.Quit();
+    }
+
+    private void Pause()
+    {
+        pauseMenu = GameObject.Find("HudCanvas").transform.Find("PauseMenu").gameObject;
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0f;
+        IsGamePaused = true;
     }
 
     private void ShowEndPanel(string titleText, string contentText)
