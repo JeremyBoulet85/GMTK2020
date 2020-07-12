@@ -31,11 +31,12 @@ public class PlayerController : MonoBehaviour
     private float dashCooldown = 0.0f;
     private bool isDashing = false;
 
+    public GameObject circle = null;
 
     private void Start()
     {
-        animator     = GetComponent<Animator>();
-        rb           = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        rb       = GetComponent<Rigidbody2D>();
 
         lastPosition = transform.position;
 
