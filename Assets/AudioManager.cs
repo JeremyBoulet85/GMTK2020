@@ -1,14 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
+    public bool madeSound = false;
 
     bool playingAmbiance = false;
     float timeWaitedBetweenBellSound = 12.0f;
     float timeWaitedBetweenFootstepSound;
+
+    List<string> playerSounds = new List<string> { "Sneeze", "Hungry", "Fart" };
 
 
     private void Awake()
@@ -45,6 +49,9 @@ public class AudioManager : MonoBehaviour
 
     public void Play(string name)
     {
+        if (playerSounds.Contains(name))
+            madeSound = true;
+
         Sound s = Array.Find(sounds, sound => sound.name == name);
 
         s.source.Play();
@@ -72,6 +79,14 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
 
         playingAmbiance = true;
+    }
+
+    public void PlayMusic()
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == "Music");
+
+        s.source.loop = true;
+        s.source.Play();
     }
 
     void PlayBell(string type)

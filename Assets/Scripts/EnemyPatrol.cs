@@ -20,7 +20,6 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField]
     float soundDetectionRadius = 5f;
 
-    private SoundManager soundManager;
     private Vector3 soundLocation;
     private float footstepSoundInterval = 0.8f;
     private float footstepSoundDistance = 10.0f;
@@ -60,7 +59,6 @@ public class EnemyPatrol : MonoBehaviour
     {
         cam = FindObjectOfType<Camera>();
         animator = GetComponent<Animator>();
-        soundManager = GetComponent<SoundManager>();
         SwitchToWalking();
     }
 
@@ -140,7 +138,7 @@ public class EnemyPatrol : MonoBehaviour
         UpdateAnimationDirection();
         if (Vector3.Distance(transform.position, player.transform.position) < footstepSoundDistance)
         {
-            soundManager.PlayFootstepSound(footstepSoundInterval, 0.15f);
+            FindObjectOfType<AudioManager>().PlayFootstepSound(true, footstepSoundInterval);
         }
         transform.Translate(speed * direction * Time.deltaTime, Space.World);
     }
@@ -305,9 +303,9 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
-        if (player.GetComponent<SoundManager>().madeSound && PointInsideSphere(player.transform.position, soundDetectionRadius))
+        if (FindObjectOfType<AudioManager>().madeSound && PointInsideSphere(player.transform.position, soundDetectionRadius))
         {
-            player.GetComponent<SoundManager>().madeSound = false;
+            FindObjectOfType<AudioManager>().madeSound = false;
             soundLocation = player.transform.position;
 
             UpdateDirection(soundLocation);
