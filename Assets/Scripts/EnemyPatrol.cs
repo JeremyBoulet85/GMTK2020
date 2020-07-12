@@ -23,7 +23,7 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField]
     GameObject interrogation = null;
 
-    private float detectionRadius = 6.0f;
+    private float detectionRadius = 3.0f;
     private Vector3 soundLocation;
     private float footstepSoundInterval = 0.8f;
     private float footstepSoundDistance = 10.0f;
