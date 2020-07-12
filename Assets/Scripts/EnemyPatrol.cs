@@ -113,7 +113,7 @@ public class EnemyPatrol : MonoBehaviour
         UpdateAnimationDirection();
         if (Vector3.Distance(transform.position, player.position) < footstepSoundDistance)
         {
-            soundManager.PlayFootstepSound(footstepSoundInterval, 0.15f);
+            FindObjectOfType<AudioManager>().PlayFootstepSound(true, footstepSoundInterval);
         }
         transform.Translate(speed * direction * Time.deltaTime, Space.World);
     }

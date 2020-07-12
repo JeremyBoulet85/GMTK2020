@@ -5,7 +5,6 @@ public class SneezeSystem : MonoBehaviour
 
     public GaugeBarController sneezeBar;
 
-    SoundManager soundManager;
     int sneezeLevel;
     const int maxSneezeLevel = 100;
     const float fillingDelayAmount = 0.25f; // seconds
@@ -17,7 +16,6 @@ public class SneezeSystem : MonoBehaviour
         timer = 0;
         sneezeLevel = 0;
         sneezeBar.SetMax(maxSneezeLevel);
-        soundManager = GetComponent<SoundManager>();
     }
 
     private void FixedUpdate()
@@ -41,7 +39,7 @@ public class SneezeSystem : MonoBehaviour
 
         if (sneezeLevel >= maxSneezeLevel) { 
             sneezeLevel = 0;
-            soundManager.PlaySound(SoundType.Sneeze, 0.9f);
+            FindObjectOfType<AudioManager>().Play("Sneeze");
             sneezeBar.isDraining = true;
         }
     }

@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         soundInit = true;
         soundManager.PlaySound(SoundType.Music, 0.06f);
-        soundManager.PlaySound(SoundType.Ambiance, 0.1f);
+        FindObjectOfType<AudioManager>().PlayAmbiance();
     }
 
     void FixedUpdate()
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
         if (distanceTravelled >= 0.001f)
         {
             animator.SetFloat("Speed", effectiveSpeed);
-            soundManager.PlayFootstepSound(effectiveTimeBetweenFootstepSound);
+            FindObjectOfType<AudioManager>().PlayFootstepSound(false, effectiveTimeBetweenFootstepSound);
         } else
         {
             animator.SetFloat("Speed", 0.0f);
