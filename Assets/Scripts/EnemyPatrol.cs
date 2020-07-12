@@ -304,6 +304,7 @@ public class EnemyPatrol : MonoBehaviour
 
         if (player.GetComponent<SoundManager>().madeSound && PointInsideSphere(player.transform.position, soundDetectionRadius))
         {
+            player.GetComponent<SoundManager>().madeSound = false;
             soundLocation = player.transform.position;
 
             UpdateDirection(soundLocation);

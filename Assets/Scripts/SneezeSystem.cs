@@ -8,8 +8,6 @@ public class SneezeSystem : MonoBehaviour
     SoundManager soundManager;
     int sneezeLevel;
     bool isSneezing;
-    const int maxSneezeLevel = 50;
-    const float fillingDelayAmount = 0.05f; // seconds
     const float drainingDelayAmount = 0.01f; // seconds
     const int maxSneezeLevel = 100;
     const float fillingDelayAmount = 0.25f; // seconds

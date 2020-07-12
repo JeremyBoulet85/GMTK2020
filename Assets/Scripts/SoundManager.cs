@@ -79,17 +79,17 @@ public class SoundManager : MonoBehaviour
                 audioSourceFootstep.PlayOneShot(footstepSound);
                 break;
             case SoundType.Sneeze:
-                audioSource.volume = volume;
-                audioSource.PlayOneShot(sneezeSound);
                 madeSound = true;
                 audioSourceSneeze.volume = volume;
                 audioSourceSneeze.PlayOneShot(sneezeSound);
                 break;
             case SoundType.Hungry:
+                madeSound = true;
                 audioSourceHungry.volume = volume;
                 audioSourceHungry.PlayOneShot(sneezeSound);
                 break;
             case SoundType.Fart:
+                madeSound = true;
                 audioSourceFart.volume = volume;
                 audioSourceFart.PlayOneShot(sneezeSound);
                 break;
@@ -121,20 +121,6 @@ public class SoundManager : MonoBehaviour
         {
             timeWaitedBetweenFootstepSound = 0.0f;
             PlaySound(SoundType.Footstep, volume);
-        }
-    }
-
-    private void Update()
-    {
-        if (madeSound)
-        {
-            timer += Time.deltaTime;
-
-            if (timer >= 1f)
-            {
-                madeSound = false;
-                timer = 0f;
-            }
         }
     }
 }
