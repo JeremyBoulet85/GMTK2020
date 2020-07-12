@@ -56540,6 +56540,11 @@ PrefabInstance:
       propertyPath: fartBar
       value: 
       objectReference: {fileID: 808878268}
+    - target: {fileID: 2320935051264273978, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3087624371309693272, guid: 6abc19ef5e39dbf489eb7b631a6bd070,
         type: 3}
       propertyPath: hungerBar
