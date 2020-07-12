@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
             if (gameOverTimer > 3.5f)
             {
                 gameOverTimer = 0f;
-                ShowEndPanel("You lost!", "Your noisy urges were out of control. Time to get lectured by the principal.");
+                ShowEndPanel("You lost!", "Your noisy impulses were out of control.\nTime to get lectured by the principal.");
                 showGameOverPanel = false;
             }
             if (principalTimer > 0.3f)
@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
         if (CurrentKeys == TotalKeys)
         {
             FreezeGame();
-            ShowEndPanel("You won!", "You kept your noisy urges under control and sneaked out of school.");
+            ShowEndPanel("You won!", "You kept your noisy impulses under control\nand sneaked out of school.");
         }
     }
 
@@ -154,7 +154,7 @@ public class GameManager : MonoBehaviour
 
     private void ShowEndPanel(string titleText, string contentText)
     {
-        var endPanel = GameObject.Find("HudCanvas").transform.Find("EndPanel").gameObject;
+        var endPanel = GameObject.Find("HudCanvas").transform.Find("TextPanelContainer").transform.Find("EndPanel").gameObject;
         var title = endPanel.transform.Find("Title").gameObject.GetComponent<Text>();
         title.text = titleText;
         var content = endPanel.transform.Find("ContentText").gameObject.GetComponent<Text>();
