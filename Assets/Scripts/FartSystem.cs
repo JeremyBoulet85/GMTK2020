@@ -4,7 +4,6 @@ public class FartSystem : MonoBehaviour
 {
     public GaugeBarController fartBar;
 
-    SoundManager soundManager;
     float fartLevel;
     const int maxFartLevel = 100;
     const float fillingDelayAmount = 0.25f; // seconds
@@ -16,7 +15,6 @@ public class FartSystem : MonoBehaviour
         timer = 0;
         fartLevel = 0f;
         fartBar.SetMax(maxFartLevel);
-        soundManager = GetComponent<SoundManager>();
     }
 
     private void FixedUpdate()
@@ -41,7 +39,7 @@ public class FartSystem : MonoBehaviour
         if (fartLevel >= maxFartLevel)
         {
             fartLevel = 0;
-            //soundManager.PlaySound(SoundType.Sneeze, 0.9f);
+            FindObjectOfType<AudioManager>().Play("Fart");
             fartBar.isDraining = true;
         }
     }
