@@ -114,4 +114,9 @@ MonoBehaviour:
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
+  - name: UIclick
+    clip: {fileID: 8300000, guid: bad39feb813c44948b37314c20bdaf46, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
   madeSound: 0
