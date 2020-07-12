@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -120,9 +121,12 @@ public class GameManager : MonoBehaviour
         m_GameOverSpawnTransform = GameObject.Find("GameOverSpawn").transform;
 
         var spawns = GameObject.FindGameObjectsWithTag("KeySpawn");
-        foreach (var spawn in spawns)
+
+        List<int> usedIndexes = new List<int>();
+        for (int i = 0; i < 4; i++) 
         {
-            Instantiate(keyPrefab, spawn.transform);
+            int rndIndex = GenerateNumber(spawns.Length);
+            Instantiate(keyPrefab, spawns[rndIndex].transform);
         }
 
         m_Player.GetComponent<PlayerController>().enabled = true;
@@ -174,5 +178,10 @@ public class GameManager : MonoBehaviour
     {
         startHardModeTimer = false;
         hardModeTimer = TOTAL_GAME_TIME;
+    }
+
+    private int GenerateNumber(int size) 
+    {
+        return Random.Range(0, size - 1);
     }
 }
