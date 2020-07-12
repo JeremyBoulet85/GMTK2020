@@ -72,6 +72,7 @@ public class PlayerController : MonoBehaviour
 
         if (isSneezing)
         {
+            rb.velocity = new Vector3(0.0f, 0.0f, 0.0f);
             return;
         }
 

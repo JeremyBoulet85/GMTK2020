@@ -18,6 +18,9 @@ public class EnemyPatrol : MonoBehaviour
     GameObject exclamation = null;
 
     [SerializeField]
+    GameObject interrogation = null;
+
+    [SerializeField]
     float soundDetectionRadius = 5f;
 
     private Vector3 soundLocation;
@@ -42,22 +45,19 @@ public class EnemyPatrol : MonoBehaviour
     private float waitTimer = 0f;
     private float foundTimer = 0f;
     private GameObject player;
-    private GameObject exclamationInstance = null;
-    private Canvas canvas;
-    private Camera cam;
+    private GameObject reactionInstance = null;
+
     private Vector3[] directions = { new Vector3(-1, 0, 0), new Vector3(0, 1, 0), new Vector3(1, 0, 0), new Vector3(0, -1, 0) };
     private int lookAroundCounter = 0;
     private float lookAroundTime = 1.5f;
 
     void Awake()
     {
-        canvas = FindObjectOfType<Canvas>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Start()
     {
-        cam = FindObjectOfType<Camera>();
         animator = GetComponent<Animator>();
         SwitchToWalking();
     }
@@ -152,20 +152,13 @@ public class EnemyPatrol : MonoBehaviour
         {
             UpdateDirection(player.transform.position);
 
-            if (canvas != null)
-            {
-                exclamationInstance = Instantiate(exclamation, canvas.transform);
-                exclamationInstance.transform.position = cam.WorldToScreenPoint(new Vector2(transform.position.x, transform.position.y + 1.7f));
-            }
+            InstantiateReaction(exclamation);
         }
 
         foundTimer += Time.deltaTime;
         if (foundTimer > waitTime)
         {
-            if (exclamationInstance != null)
-            {
-                Destroy(exclamationInstance);
-            }
+            DestroyReaction();
             foundTimer = 0f;
 
             state = PatrolState.CaughtPlayer;
@@ -186,19 +179,54 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.Investigating)
             return;
 
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position);
-        if (hit.collider != null && hit.collider.CompareTag("Player"))
+        if (foundTimer == 0)
         {
-            state = PatrolState.FoundPlayer;
+            UpdateDirection(player.transform.position);
+
+            InstantiateReaction(interrogation);
         }
-        else if (hit.collider == null)
+            
+        foundTimer += Time.deltaTime;
+        if (foundTimer > 1.5f)
         {
-            state = PatrolState.Chase;
+            foundTimer = 0f;
+            DestroyReaction();
+
+            RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position);
+            if (hit.collider != null && hit.collider.CompareTag("Player"))
+            {
+                state = PatrolState.FoundPlayer;
+            }
+            else if (hit.collider == null)
+            {
+                state = PatrolState.Chase;
+            }
+            else
+            {
+                state = PatrolState.LookAround;
+            }
         }
-        else
+    }
+
+    private void InstantiateReaction(GameObject reaction)
+    {
+        DestroyReaction();
+        reactionInstance = Instantiate(reaction, gameObject.transform);
+        reactionInstance.transform.position = new Vector2(transform.position.x, transform.position.y + 1.5f);
+    }
+
+    private void DestroyReaction()
+    {
+        if (reactionInstance != null)
         {
-            state = PatrolState.LookAround;
+            Destroy(reactionInstance);
         }
+    }
+
+    private void ResetTimers()
+    {
+        foundTimer = 0f;
+        waitTimer = 0f;
     }
 
     private void Chase()
@@ -279,6 +307,7 @@ public class EnemyPatrol : MonoBehaviour
 
         if (PointInsideSphere(player.transform.position, 8f) && IsInsideVisionCone() && CanSeePlayer())
         {
+            ResetTimers();
             state = PatrolState.FoundPlayer;
         }
     }
@@ -305,6 +334,7 @@ public class EnemyPatrol : MonoBehaviour
 
         if (FindObjectOfType<AudioManager>().madeSound && PointInsideSphere(player.transform.position, soundDetectionRadius))
         {
+            ResetTimers();
             FindObjectOfType<AudioManager>().madeSound = false;
             soundLocation = player.transform.position;
 
