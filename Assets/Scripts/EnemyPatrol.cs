@@ -107,17 +107,17 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.Waiting)
             return;
 
-        LookAround();
+        //LookAround();
 
         // Code if we want to just stop:
-        //animator.SetFloat("Speed", 0.0f);
+        animator.SetFloat("Speed", 0.0f);
 
-        //waitTimer += Time.deltaTime;
-        //if (waitTimer > waitTime)
-        //{
-        //    waitTimer = 0f;
-        //    SwitchToWalking();
-        //}
+        waitTimer += Time.deltaTime;
+        if (waitTimer > waitTime)
+        {
+            waitTimer = 0f;
+            SwitchToWalking();
+        }
     }
 
     private void Walk()
@@ -259,7 +259,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void LookAround()
     {
-        if (state != PatrolState.LookAround && state != PatrolState.Waiting)
+        if (state != PatrolState.LookAround)
             return;
 
         waitTimer += Time.deltaTime;
