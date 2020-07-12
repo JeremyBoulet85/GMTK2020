@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
     private Vector3 lastDirection;
     private bool isSneezing = false;
     private Vector3 fartPos;
-
     private float dashTime;
     private float dashCooldown = 0.0f;
     private bool isDashing = false;
@@ -40,6 +39,8 @@ public class PlayerController : MonoBehaviour
         rb       = GetComponent<Rigidbody2D>();
 
         lastPosition = transform.position;
+        circle.transform.localScale = new Vector3(10, 10, 2);
+        circle.transform.localPosition = new Vector3(0, -6, 1);
 
         dashTime = startDashTime;
     }
