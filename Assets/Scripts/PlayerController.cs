@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public float dashCooldownTime = 5.0f;
 
+    public GameObject fart = null;
+
     public bool IsFrozen { get; private set; } = false;
     private Animator animator;
     private Rigidbody2D rb;
@@ -124,6 +126,9 @@ public class PlayerController : MonoBehaviour
 
     private void Dash() 
     {
+        if (!isDashing)
+            Instantiate(fart, transform.parent);
+
         FindObjectOfType<AudioManager>().Play("Dash");
         rb.velocity = lastDirection * dashSpeed;
         dashTime -= Time.fixedDeltaTime;
