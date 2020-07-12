@@ -36,8 +36,7 @@ public class EnemyPatrol : MonoBehaviour
         FoundPlayer,
         StrikePlayer,
         Investigating,
-        LookAround,
-        Chase
+        LookAround
     }
 
     private PatrolState state;
@@ -98,9 +97,6 @@ public class EnemyPatrol : MonoBehaviour
         {
             case PatrolState.Walking:
                 Walk();
-                break;
-            case PatrolState.Chase:
-                Chase();
                 break;
         }
         DrawCone();
@@ -211,10 +207,6 @@ public class EnemyPatrol : MonoBehaviour
             {
                 state = PatrolState.FoundPlayer;
             }
-            else if (hit.collider == null)
-            {
-                state = PatrolState.Chase;
-            }
             else
             {
                 state = PatrolState.LookAround;
@@ -241,22 +233,6 @@ public class EnemyPatrol : MonoBehaviour
     {
         foundTimer = 0f;
         waitTimer = 0f;
-    }
-
-    private void Chase()
-    {
-        if (state != PatrolState.Chase)
-            return;
-
-        if (HasReachedTarget(soundLocation, 0.5f))
-        {
-            state = PatrolState.LookAround;
-        }
-        else
-        {
-            UpdateDirection(soundLocation);
-            MoveCharacter();
-        }
     }
 
     private void LookAround()
