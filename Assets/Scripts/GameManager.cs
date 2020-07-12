@@ -75,9 +75,13 @@ public class GameManager : MonoBehaviour
 
         if (showGameOverPanel)
         {
+            if (gameOverTimer == 0)
+            {
+                FindObjectOfType<AudioManager>().Play("PrincipalAngry");
+            }
             gameOverTimer += Time.deltaTime;
             principalTimer += Time.deltaTime;
-
+            
             if (gameOverTimer > 3.5f)
             {
                 gameOverTimer = 0f;
