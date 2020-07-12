@@ -23255,7 +23255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 266.58255, y: 135.40479}
   m_Pivot: {x: 1, y: 0}
 --- !u!1 &886065989
@@ -41425,6 +41425,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82cb95ea9dd10cd4b9feab17371becfe, type: 3}
+--- !u!114 &1090998718 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 350541041728772497, guid: 97833093b1dc853489a57a5bb2abbd67,
+    type: 3}
+  m_PrefabInstance: {fileID: 662445528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d988616c6ef9b82449ed7e29869249ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1091064305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57423,7 +57435,7 @@ PrefabInstance:
         type: 3}
       propertyPath: staminaBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1090998718}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6abc19ef5e39dbf489eb7b631a6bd070, type: 3}
 --- !u!4 &1446009792 stripped
