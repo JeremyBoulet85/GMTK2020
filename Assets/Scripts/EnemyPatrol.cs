@@ -23,7 +23,7 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField]
     GameObject interrogation = null;
 
-    private float soundDetectionRadius = 6.0f;
+    private float detectionRadius = 6.0f;
     private Vector3 soundLocation;
     private float footstepSoundInterval = 0.8f;
     private float footstepSoundDistance = 10.0f;
@@ -319,7 +319,7 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
-        if (PointInsideSphere(player.transform.position, 8f) && IsInsideVisionCone() && CanSeePlayer())
+        if (PointInsideSphere(player.transform.position, detectionRadius) && IsInsideVisionCone() && CanSeePlayer())
         {
             ResetTimers();
             state = PatrolState.FoundPlayer;
@@ -346,7 +346,7 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
-        if (FindObjectOfType<AudioManager>().madeSound && PointInsideSphere(player.transform.position, soundDetectionRadius))
+        if (FindObjectOfType<AudioManager>().madeSound && PointInsideSphere(player.transform.position, detectionRadius))
         {
             ResetTimers();
             FindObjectOfType<AudioManager>().madeSound = false;
