@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
     float timeWaitedBetweenBellSound = 12.0f;
     float timeWaitedBetweenFootstepSound;
 
-    List<string> playerSounds = new List<string> { "Sneeze", "Hungry", "Fart" };
+    List<string> playerSounds = new List<string> { "Sneeze", "Hungry", "Fart", "Dash"};
 
 
     private void Awake()
