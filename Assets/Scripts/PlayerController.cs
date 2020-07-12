@@ -107,6 +107,7 @@ public class PlayerController : MonoBehaviour
 
     private void Dash() 
     {
+        FindObjectOfType<AudioManager>().Play("Dash");
         rb.velocity = lastDirection * dashSpeed;
         dashTime -= Time.fixedDeltaTime;
 

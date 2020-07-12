@@ -8,7 +8,8 @@ public enum SoundType
     Hungry,
     Sneeze,
     Music,
-    Fart
+    Fart,
+    Dash
 }
 
 public class SoundManager : MonoBehaviour
