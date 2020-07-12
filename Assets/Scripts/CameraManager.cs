@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    public float maxX;
-    public float maxY;
-    public float minX;
-    public float minY;
+    public float maxX = 1000.0f;
+    public float maxY = 1000.0f;
+    public float minX = -1000.0f;
+    public float minY = -1000.0f;
 
     private Camera cam = null;
     private Transform playerTransform = null;
