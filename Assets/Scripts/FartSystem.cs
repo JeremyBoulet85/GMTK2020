@@ -7,6 +7,7 @@ public class FartSystem : MonoBehaviour
     float fartLevel;
     const int maxFartLevel = 100;
     const float fillingDelayAmount = 0.25f; // seconds
+    private PlayerController player;
 
     protected float timer;
 
@@ -20,6 +21,11 @@ public class FartSystem : MonoBehaviour
     private void FixedUpdate()
     {
         timer += Time.deltaTime;
+    }
+
+    void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     void Update()
@@ -40,6 +46,7 @@ public class FartSystem : MonoBehaviour
         {
             fartLevel = 0;
             FindObjectOfType<AudioManager>().Play("Fart");
+            (player as PlayerController).Sneeze();
             fartBar.isDraining = true;
         }
     }
