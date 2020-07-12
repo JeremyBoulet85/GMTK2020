@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public float dashCooldownTime = 5.0f;
 
     public GameObject fart = null;
+    public bool isRunning = false;
 
     public bool IsFrozen { get; private set; } = false;
     private Animator animator;
@@ -27,11 +28,9 @@ public class PlayerController : MonoBehaviour
     private Vector3 lastDirection;
     private bool isSneezing = false;
     private Vector3 fartPos;
-
     private float dashTime;
     private float dashCooldown = 0.0f;
     private bool isDashing = false;
-
     public GameObject circle = null;
 
     private void Start()
@@ -40,6 +39,8 @@ public class PlayerController : MonoBehaviour
         rb       = GetComponent<Rigidbody2D>();
 
         lastPosition = transform.position;
+        circle.transform.localScale = new Vector3(9, 9, 2);
+        circle.transform.localPosition = new Vector3(0, -6, 1);
 
         dashTime = startDashTime;
     }
@@ -135,11 +136,16 @@ public class PlayerController : MonoBehaviour
         float effectiveTimeBetweenFootstepSound = timeBetweenFootstepSound;
 
         if (Input.GetKey(KeyCode.LeftShift)) {
+            isRunning = true;
+            circle.GetComponent<Animator>().SetBool("makingSound", true);
             animator.speed = 2.0f;
             effectiveSpeed = runningSpeed;
             effectiveTimeBetweenFootstepSound = timeBetweenFootstepSound / 2.0f;
         } else
         {
+            isRunning = false;
+            circle.GetComponent<Animator>().SetBool("makingSound", false);
+
             animator.speed = 1.0f;
         }
 
