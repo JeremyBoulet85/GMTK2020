@@ -23,7 +23,7 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField]
     GameObject interrogation = null;
 
-    private float detectionRadius = 6.0f;
+    private float detectionRadius = 3.0f;
     private Vector3 soundLocation;
     private float footstepSoundInterval = 0.8f;
     private float footstepSoundDistance = 10.0f;
@@ -67,7 +67,6 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Update()
     {
-        DrawCone();
         SeePlayer();
         HearPlayerSound();
         switch (state)
@@ -88,12 +87,11 @@ public class EnemyPatrol : MonoBehaviour
                 StrikePlayer();
                 break;
         }
+        DrawCone();
     }
 
     private void FixedUpdate()
     {
-        DrawCone();
-
         SeePlayer();
         HearPlayerSound();
         switch (state)
@@ -105,14 +103,13 @@ public class EnemyPatrol : MonoBehaviour
                 Chase();
                 break;
         }
+        DrawCone();
     }
 
     private void Wait()
     {
         if (state != PatrolState.Waiting)
             return;
-
-        //LookAround();
 
         // Code if we want to just stop:
         animator.SetFloat("Speed", 0.0f);
@@ -275,6 +272,8 @@ public class EnemyPatrol : MonoBehaviour
             {
                 direction = directions[lookAroundCounter];
                 UpdateAnimationDirection();
+                animator.SetFloat("Speed", 0.0f);
+
                 lookAroundCounter++;
             }
             else
@@ -416,5 +415,6 @@ public class EnemyPatrol : MonoBehaviour
             animator.SetFloat("Horizontal", direction.x);
             animator.SetFloat("Vertical", direction.y);
         }
+        DrawCone();
     }
 }
