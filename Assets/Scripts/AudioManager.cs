@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
     public bool madeSound = false;
+    public AudioMixer mixer;
 
     bool playingAmbiance = false;
     float timeWaitedBetweenBellSound = 12.0f;
@@ -21,6 +22,23 @@ public class AudioManager : MonoBehaviour
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
+
+            switch (s.mixerGroup)
+            {
+                case "Music":
+                    s.source.outputAudioMixerGroup = mixer.FindMatchingGroups("Master/Music")[0];
+                    break;
+                case "Ambiant":
+                    s.source.outputAudioMixerGroup = mixer.FindMatchingGroups("Master/Ambiant")[0];
+                    break;
+                case "SoundEffect":
+                    s.source.outputAudioMixerGroup = mixer.FindMatchingGroups("Master/SoundEffect")[0];
+                    break;
+                default:
+                    s.source.outputAudioMixerGroup = mixer.FindMatchingGroups("Master")[0];
+                    break;
+
+            }
 
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
@@ -45,6 +63,26 @@ public class AudioManager : MonoBehaviour
                     PlayBell("Bell2");
             }
         }
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        mixer.SetFloat("volume", volume);
+    }
+
+    public void SetAmbiantVolume(float volume)
+    {
+        mixer.SetFloat("Ambiant", volume);
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        mixer.SetFloat("Music", volume);
+    }
+
+    public void SetSoundEffectVolume(float volume)
+    {
+        mixer.SetFloat("SoundEffect", volume);
     }
 
     public void Play(string name)

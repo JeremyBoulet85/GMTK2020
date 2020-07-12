@@ -9,4 +9,19 @@ public class OptionsMenu : MonoBehaviour
     {
         mixer.SetFloat("volume", volume);
     }
+
+    public void SetAmbiantVolume(float volume)
+    {
+        mixer.SetFloat("Ambiant", volume);
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        mixer.SetFloat("Music", volume);
+    }
+
+    public void SetSoundEffectVolume(float volume)
+    {
+        mixer.SetFloat("SoundEffect", volume);
+    }
 }

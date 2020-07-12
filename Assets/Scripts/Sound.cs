@@ -4,6 +4,7 @@
 public class Sound
 {
     public string name;
+    public string mixerGroup;
 
     public AudioClip clip;
     
