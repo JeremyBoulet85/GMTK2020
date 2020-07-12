@@ -35,6 +35,11 @@ public class PlayerController : MonoBehaviour
         soundManager.PlaySound(SoundType.KeyCollect, 0.7f);
     }
 
+    public void StopWalking()
+    {
+        animator.SetFloat("Speed", 0.0f);
+    }
+
     private bool soundInit = false;
     
     private void InitSound()
