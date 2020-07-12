@@ -56,6 +56,11 @@ public class PlayerController : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("KeyCollect");
     }
 
+    public void StopWalking()
+    {
+        animator.SetFloat("Speed", 0.0f);
+    }
+
     private bool soundInit = false;
     
     private void InitSound()
