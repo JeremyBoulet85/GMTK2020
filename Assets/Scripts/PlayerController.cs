@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private SoundManager soundManager;
     private float timeBetweenFootstepSound = 0.34f;
     private Vector3 lastPosition;
+    private bool isSneezing = false;
 
     private void Start()
     {
@@ -27,7 +28,15 @@ public class PlayerController : MonoBehaviour
 
     public void Sneeze()
     {
+        isSneezing = true;
+        animator.Play("Sneeze");
         soundManager.PlaySound(SoundType.Sneeze, 0.9f);
+    }
+
+    public void SneezeFinished()
+    {
+        isSneezing = false;
+        animator.Play("Idle");
     }
     
     public void CollectKey()
@@ -48,6 +57,11 @@ public class PlayerController : MonoBehaviour
     {
         if (!soundInit)
             InitSound();
+
+        if (isSneezing)
+        {
+            return;
+        }
 
         float effectiveSpeed = normalSpeed;
         float effectiveTimeBetweenFootstepSound = timeBetweenFootstepSound;
