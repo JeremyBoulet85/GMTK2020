@@ -23,16 +23,15 @@ public class PlayerController : MonoBehaviour
     private Vector3 lastPosition;
     private Vector3 lastDirection;
     private bool isSneezing = false;
-
+    private bool lineInit = false;
     private float dashTime;
     private float dashCooldown = 0.0f;
     private bool isDashing = false;
 
-
     private void Start()
     {
-        animator     = GetComponent<Animator>();
-        rb           = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        rb       = GetComponent<Rigidbody2D>();
 
         lastPosition = transform.position;
 
@@ -67,6 +66,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!lineInit)
+        {
+            gameObject.DrawCircle(2, 0.2f, new Color(0.0f, 0.5f, 1.0f, 0.2f));
+            lineInit = true;
+        }
+
         if (!soundInit)
             InitSound();
 

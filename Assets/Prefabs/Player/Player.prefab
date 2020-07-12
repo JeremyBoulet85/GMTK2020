@@ -271,9 +271,6 @@ MonoBehaviour:
   dashSpeed: 40
   startDashTime: 0.07
   dashCooldownTime: 10
-  segments: 50
-  xradius: 5
-  yradius: 5
 --- !u!95 &4267781405554999087
 Animator:
   serializedVersion: 3
