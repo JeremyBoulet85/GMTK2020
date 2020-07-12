@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         rb       = GetComponent<Rigidbody2D>();
 
         lastPosition = transform.position;
-        circle.transform.localScale = new Vector3(10, 10, 2);
+        circle.transform.localScale = new Vector3(9, 9, 2);
         circle.transform.localPosition = new Vector3(0, -6, 1);
 
         dashTime = startDashTime;
