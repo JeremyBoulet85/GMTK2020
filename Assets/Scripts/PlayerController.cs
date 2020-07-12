@@ -46,12 +46,14 @@ public class PlayerController : MonoBehaviour
     public void Sneeze()
     {
         isSneezing = true;
+        circle.GetComponent<Animator>().SetBool("makingSound", true);
         animator.Play("Sneeze");
     }
 
     public void SneezeFinished()
     {
         isSneezing = false;
+        circle.GetComponent<Animator>().SetBool("makingSound", false);
         animator.Play("Idle");
     }
     
