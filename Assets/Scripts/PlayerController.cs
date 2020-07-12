@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour
 
         if (isSneezing)
         {
+            rb.velocity = new Vector3(0.0f, 0.0f, 0.0f);
             return;
         }
 
@@ -94,7 +95,6 @@ public class PlayerController : MonoBehaviour
 
         if (dashCooldown > 0)
             dashCooldown -= Time.fixedDeltaTime;
-        print(dashCooldown);
 
         if ((Input.GetKey(KeyCode.Space) && dashCooldown <= 0) || isDashing) 
         {
