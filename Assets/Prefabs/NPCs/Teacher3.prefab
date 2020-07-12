@@ -136,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footstepSound: {fileID: 8300000, guid: 9be7cc8964f74d347a15ba4862c57f72, type: 3}
   sneezeSound: {fileID: 8300000, guid: 85284f8d61ff8cc4e8d604c1e2ab26e0, type: 3}
+  madeSound: 0
   keyCollect: {fileID: 0}
   ambiance: {fileID: 0}
   music: {fileID: 0}
