@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     // 60f -> 60 seconds
-    private const float TOTAL_GAME_TIME = 60f;
+    private const float TOTAL_GAME_TIME = 120f;
 
     public static GameManager instance = null;
 
