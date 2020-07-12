@@ -151,6 +151,8 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.FoundPlayer)
             return;
 
+        player.GetComponent<PlayerController>().Freeze(true);
+
         if (foundTimer == 0)
         {
             GameManager.instance.GetStriked();
@@ -164,7 +166,6 @@ public class EnemyPatrol : MonoBehaviour
         {
             DestroyReaction();
             foundTimer = 0f;
-
             state = PatrolState.StrikePlayer;
         }
     }
@@ -174,9 +175,15 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.StrikePlayer)
             return;
 
-        if (GameManager.instance.ShouldRespawn)
+        player.GetComponent<PlayerController>().Freeze(true);
+
+        if (!GameManager.instance.IsGameOver)
         {
             GameManager.instance.Respawn();
+        }
+        else
+        {
+            GameManager.instance.GameOver();
         }
 
         SwitchToWalking();
@@ -283,6 +290,8 @@ public class EnemyPatrol : MonoBehaviour
     private void SwitchToWalking()
     {
         state = PatrolState.Walking;
+        player.GetComponent<PlayerController>().Freeze(false);
+
         if (currentTarget == null)
         {
             currentTarget = pointA;
