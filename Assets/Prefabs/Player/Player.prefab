@@ -242,7 +242,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 10467390011550021, guid: 91af9ca7a5c8e6748b112201db2d78dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4209804859553748388}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d65645363f1b0647851bd993b1e3e0b, type: 3}
   m_Name: 
@@ -271,9 +271,6 @@ MonoBehaviour:
   dashSpeed: 40
   startDashTime: 0.07
   dashCooldownTime: 10
-  segments: 50
-  xradius: 5
-  yradius: 5
 --- !u!95 &4267781405554999087
 Animator:
   serializedVersion: 3
@@ -351,7 +348,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4209804859553748388}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b565e2d1f10ed7e4e8d00d597a3b3878, type: 3}
   m_Name: 
@@ -364,7 +361,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4209804859553748388}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6fd3a1e07e9d834a886154475d93e37, type: 3}
   m_Name: 
@@ -378,7 +375,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4209804859553748388}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e745dcb35726947438cc430655bd387d, type: 3}
   m_Name: 

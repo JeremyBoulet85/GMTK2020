@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,18 +7,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int totalKeys = 4;
 
-    enum GameState
-    {
-        MainMenu,
-        Instruction,
-        Start,
-        End
-    }
+    [SerializeField]
+    private int totalStrikes = 3;
 
-    public int StrikeCount { get; set; }
     public bool Finished { get; private set; } = false;
+    public bool ShouldRespawn { get; private set; } = false;
     public int CurrentKeys { get; private set; } = 0;
     public int TotalKeys { get => totalKeys; }
+    public int StrikeCount { get; private set; } = 0;
+    public int TotalStrikes { get => totalStrikes; }
 
     public GameObject keyPrefab;
 
@@ -41,19 +35,13 @@ public class GameManager : MonoBehaviour
 
         //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
-
-        Debug.Log("Awake");
     }
 
-    private void Start()
+    public void Respawn()
     {
-        Debug.Log("Start");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        UpdateStrikeCount();
+        ShouldRespawn = false;
+        StrikeCount = 0;
+        m_Player.transform.position = m_PlayerSpawnTransform.position;
     }
 
     public void CheckGameWin()
@@ -78,7 +66,7 @@ public class GameManager : MonoBehaviour
         StrikeCount = 0;
 
         m_Player = GameObject.FindGameObjectWithTag("Player");
-        m_PlayerSpawnTransform = GameObject.FindGameObjectWithTag("PlayerSpawn").transform;
+        m_PlayerSpawnTransform = GameObject.Find("PlayerSpawn").transform;
         m_Player.transform.position = m_PlayerSpawnTransform.position;
 
         var spawns = GameObject.FindGameObjectsWithTag("KeySpawn");
@@ -93,13 +81,10 @@ public class GameManager : MonoBehaviour
         m_Player.GetComponent<HungerSystem>().enabled = true;
     }
 
-    void UpdateStrikeCount()
+    public void GetStriked()
     {
-        if (StrikeCount >= 3)
-        {
-            m_Player.transform.position = m_PlayerSpawnTransform.position;
-            StrikeCount = 0;
-        }
+        ++StrikeCount;
+        ShouldRespawn = StrikeCount >= TotalStrikes;
     }
 
     public void PickUpKey()
