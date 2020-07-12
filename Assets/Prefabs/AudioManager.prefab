@@ -100,7 +100,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
   - name: FemaleAngry
-    clip: {fileID: 8300000, guid: a49c0a48770132e4f8400b512874f25f, type: 3}
+    clip: {fileID: 8300000, guid: 4459c3f77de2e7d4487f876f942e0cca, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
