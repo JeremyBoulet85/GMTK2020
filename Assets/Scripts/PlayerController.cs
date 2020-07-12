@@ -130,7 +130,6 @@ public class PlayerController : MonoBehaviour
 
     private void Dash() 
     {
-        
         if (!isDashing)
         {
             fartPos = transform.position;
