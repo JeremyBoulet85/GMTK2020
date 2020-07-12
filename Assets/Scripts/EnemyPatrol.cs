@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
@@ -19,7 +16,12 @@ public class EnemyPatrol : MonoBehaviour
 
     [SerializeField]
     GameObject exclamation = null;
+
+    [SerializeField]
+    float soundDetectionRadius = 5f;
+
     private SoundManager soundManager;
+    private Vector3 soundLocation;
     private float footstepSoundInterval = 0.8f;
     private float footstepSoundDistance = 10.0f;
     private Animator animator;
@@ -29,7 +31,10 @@ public class EnemyPatrol : MonoBehaviour
         Walking,
         Waiting,
         FoundPlayer,
-        Stop
+        CaughtPlayer,
+        Investigating,
+        LookAround,
+        Chase
     }
 
     private PatrolState state;
@@ -37,15 +42,18 @@ public class EnemyPatrol : MonoBehaviour
     private Vector3 direction;
     private float waitTimer = 0f;
     private float foundTimer = 0f;
-    private Transform player;
+    private GameObject player;
     private GameObject exclamationInstance = null;
     private Canvas canvas;
     private Camera cam;
+    private Vector3[] directions = { new Vector3(-1, 0, 0), new Vector3(0, 1, 0), new Vector3(1, 0, 0), new Vector3(0, -1, 0) };
+    private int lookAroundCounter = 0;
+    private float lookAroundTime = 1.5f;
 
     void Awake()
     {
         canvas = FindObjectOfType<Canvas>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Start()
@@ -58,28 +66,39 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Update()
     {
+        SeePlayer();
+        HearPlayerSound();
         switch (state)
         {
             case PatrolState.Waiting:
                 Wait();
-                DetectPlayer();
+                break;
+            case PatrolState.Investigating:
+                Investigate();
+                break;
+            case PatrolState.LookAround:
+                LookAround();
                 break;
             case PatrolState.FoundPlayer:
                 FoundPlayer();
                 break;
-            case PatrolState.Stop:
-                Stop();
+            case PatrolState.CaughtPlayer:
+                StrikePlayer();
                 break;
         }
     }
 
     private void FixedUpdate()
     {
+        SeePlayer();
+        HearPlayerSound();
         switch (state)
         {
             case PatrolState.Walking:
-                DetectPlayer();
                 Walk();
+                break;
+            case PatrolState.Chase:
+                Chase();
                 break;
         }
     }
@@ -89,14 +108,17 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.Waiting)
             return;
 
-        animator.SetFloat("Speed", 0.0f);
+        LookAround();
 
-        waitTimer += Time.deltaTime;
-        if (waitTimer > waitTime)
-        {
-            waitTimer = 0f;
-            SwitchToWalking();
-        }
+        // Code if we want to just stop:
+        //animator.SetFloat("Speed", 0.0f);
+
+        //waitTimer += Time.deltaTime;
+        //if (waitTimer > waitTime)
+        //{
+        //    waitTimer = 0f;
+        //    SwitchToWalking();
+        //}
     }
 
     private void Walk()
@@ -110,22 +132,17 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
+        MoveCharacter();
+    }
+
+    private void MoveCharacter()
+    {
         UpdateAnimationDirection();
-        if (Vector3.Distance(transform.position, player.position) < footstepSoundDistance)
+        if (Vector3.Distance(transform.position, player.transform.position) < footstepSoundDistance)
         {
             soundManager.PlayFootstepSound(footstepSoundInterval, 0.15f);
         }
         transform.Translate(speed * direction * Time.deltaTime, Space.World);
-    }
-
-    private void DetectPlayer()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized);
-        Debug.DrawRay(transform.position, direction * 1000);
-        if (hit.collider != null && hit.transform.tag == "Player")
-        {
-            state = PatrolState.FoundPlayer;
-        }
     }
 
     private void FoundPlayer()
@@ -133,13 +150,10 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.FoundPlayer)
             return;
 
-        UpdateDirection(player.position);
-        UpdateAnimationDirection();
-
-        animator.SetFloat("Speed", 0.0f);
-
         if (foundTimer == 0)
         {
+            UpdateDirection(player.transform.position);
+
             if (canvas != null)
             {
                 exclamationInstance = Instantiate(exclamation, canvas.transform);
@@ -156,17 +170,76 @@ public class EnemyPatrol : MonoBehaviour
             }
             foundTimer = 0f;
 
-            state = PatrolState.Stop;
+            state = PatrolState.CaughtPlayer;
         }
     }
 
-    private void Stop()
+    private void StrikePlayer()
     {
-        if (state != PatrolState.Stop)
+        if (state != PatrolState.CaughtPlayer)
             return;
 
         GameManager.instance.StrikeCount++;
         SwitchToWalking();
+    }
+
+    private void Investigate()
+    {
+        if (state != PatrolState.Investigating)
+            return;
+
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position);
+        if (hit.collider != null && hit.collider.CompareTag("Player"))
+        {
+            state = PatrolState.FoundPlayer;
+        }
+        else if (hit.collider == null)
+        {
+            state = PatrolState.Chase;
+        }
+        else
+        {
+            state = PatrolState.LookAround;
+        }
+    }
+
+    private void Chase()
+    {
+        if (state != PatrolState.Chase)
+            return;
+
+        if (HasReachedTarget(soundLocation, 0.5f))
+        {
+            state = PatrolState.LookAround;
+        }
+        else
+        {
+            UpdateDirection(soundLocation);
+            MoveCharacter();
+        }
+    }
+
+    private void LookAround()
+    {
+        if (state != PatrolState.LookAround && state != PatrolState.Waiting)
+            return;
+
+        waitTimer += Time.deltaTime;
+        if (waitTimer > lookAroundTime)
+        {
+            waitTimer = 0f;
+            if (lookAroundCounter < 4)
+            {
+                direction = directions[lookAroundCounter];
+                UpdateAnimationDirection();
+                lookAroundCounter++;
+            }
+            else
+            {
+                lookAroundCounter = 0;
+                SwitchToWalking();
+            }
+        }
     }
 
     private void SwitchToWaiting()
@@ -186,7 +259,6 @@ public class EnemyPatrol : MonoBehaviour
             currentTarget = currentTarget.Equals(pointA) ? pointB : pointA;
         }
         UpdateDirection(currentTarget.position);
-        UpdateAnimationDirection();
     }
 
     private bool HasReachedTarget(Vector3 target, float distance)
@@ -197,14 +269,68 @@ public class EnemyPatrol : MonoBehaviour
     private void UpdateDirection(Vector3 target)
     {
         direction = (target - transform.position).normalized;
+        UpdateAnimationDirection();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void SeePlayer()
     {
-        if (state == PatrolState.Walking && !collision.collider.CompareTag("Player"))
+        if (state == PatrolState.FoundPlayer || state == PatrolState.CaughtPlayer)
         {
-            SwitchToWaiting();
+            return;
         }
+
+        if (PointInsideSphere(player.transform.position, 8f) && IsInsideVisionCone() && CanSeePlayer())
+        {
+            state = PatrolState.FoundPlayer;
+        }
+    }
+
+    private bool PointInsideSphere(Vector2 point, float radius)
+    {
+        return Vector2.Distance(point, transform.position) < radius;
+    }
+
+    private bool IsInsideVisionCone()
+    {
+        Vector2 targetDir = player.transform.position - transform.position;
+        Vector2 forward = direction.normalized;
+        
+        return Vector2.Angle(targetDir, forward) < 10f;
+    }
+
+    private void HearPlayerSound()
+    {
+        if (state == PatrolState.FoundPlayer || state == PatrolState.CaughtPlayer)
+        {
+            return;
+        }
+
+        if (player.GetComponent<SoundManager>().madeSound && PointInsideSphere(player.transform.position, soundDetectionRadius))
+        {
+            player.GetComponent<SoundManager>().madeSound = false;
+            soundLocation = player.transform.position;
+
+            UpdateDirection(soundLocation);
+            if (CanSeePlayer())
+            {
+                state = PatrolState.FoundPlayer;
+            }
+            else
+            {
+                state = PatrolState.Investigating;
+            }
+        }
+    }
+
+    private bool CanSeePlayer()
+    {
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position);
+        if (hit.collider != null && hit.collider.CompareTag("Player"))
+        {
+            return true;
+
+        }
+        return hit.collider == null;
     }
 
     private void UpdateAnimationDirection()

@@ -30,6 +30,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip bell2 = null;
     private bool playingAmbiance = false;
     private float timeWaitedBetweenFootstepSound;
+    public bool madeSound = false;
+    protected float timer;
     private float timeWaitedBetweenBellSound = 12.0f;
 
     public void Start()
@@ -77,14 +79,17 @@ public class SoundManager : MonoBehaviour
                 audioSourceFootstep.PlayOneShot(footstepSound);
                 break;
             case SoundType.Sneeze:
+                madeSound = true;
                 audioSourceSneeze.volume = volume;
                 audioSourceSneeze.PlayOneShot(sneezeSound);
                 break;
             case SoundType.Hungry:
+                madeSound = true;
                 audioSourceHungry.volume = volume;
                 audioSourceHungry.PlayOneShot(sneezeSound);
                 break;
             case SoundType.Fart:
+                madeSound = true;
                 audioSourceFart.volume = volume;
                 audioSourceFart.PlayOneShot(sneezeSound);
                 break;

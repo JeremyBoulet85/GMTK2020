@@ -10,11 +10,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float runningSpeed = 8.0f;
 
+    [SerializeField]
+    public float dashSpeed = 40.0f;
+
     private Animator animator;
     private Rigidbody2D rb;
     private SoundManager soundManager;
     private float timeBetweenFootstepSound = 0.34f;
     private Vector3 lastPosition;
+    private bool isSneezing = false;
 
     private void Start()
     {
@@ -27,7 +31,15 @@ public class PlayerController : MonoBehaviour
 
     public void Sneeze()
     {
+        isSneezing = true;
+        animator.Play("Sneeze");
         soundManager.PlaySound(SoundType.Sneeze, 0.9f);
+    }
+
+    public void SneezeFinished()
+    {
+        isSneezing = false;
+        animator.Play("Idle");
     }
     
     public void CollectKey()
@@ -49,6 +61,11 @@ public class PlayerController : MonoBehaviour
         if (!soundInit)
             InitSound();
 
+        if (isSneezing)
+        {
+            return;
+        }
+
         float effectiveSpeed = normalSpeed;
         float effectiveTimeBetweenFootstepSound = timeBetweenFootstepSound;
 
@@ -61,11 +78,29 @@ public class PlayerController : MonoBehaviour
             animator.speed = 1.0f;
         }
 
+        if (Input.GetKey(KeyCode.Space)) 
+        {
+            Dash();
+        }
+        else
+        {
+            MovePosition(effectiveSpeed, effectiveTimeBetweenFootstepSound);
+        }
+    }
+
+    private void Dash() 
+    {
+        print("test");
+        rb.velocity = Vector2.left * dashSpeed;
+    }
+
+    private void MovePosition(float effectiveSpeed, float effectiveTimeBetweenFootstepSound) 
+    {
         Vector3 velocity = new Vector3();
 
-        velocity.y += Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)    ? 1.0f : 0.0f;
-        velocity.x -= Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)  ? 1.0f : 0.0f;
-        velocity.y -= Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)  ? 1.0f : 0.0f;
+        velocity.y += Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) ? 1.0f : 0.0f;
+        velocity.x -= Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) ? 1.0f : 0.0f;
+        velocity.y -= Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) ? 1.0f : 0.0f;
         velocity.x += Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? 1.0f : 0.0f;
 
         if (velocity.sqrMagnitude >= 0.01f)
@@ -83,7 +118,8 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("Speed", effectiveSpeed);
             soundManager.PlayFootstepSound(effectiveTimeBetweenFootstepSound);
-        } else
+        }
+        else
         {
             animator.SetFloat("Speed", 0.0f);
         }

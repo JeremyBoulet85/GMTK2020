@@ -7,8 +7,11 @@ public class SneezeSystem : MonoBehaviour
 
     SoundManager soundManager;
     int sneezeLevel;
+    bool isSneezing;
+    const float drainingDelayAmount = 0.01f; // seconds
     const int maxSneezeLevel = 100;
     const float fillingDelayAmount = 0.25f; // seconds
+    private PlayerController player;
 
     protected float timer;
 
@@ -23,6 +26,11 @@ public class SneezeSystem : MonoBehaviour
     private void FixedUpdate()
     {
         timer += Time.deltaTime;
+    }
+
+    void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     void Update()
@@ -42,6 +50,7 @@ public class SneezeSystem : MonoBehaviour
         if (sneezeLevel >= maxSneezeLevel) { 
             sneezeLevel = 0;
             soundManager.PlaySound(SoundType.Sneeze, 0.9f);
+            (player as PlayerController).Sneeze();
             sneezeBar.isDraining = true;
         }
     }
