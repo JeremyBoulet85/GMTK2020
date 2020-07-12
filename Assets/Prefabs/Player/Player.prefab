@@ -269,7 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalSpeed: 4
   runningSpeed: 8
-  dashSpeed: 40
+  dashSpeed: 20
   startDashTime: 0.07
   dashCooldownTime: 5
   fart: {fileID: 7634866820712999341, guid: cab82f77c9341e64cb79c85ff47b7e16, type: 3}
