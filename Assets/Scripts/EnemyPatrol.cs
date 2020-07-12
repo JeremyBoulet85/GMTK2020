@@ -23,7 +23,7 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField]
     GameObject interrogation = null;
 
-    private float soundDetectionRadius = 6.0f;
+    private float detectionRadius = 6.0f;
     private Vector3 soundLocation;
     private float footstepSoundInterval = 0.8f;
     private float footstepSoundDistance = 10.0f;
@@ -107,17 +107,17 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.Waiting)
             return;
 
-        LookAround();
+        //LookAround();
 
         // Code if we want to just stop:
-        //animator.SetFloat("Speed", 0.0f);
+        animator.SetFloat("Speed", 0.0f);
 
-        //waitTimer += Time.deltaTime;
-        //if (waitTimer > waitTime)
-        //{
-        //    waitTimer = 0f;
-        //    SwitchToWalking();
-        //}
+        waitTimer += Time.deltaTime;
+        if (waitTimer > waitTime)
+        {
+            waitTimer = 0f;
+            SwitchToWalking();
+        }
     }
 
     private void Walk()
@@ -259,7 +259,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void LookAround()
     {
-        if (state != PatrolState.LookAround && state != PatrolState.Waiting)
+        if (state != PatrolState.LookAround)
             return;
 
         waitTimer += Time.deltaTime;
@@ -319,7 +319,7 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
-        if (PointInsideSphere(player.transform.position, 8f) && IsInsideVisionCone() && CanSeePlayer())
+        if (PointInsideSphere(player.transform.position, detectionRadius) && IsInsideVisionCone() && CanSeePlayer())
         {
             ResetTimers();
             state = PatrolState.FoundPlayer;
@@ -346,7 +346,7 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
-        if (FindObjectOfType<AudioManager>().madeSound && PointInsideSphere(player.transform.position, soundDetectionRadius))
+        if (FindObjectOfType<AudioManager>().madeSound && PointInsideSphere(player.transform.position, detectionRadius))
         {
             ResetTimers();
             FindObjectOfType<AudioManager>().madeSound = false;
@@ -366,7 +366,11 @@ public class EnemyPatrol : MonoBehaviour
 
     private bool CanSeePlayer()
     {
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position);
+        int layerMask = 1 << 8;
+
+        layerMask = ~layerMask;
+
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position, layerMask);
         if (hit.collider != null && hit.collider.CompareTag("Player"))
         {
             return true;
