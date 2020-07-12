@@ -79,15 +79,6 @@ public class PlayerController : MonoBehaviour
         IsFrozen = freeze;
     }
 
-    private bool soundInit = false;
-    
-    private void InitSound()
-    {
-        soundInit = true;
-        FindObjectOfType<AudioManager>().PlayMusic();
-        FindObjectOfType<AudioManager>().PlayAmbiance();
-    }
-
     public void EnteringZone(ZoneType zoneType)
     {
         switch (zoneType)
@@ -123,6 +114,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
 
+
         if (dashCooldown > 0)
         {
             dashCooldown -= Time.fixedDeltaTime;
@@ -134,9 +126,6 @@ public class PlayerController : MonoBehaviour
             StopWalking();
             return;
         }
-
-        if (!soundInit)
-            InitSound();
 
         if (isSneezing)
         {
