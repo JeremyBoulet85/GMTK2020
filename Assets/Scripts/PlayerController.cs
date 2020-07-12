@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
     private bool isDashing = false;
     public GameObject circle = null;
 
+    public GaugeBarController staminaBar;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -43,6 +45,9 @@ public class PlayerController : MonoBehaviour
         circle.transform.localPosition = new Vector3(0, -3, 1);
 
         dashTime = startDashTime;
+
+        staminaBar.SetMax((int) dashCooldownTime);
+        staminaBar.SetValue((int)dashCooldownTime);
     }
 
     public void Sneeze()
@@ -117,6 +122,13 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+
+        if (dashCooldown > 0)
+        {
+            dashCooldown -= Time.fixedDeltaTime;
+            staminaBar.IncreaseValue(Time.fixedDeltaTime);
+        }
+
         if (IsFrozen)
         {
             StopWalking();
@@ -149,9 +161,6 @@ public class PlayerController : MonoBehaviour
             animator.speed = 1.0f;
         }
 
-        if (dashCooldown > 0)
-            dashCooldown -= Time.fixedDeltaTime;
-
         if ((Input.GetKey(KeyCode.Space) && dashCooldown <= 0) || isDashing) 
         {
             if (dashCooldown != dashCooldownTime)
@@ -173,6 +182,12 @@ public class PlayerController : MonoBehaviour
             fartPos = transform.position;
             Instantiate(fart, fartPos, transform.rotation);
         }
+        else 
+        {
+            staminaBar.SetValue(0);
+        }
+
+        circle.GetComponent<Animator>().SetBool("makingSound", true);
 
         FindObjectOfType<AudioManager>().Play("Dash");
         rb.velocity = lastDirection * dashSpeed;
