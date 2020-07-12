@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     public int StrikeCount { get; private set; } = 0;
     public int TotalStrikes { get => totalStrikes; }
 
+    public bool IsHardMode { get; set; } = false;
+
     public GameObject keyPrefab;
 
     private GameObject m_Player;
