@@ -51,6 +51,7 @@ public class EnemyPatrol : MonoBehaviour
     private Vector3[] directions = { new Vector3(-1, 0, 0), new Vector3(0, 1, 0), new Vector3(1, 0, 0), new Vector3(0, -1, 0) };
     private int lookAroundCounter = 0;
     private float lookAroundTime = 1.5f;
+    private LineRenderer lineRenderer;
 
     void Awake()
     {
@@ -60,11 +61,13 @@ public class EnemyPatrol : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        lineRenderer = transform.Find("Line").GetComponent<LineRenderer>();
         SwitchToWalking();
     }
 
     private void Update()
     {
+        DrawCone();
         SeePlayer();
         HearPlayerSound();
         switch (state)
@@ -89,6 +92,8 @@ public class EnemyPatrol : MonoBehaviour
 
     private void FixedUpdate()
     {
+        DrawCone();
+
         SeePlayer();
         HearPlayerSound();
         switch (state)
@@ -333,6 +338,24 @@ public class EnemyPatrol : MonoBehaviour
         return distance < radius;
     }
 
+    public Vector2 Rotate(Vector2 v, float degrees)
+    {
+        return (Quaternion.Euler(0, 0, degrees) * v).normalized;
+    }
+
+    private void DrawCone()
+    {
+        Vector2 position = transform.localPosition;
+        Vector2 u = (direction.normalized * detectionRadius).normalized;
+        Vector2 A = Rotate(u, 10) * detectionRadius;
+        Vector2 B = Rotate(u, -10) * detectionRadius;
+
+        lineRenderer.SetPosition(0, Vector2.zero);
+        lineRenderer.SetPosition(1, A);
+        lineRenderer.SetPosition(2, B);
+        lineRenderer.SetPosition(3, Vector2.zero);
+    }
+    
     private bool IsInsideVisionCone()
     {
         Vector2 targetDir = player.transform.position - transform.position;
