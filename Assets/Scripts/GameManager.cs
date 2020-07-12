@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,20 +6,22 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private int totalKeys = 4;
+
     [SerializeField]
     private int totalStrikes = 3;
 
     public bool Finished { get; private set; } = false;
-    public bool ShouldRespawn { get; private set; } = false;
+    public bool IsGameOver { get; private set; } = false;
     public int CurrentKeys { get; private set; } = 0;
     public int TotalKeys { get => totalKeys; }
-
     public int StrikeCount { get; private set; } = 0;
     public int TotalStrikes { get => totalStrikes; }
 
-    private Transform player;
+    public GameObject keyPrefab;
 
-    public Transform startingPoint;
+    private GameObject m_Player;
+    private Transform m_PlayerSpawnTransform;
+    private Transform m_GameOverSpawnTransform;
 
     void Awake()
     {
@@ -37,21 +36,63 @@ public class GameManager : MonoBehaviour
 
         //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
-
-        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public void Respawn()
     {
-        ShouldRespawn = false;
+        m_Player.transform.position = m_PlayerSpawnTransform.position;
+    }
+
+    public void GameOver()
+    {
+        IsGameOver = false;
         StrikeCount = 0;
-        player.transform.position = startingPoint.position;
+        m_Player.transform.position = m_GameOverSpawnTransform.position;
+    }
+
+    public void CheckGameWin()
+    {
+        if (CurrentKeys == TotalKeys)
+        {
+            var pc = m_Player.GetComponent<PlayerController>();
+            pc.StopWalking();
+            pc.enabled = false;
+            m_Player.GetComponent<SneezeSystem>().enabled = false;
+            m_Player.GetComponent<FartSystem>().enabled = false;
+            m_Player.GetComponent<HungerSystem>().enabled = false;
+
+            var endPanel = GameObject.Find("HudCanvas").transform.Find("EndPanel").gameObject;
+            endPanel.SetActive(true);
+        }
+    }
+
+    public void StartGame()
+    {
+        CurrentKeys = 0;
+        StrikeCount = 0;
+
+        m_Player = GameObject.FindGameObjectWithTag("Player");
+        m_PlayerSpawnTransform = GameObject.Find("PlayerSpawn").transform;
+        m_Player.transform.position = m_PlayerSpawnTransform.position;
+
+        m_GameOverSpawnTransform = GameObject.Find("GameOverSpawn").transform;
+
+        var spawns = GameObject.FindGameObjectsWithTag("KeySpawn");
+        foreach (var spawn in spawns)
+        {
+            Instantiate(keyPrefab, spawn.transform);
+        }
+
+        m_Player.GetComponent<PlayerController>().enabled = true;
+        m_Player.GetComponent<SneezeSystem>().enabled = true;
+        m_Player.GetComponent<FartSystem>().enabled = true;
+        m_Player.GetComponent<HungerSystem>().enabled = true;
     }
 
     public void GetStriked()
     {
         ++StrikeCount;
-        ShouldRespawn = StrikeCount >= TotalStrikes;
+        IsGameOver = StrikeCount >= TotalStrikes;
     }
 
     public void PickUpKey()

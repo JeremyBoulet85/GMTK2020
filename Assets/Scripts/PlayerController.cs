@@ -15,10 +15,11 @@ public class PlayerController : MonoBehaviour
     public float startDashTime = 0.07f;
 
     [SerializeField]
-    public float dashCooldownTime = 10.0f;
+    public float dashCooldownTime = 5.0f;
 
     public GameObject fart = null;
 
+    public bool IsFrozen { get; private set; } = false;
     private Animator animator;
     private Rigidbody2D rb;
     private float timeBetweenFootstepSound = 0.34f;
@@ -58,6 +59,16 @@ public class PlayerController : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("KeyCollect");
     }
 
+    public void StopWalking()
+    {
+        animator.SetFloat("Speed", 0.0f);
+    }
+
+    public void Freeze(bool freeze)
+    {
+        IsFrozen = freeze;
+    }
+
     private bool soundInit = false;
     
     private void InitSound()
@@ -69,6 +80,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (IsFrozen)
+        {
+            StopWalking();
+            return;
+        }
+
         if (!soundInit)
             InitSound();
 

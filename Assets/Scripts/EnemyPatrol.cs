@@ -3,6 +3,9 @@
 public class EnemyPatrol : MonoBehaviour
 {
     [SerializeField]
+    bool isMale = false;
+
+    [SerializeField]
     Transform pointA = null;
 
     [SerializeField]
@@ -148,10 +151,13 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.FoundPlayer)
             return;
 
+        player.GetComponent<PlayerController>().Freeze(true);
+
         if (foundTimer == 0)
         {
             GameManager.instance.GetStriked();
             UpdateDirection(player.transform.position);
+            FindObjectOfType<AudioManager>().Play(isMale ? "MaleAngry" : "FemaleAngry");
             InstantiateReaction(exclamation);
         }
 
@@ -160,7 +166,6 @@ public class EnemyPatrol : MonoBehaviour
         {
             DestroyReaction();
             foundTimer = 0f;
-
             state = PatrolState.StrikePlayer;
         }
     }
@@ -170,9 +175,15 @@ public class EnemyPatrol : MonoBehaviour
         if (state != PatrolState.StrikePlayer)
             return;
 
-        if (GameManager.instance.ShouldRespawn)
+        player.GetComponent<PlayerController>().Freeze(true);
+
+        if (!GameManager.instance.IsGameOver)
         {
             GameManager.instance.Respawn();
+        }
+        else
+        {
+            GameManager.instance.GameOver();
         }
 
         SwitchToWalking();
@@ -186,7 +197,6 @@ public class EnemyPatrol : MonoBehaviour
         if (foundTimer == 0)
         {
             UpdateDirection(player.transform.position);
-
             InstantiateReaction(interrogation);
         }
             
@@ -280,6 +290,8 @@ public class EnemyPatrol : MonoBehaviour
     private void SwitchToWalking()
     {
         state = PatrolState.Walking;
+        player.GetComponent<PlayerController>().Freeze(false);
+
         if (currentTarget == null)
         {
             currentTarget = pointA;
