@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 lastPosition;
     private Vector3 lastDirection;
     private bool isSneezing = false;
-    private Transform fartPrevious;
+    private Vector3 fartPos;
 
     private float dashTime;
     private float dashCooldown = 0.0f;
@@ -81,14 +81,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!isDashing)
-        {
-            fartPrevious = transform;
-        } else
-        {
-            print("F");
-        }
-
         if (IsFrozen)
         {
             StopWalking();
@@ -135,11 +127,12 @@ public class PlayerController : MonoBehaviour
 
     private void Dash() 
     {
-        //Transform player = transform;
-        //player.position = new Vector3(player.position.x, player.position.y, 100);
-        print(fartPrevious.position);
+        
         if (!isDashing)
-            Instantiate(fart, fartPrevious);
+        {
+            fartPos = transform.position;
+            Instantiate(fart, fartPos, transform.rotation);
+        }
 
         FindObjectOfType<AudioManager>().Play("Dash");
         rb.velocity = lastDirection * dashSpeed;
@@ -149,7 +142,7 @@ public class PlayerController : MonoBehaviour
         if (!isDashing) 
             dashTime = startDashTime;
     }
-
+    
     private void MovePosition(float effectiveSpeed, float effectiveTimeBetweenFootstepSound) 
     {
         Vector3 velocity = new Vector3();
