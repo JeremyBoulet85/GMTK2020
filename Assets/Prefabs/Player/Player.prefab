@@ -268,6 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalSpeed: 4
   runningSpeed: 8
+  dashSpeed: 40
 --- !u!95 &4267781405554999087
 Animator:
   serializedVersion: 3
@@ -322,7 +323,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &5554519438171719550
 MonoBehaviour:
@@ -343,6 +344,7 @@ MonoBehaviour:
   music: {fileID: 8300000, guid: 0bf41d80d3c44a74faa1695dd71a30ac, type: 3}
   bell1: {fileID: 8300000, guid: d72206b08db716544a4153b048ec4048, type: 3}
   bell2: {fileID: 8300000, guid: 81ac653e1fbb31349b96316d347fbd7f, type: 3}
+  madeSound: 0
 --- !u!114 &-5603782894479208293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e745dcb35726947438cc430655bd387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fartBar: {fileID: 0}
 --- !u!1 &8978026265231983043
 GameObject:
   m_ObjectHideFlags: 0
