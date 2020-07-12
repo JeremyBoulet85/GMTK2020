@@ -272,7 +272,7 @@ MonoBehaviour:
   dashSpeed: 40
   startDashTime: 0.07
   dashCooldownTime: 5
-  fart: {fileID: 0}
+  fart: {fileID: 7634866820712999341, guid: cab82f77c9341e64cb79c85ff47b7e16, type: 3}
   circle: {fileID: 7628087503669807165}
 --- !u!95 &4267781405554999087
 Animator:

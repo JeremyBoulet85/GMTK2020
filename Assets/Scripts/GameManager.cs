@@ -18,11 +18,16 @@ public class GameManager : MonoBehaviour
     public int StrikeCount { get; private set; } = 0;
     public int TotalStrikes { get => totalStrikes; }
 
+    public bool IsHardMode { get; set; } = false;
+
     public GameObject keyPrefab;
 
     private GameObject m_Player;
     private Transform m_PlayerSpawnTransform;
     private Transform m_GameOverSpawnTransform;
+    private float gameOverTimer = 0f;
+    private float principalTimer = 0f;
+    private bool showGameOverPanel = false;
 
     void Awake()
     {
@@ -44,13 +49,35 @@ public class GameManager : MonoBehaviour
         m_Player.transform.position = m_PlayerSpawnTransform.position;
     }
 
+    void Update()
+    {
+        if (showGameOverPanel)
+        {
+            gameOverTimer += Time.deltaTime;
+            principalTimer += Time.deltaTime;
+
+            if (gameOverTimer > 3.5f)
+            {
+                gameOverTimer = 0f;
+                ShowEndPanel("You lost!", "Your noisy urges were out of control. Time to get lectured by the principal.");
+                showGameOverPanel = false;
+            }
+            if (principalTimer > 0.3f)
+            {
+                principalTimer = 0f;
+                var angryExclamations = GameObject.Find("Map").transform.Find("Principal").transform.Find("AngryPrincipal").gameObject;
+                angryExclamations.SetActive(!angryExclamations.activeSelf);
+            }
+        }
+    }
+
     public void GameOver()
     {
         IsGameOver = false;
         StrikeCount = 0;
         m_Player.transform.position = m_GameOverSpawnTransform.position;
+        showGameOverPanel = true;
         FreezeGame();
-        ShowEndPanel("You lost!", "Your noisy urges were out of control. Time to get lectured by the principal.");
     }
 
     public void CheckGameWin()
