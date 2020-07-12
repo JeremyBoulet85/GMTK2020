@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    // 60f -> 60 seconds
+    private const float TOTAL_GAME_TIME = 60f;
+
     public static GameManager instance = null;
 
     [SerializeField]
@@ -20,6 +23,8 @@ public class GameManager : MonoBehaviour
 
     public bool IsHardMode { get; set; } = false;
 
+    public float HardModeTimer { get => hardModeTimer; }
+
     public GameObject keyPrefab;
 
     private GameObject m_Player;
@@ -28,6 +33,9 @@ public class GameManager : MonoBehaviour
     private float gameOverTimer = 0f;
     private float principalTimer = 0f;
     private bool showGameOverPanel = false;
+    private float hardModeTimer = TOTAL_GAME_TIME;
+    private bool startHardModeTimer = false;
+
 
     void Awake()
     {
@@ -69,6 +77,16 @@ public class GameManager : MonoBehaviour
                 angryExclamations.SetActive(!angryExclamations.activeSelf);
             }
         }
+
+        if (startHardModeTimer)
+        {
+            if (hardModeTimer < 0)
+            {
+                GameOver();
+            }
+            hardModeTimer -= Time.deltaTime;
+            print(hardModeTimer);
+        }
     }
 
     public void GameOver()
@@ -77,6 +95,7 @@ public class GameManager : MonoBehaviour
         StrikeCount = 0;
         m_Player.transform.position = m_GameOverSpawnTransform.position;
         showGameOverPanel = true;
+        ResetHardModeTimer();
         FreezeGame();
         ShowEndPanel("You lost!", "Your noisy urges were out of control. Time to get lectured by the principal.");
     }
@@ -111,6 +130,11 @@ public class GameManager : MonoBehaviour
         m_Player.GetComponent<SneezeSystem>().enabled = true;
         m_Player.GetComponent<FartSystem>().enabled = true;
         m_Player.GetComponent<HungerSystem>().enabled = true;
+
+        if (IsHardMode) 
+        {
+            startHardModeTimer = true;
+        }
     }
 
     public void GetStriked()
@@ -144,5 +168,12 @@ public class GameManager : MonoBehaviour
         m_Player.GetComponent<SneezeSystem>().enabled = false;
         m_Player.GetComponent<FartSystem>().enabled = false;
         m_Player.GetComponent<HungerSystem>().enabled = false;
+
+    }
+
+    private void ResetHardModeTimer() 
+    {
+        startHardModeTimer = false;
+        hardModeTimer = TOTAL_GAME_TIME;
     }
 }
