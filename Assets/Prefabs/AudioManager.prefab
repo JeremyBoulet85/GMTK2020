@@ -45,71 +45,85 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Hungry
+    mixerGroup: SoundEffect
     clip: {fileID: 8300000, guid: 425c4c85e24c86d46bb48a2f7cdeafee, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
   - name: Fart
+    mixerGroup: SoundEffect
     clip: {fileID: 8300000, guid: a6b3b2cb7511f5d4f854329ca04540d7, type: 3}
     volume: 0.9
     pitch: 1
     source: {fileID: 0}
   - name: Sneeze
+    mixerGroup: SoundEffect
     clip: {fileID: 8300000, guid: 85284f8d61ff8cc4e8d604c1e2ab26e0, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
   - name: Footstep
+    mixerGroup: SoundEffect
     clip: {fileID: 8300000, guid: 9be7cc8964f74d347a15ba4862c57f72, type: 3}
     volume: 0.3
     pitch: 1
     source: {fileID: 0}
   - name: FootstepEnemy
+    mixerGroup: SoundEffect
     clip: {fileID: 8300000, guid: 9be7cc8964f74d347a15ba4862c57f72, type: 3}
     volume: 0.3
     pitch: 1
     source: {fileID: 0}
   - name: Bell1
+    mixerGroup: Ambiant
     clip: {fileID: 8300000, guid: d72206b08db716544a4153b048ec4048, type: 3}
     volume: 0.06
     pitch: 1
     source: {fileID: 0}
   - name: Bell2
+    mixerGroup: Ambiant
     clip: {fileID: 8300000, guid: 81ac653e1fbb31349b96316d347fbd7f, type: 3}
     volume: 0.06
     pitch: 1
     source: {fileID: 0}
   - name: Ambiance
+    mixerGroup: Ambiant
     clip: {fileID: 8300000, guid: 2a32b675a603be64aacc995c4c29c454, type: 3}
     volume: 0.1
     pitch: 1
     source: {fileID: 0}
   - name: Music
+    mixerGroup: Music
     clip: {fileID: 8300000, guid: 0bf41d80d3c44a74faa1695dd71a30ac, type: 3}
     volume: 0.06
     pitch: 1
     source: {fileID: 0}
   - name: KeyCollect
+    mixerGroup: SoundEffect
     clip: {fileID: 8300000, guid: a5eeb4f01ef780c489b4602774059f23, type: 3}
     volume: 0.7
     pitch: 1
     source: {fileID: 0}
   - name: Dash
+    mixerGroup: SoundEffect
     clip: {fileID: 8300000, guid: bf3ab57b26260ac45a3cfc7a7ce9b616, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: FemaleAngry
+    mixerGroup: SoundEffect
     clip: {fileID: 8300000, guid: 4459c3f77de2e7d4487f876f942e0cca, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: MaleAngry
+    mixerGroup: SoundEffect
     clip: {fileID: 8300000, guid: 4263018be014f4e4bb84c5d24ab35c8a, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: PrincipalAngry
+    mixerGroup: SoundEffect
     clip: {fileID: 8300000, guid: 278d24fa63138334d9482ecad178fc84, type: 3}
     volume: 0.5
     pitch: 1
@@ -120,3 +134,4 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
   madeSound: 0
+  mixer: {fileID: 24100000, guid: 8be7a85e216edd8469ae9b1217ae2737, type: 2}
