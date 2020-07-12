@@ -8,7 +8,7 @@ public class FartSystem : MonoBehaviour
     const int maxFartLevel = 100;
     const float fillingDelayAmount = 0.25f; // seconds
     private PlayerController player;
-
+    private bool isInBathroom = false;
     protected float timer;
 
     void Start()
@@ -37,10 +37,27 @@ public class FartSystem : MonoBehaviour
         }
     }
 
+    public void EnterBathroom()
+    {
+        isInBathroom = true;
+    }
+
+    public void ExitBathroom()
+    {
+        isInBathroom = false;
+    }
+
     void IncreaseSneezeLevel()
     {
-        fartLevel += 0.5f;
-        fartBar.IncreaseValue(0.5f);
+        if (!isInBathroom)
+        {
+            fartLevel += 0.5f;
+            fartBar.IncreaseValue(0.5f);
+        } else
+        {
+            fartLevel -= 2.0f;
+            fartBar.DecreaseValue(2.0f);
+        }
 
         if (fartLevel >= maxFartLevel)
         {

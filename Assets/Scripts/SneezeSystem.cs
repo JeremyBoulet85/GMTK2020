@@ -11,6 +11,7 @@ public class SneezeSystem : MonoBehaviour
     const int maxSneezeLevel = 100;
     const float fillingDelayAmount = 0.25f; // seconds
     private PlayerController player;
+    private bool isInAlley = false;
 
     protected float timer;
 
@@ -40,10 +41,27 @@ public class SneezeSystem : MonoBehaviour
         }
     }
 
+    public void EnterAlley()
+    {
+        isInAlley = true;
+    }
+
+    public void ExitAlley()
+    {
+        isInAlley = false;
+    }
+
     void IncreaseSneezeLevel()
     {
-        sneezeLevel += 1;
-        sneezeBar.IncreaseValue(1);
+        if (isInAlley)
+        {
+            sneezeLevel += 4;
+            sneezeBar.IncreaseValue(4);
+        } else
+        {
+            sneezeLevel += 1;
+            sneezeBar.IncreaseValue(1);
+        }
 
         if (sneezeLevel >= maxSneezeLevel) { 
             sneezeLevel = 0;
