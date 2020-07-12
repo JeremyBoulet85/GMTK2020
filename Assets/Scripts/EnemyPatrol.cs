@@ -366,7 +366,11 @@ public class EnemyPatrol : MonoBehaviour
 
     private bool CanSeePlayer()
     {
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position);
+        int layerMask = 1 << 8;
+
+        layerMask = ~layerMask;
+
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position, layerMask);
         if (hit.collider != null && hit.collider.CompareTag("Player"))
         {
             return true;
