@@ -94,4 +94,9 @@ MonoBehaviour:
     volume: 0.7
     pitch: 1
     source: {fileID: 0}
+  - name: Dash
+    clip: {fileID: 8300000, guid: bf3ab57b26260ac45a3cfc7a7ce9b616, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
   madeSound: 0
