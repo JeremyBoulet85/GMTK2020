@@ -109,4 +109,9 @@ MonoBehaviour:
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
+  - name: PrincipalAngry
+    clip: {fileID: 8300000, guid: 278d24fa63138334d9482ecad178fc84, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
   madeSound: 0
