@@ -176,6 +176,7 @@ public class GameManager : MonoBehaviour
     public void LoadMenu()
     {
         IsInstructionPannelShown = true;
+        Time.timeScale = 1f;
         SceneManager.LoadScene(MENU_SCENE);
     }
 
