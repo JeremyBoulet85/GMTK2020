@@ -789,11 +789,6 @@ PrefabInstance:
       propertyPath: pointB
       value: 
       objectReference: {fileID: 324169589}
-    - target: {fileID: 3247107699006645481, guid: e2514fbbdfdcb374da9af10992be3df4,
-        type: 3}
-      propertyPath: speed
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4959789138019095283, guid: e2514fbbdfdcb374da9af10992be3df4,
         type: 3}
       propertyPath: m_Name
