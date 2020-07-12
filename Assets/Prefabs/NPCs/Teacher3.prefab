@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7637529056115323139, guid: 6238655b412d1404eb8f63b9f2babdbf,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -118,7 +118,7 @@ MonoBehaviour:
   isMale: 1
   pointA: {fileID: 0}
   pointB: {fileID: 0}
-  speed: 1
+  speed: 0.8
   waitTime: 2
   exclamation: {fileID: 2344749319038539405, guid: 5d35babf1a0dcef46be13329fb294ce8,
     type: 3}
