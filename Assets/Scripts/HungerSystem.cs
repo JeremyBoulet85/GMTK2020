@@ -11,6 +11,7 @@ public class HungerSystem : MonoBehaviour
 
     const float scaling = 3.1f;
     const int maxHungerLevel = 100;
+    private PlayerController playerRef;
 
     void Start()
     {
@@ -26,6 +27,11 @@ public class HungerSystem : MonoBehaviour
             IncreaseHungerLevel();
 
         previousPos = player.position;
+    }
+
+    void Awake()
+    {
+        playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     void IncreaseHungerLevel()
@@ -49,7 +55,7 @@ public class HungerSystem : MonoBehaviour
         {
             hungerLevel = 0;
             FindObjectOfType<AudioManager>().Play("Hungry");
-
+            (playerRef as PlayerController).Sneeze();
             hungerBar.isDraining = true;
         }
 
