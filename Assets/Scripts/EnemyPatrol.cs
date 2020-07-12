@@ -319,16 +319,22 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
-        if (PointInsideSphere(player.transform.position, detectionRadius) && IsInsideVisionCone() && CanSeePlayer())
+        if (PointInsideSphere(player.transform.position, detectionRadius, false) && IsInsideVisionCone() && CanSeePlayer())
         {
             ResetTimers();
             state = PatrolState.FoundPlayer;
         }
     }
 
-    private bool PointInsideSphere(Vector2 point, float radius)
+    private bool PointInsideSphere(Vector2 point, float radius, bool isSuperNoisy)
     {
-        return Vector2.Distance(point, transform.position) < radius;
+        float distance = Vector2.Distance(point, transform.position);
+        if (isSuperNoisy)
+        {
+            distance /= 1.5f;
+        }
+
+        return distance < radius;
     }
 
     private bool IsInsideVisionCone()
@@ -346,7 +352,10 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
-        if (FindObjectOfType<AudioManager>().madeSound && PointInsideSphere(player.transform.position, detectionRadius))
+        bool isRunning = player.GetComponent<PlayerController>().isRunning;
+
+        if (FindObjectOfType<AudioManager>().madeSound && PointInsideSphere(player.transform.position, detectionRadius, isRunning) || 
+            isRunning && PointInsideSphere(player.transform.position, detectionRadius, isRunning))
         {
             ResetTimers();
             FindObjectOfType<AudioManager>().madeSound = false;
