@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
     private float dashTime;
     private float dashCooldown = 0.0f;
     private bool isDashing = false;
-    private Vector3 defaultBlueCircleScale = new Vector3(5, 5, 1);
     public GameObject circle = null;
 
     private void Start()
@@ -105,16 +104,15 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift)) {
             isRunning = true;
-            circle.transform.localScale = 2 * defaultBlueCircleScale;
-            circle.transform.localPosition = new Vector2(0,-6f);
+            circle.GetComponent<Animator>().SetBool("makingSound", true);
             animator.speed = 2.0f;
             effectiveSpeed = runningSpeed;
             effectiveTimeBetweenFootstepSound = timeBetweenFootstepSound / 2.0f;
         } else
         {
-            circle.transform.localScale = defaultBlueCircleScale;
-            circle.transform.localPosition = new Vector2(0, -3f);
             isRunning = false;
+            circle.GetComponent<Animator>().SetBool("makingSound", false);
+
             animator.speed = 1.0f;
         }
 
