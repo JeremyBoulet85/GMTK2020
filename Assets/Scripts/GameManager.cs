@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
             gameOverTimer += Time.deltaTime;
             principalTimer += Time.deltaTime;
 
-            if (gameOverTimer > 4f)
+            if (gameOverTimer > 3.5f)
             {
                 gameOverTimer = 0f;
                 ShowEndPanel("You lost!", "Your noisy urges were out of control. Time to get lectured by the principal.");
@@ -78,7 +78,6 @@ public class GameManager : MonoBehaviour
         m_Player.transform.position = m_GameOverSpawnTransform.position;
         showGameOverPanel = true;
         FreezeGame();
-        ShowEndPanel("You lost!", "Your noisy urges were out of control. Time to get lectured by the principal.");
     }
 
     public void CheckGameWin()
