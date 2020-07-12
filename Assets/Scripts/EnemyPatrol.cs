@@ -3,6 +3,9 @@
 public class EnemyPatrol : MonoBehaviour
 {
     [SerializeField]
+    bool isMale = false;
+
+    [SerializeField]
     Transform pointA = null;
 
     [SerializeField]
@@ -152,6 +155,7 @@ public class EnemyPatrol : MonoBehaviour
         {
             GameManager.instance.GetStriked();
             UpdateDirection(player.transform.position);
+            FindObjectOfType<AudioManager>().Play(isMale ? "MaleAngry" : "FemaleAngry");
             InstantiateReaction(exclamation);
         }
 
@@ -186,7 +190,6 @@ public class EnemyPatrol : MonoBehaviour
         if (foundTimer == 0)
         {
             UpdateDirection(player.transform.position);
-
             InstantiateReaction(interrogation);
         }
             

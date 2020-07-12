@@ -99,4 +99,14 @@ MonoBehaviour:
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
+  - name: FemaleAngry
+    clip: {fileID: 8300000, guid: a49c0a48770132e4f8400b512874f25f, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: MaleAngry
+    clip: {fileID: 8300000, guid: 4263018be014f4e4bb84c5d24ab35c8a, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
   madeSound: 0
