@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour
         if (distanceTravelled >= 0.001f)
         {
             animator.SetFloat("Speed", effectiveSpeed);
-            FindObjectOfType<AudioManager>().PlayFootstepSound(false, effectiveTimeBetweenFootstepSound);
+            //FindObjectOfType<AudioManager>().PlayFootstepSound(false, effectiveTimeBetweenFootstepSound);
         } else {
             animator.SetFloat("Speed", 0.0f);
         }
