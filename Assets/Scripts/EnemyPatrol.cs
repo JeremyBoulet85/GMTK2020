@@ -34,7 +34,7 @@ public class EnemyPatrol : MonoBehaviour
         Walking,
         Waiting,
         FoundPlayer,
-        CaughtPlayer,
+        StrikePlayer,
         Investigating,
         LookAround,
         Chase
@@ -82,7 +82,7 @@ public class EnemyPatrol : MonoBehaviour
             case PatrolState.FoundPlayer:
                 FoundPlayer();
                 break;
-            case PatrolState.CaughtPlayer:
+            case PatrolState.StrikePlayer:
                 StrikePlayer();
                 break;
         }
@@ -152,8 +152,8 @@ public class EnemyPatrol : MonoBehaviour
 
         if (foundTimer == 0)
         {
+            GameManager.instance.GetStriked();
             UpdateDirection(player.transform.position);
-
             InstantiateReaction(exclamation);
         }
 
@@ -163,16 +163,20 @@ public class EnemyPatrol : MonoBehaviour
             DestroyReaction();
             foundTimer = 0f;
 
-            state = PatrolState.CaughtPlayer;
+            state = PatrolState.StrikePlayer;
         }
     }
 
     private void StrikePlayer()
     {
-        if (state != PatrolState.CaughtPlayer)
+        if (state != PatrolState.StrikePlayer)
             return;
 
-        GameManager.instance.StrikeCount++;
+        if (GameManager.instance.ShouldRespawn)
+        {
+            GameManager.instance.Respawn();
+        }
+
         SwitchToWalking();
     }
 
@@ -302,7 +306,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void SeePlayer()
     {
-        if (state == PatrolState.FoundPlayer || state == PatrolState.CaughtPlayer)
+        if (state == PatrolState.FoundPlayer || state == PatrolState.StrikePlayer)
         {
             return;
         }
@@ -329,7 +333,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void HearPlayerSound()
     {
-        if (state == PatrolState.FoundPlayer || state == PatrolState.CaughtPlayer)
+        if (state == PatrolState.FoundPlayer || state == PatrolState.StrikePlayer)
         {
             return;
         }

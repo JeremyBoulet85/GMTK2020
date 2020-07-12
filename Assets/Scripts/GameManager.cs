@@ -9,10 +9,18 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private int totalKeys = 4;
-    public int StrikeCount { get; set; }
+    [SerializeField]
+    private int totalStrikes = 3;
+
     public bool Finished { get; private set; } = false;
+    public bool ShouldRespawn { get; private set; } = false;
     public int CurrentKeys { get; private set; } = 0;
     public int TotalKeys { get => totalKeys; }
+
+    public int StrikeCount { get; private set; } = 0;
+    public int TotalStrikes { get => totalStrikes; }
+    private float timer = 0f;
+    private float maxTimer = 2f;
 
     private Transform player;
 
@@ -35,24 +43,17 @@ public class GameManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    //Initializes the game for each level.
-    void InitGame()
+    public void Respawn()
     {
+        ShouldRespawn = false;
+        StrikeCount = 0;
+        player.transform.position = startingPoint.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GetStriked()
     {
-        UpdateStrikeCount();
-    }
-
-    void UpdateStrikeCount()
-    {
-        if (StrikeCount >= 3)
-        {
-            player.transform.position = startingPoint.position;
-            StrikeCount = 0;
-        }
+        ++StrikeCount;
+        ShouldRespawn = StrikeCount >= TotalStrikes;
     }
 
     public void PickUpKey()
