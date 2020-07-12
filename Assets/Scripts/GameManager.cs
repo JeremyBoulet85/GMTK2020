@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,21 +49,16 @@ public class GameManager : MonoBehaviour
         IsGameOver = false;
         StrikeCount = 0;
         m_Player.transform.position = m_GameOverSpawnTransform.position;
+        FreezeGame();
+        ShowEndPanel("You lost!", "Your noisy urges were out of control. Time to get lectured by the principal.");
     }
 
     public void CheckGameWin()
     {
         if (CurrentKeys == TotalKeys)
         {
-            var pc = m_Player.GetComponent<PlayerController>();
-            pc.StopWalking();
-            pc.enabled = false;
-            m_Player.GetComponent<SneezeSystem>().enabled = false;
-            m_Player.GetComponent<FartSystem>().enabled = false;
-            m_Player.GetComponent<HungerSystem>().enabled = false;
-
-            var endPanel = GameObject.Find("HudCanvas").transform.Find("EndPanel").gameObject;
-            endPanel.SetActive(true);
+            FreezeGame();
+            ShowEndPanel("You won!", "You kept your noisy urges under control and sneaked out of school.");
         }
     }
 
@@ -99,5 +95,26 @@ public class GameManager : MonoBehaviour
     {
         ++CurrentKeys;
         Finished = CurrentKeys == totalKeys;
+    }
+
+    private void ShowEndPanel(string titleText, string contentText)
+    {
+        var endPanel = GameObject.Find("HudCanvas").transform.Find("EndPanel").gameObject;
+        var title = endPanel.transform.Find("Title").gameObject.GetComponent<Text>();
+        title.text = titleText;
+        var content = endPanel.transform.Find("ContentText").gameObject.GetComponent<Text>();
+        content.text = contentText;
+
+        endPanel.SetActive(true);
+    }
+
+    private void FreezeGame()
+    {
+        var pc = m_Player.GetComponent<PlayerController>();
+        pc.StopWalking();
+        pc.enabled = false;
+        m_Player.GetComponent<SneezeSystem>().enabled = false;
+        m_Player.GetComponent<FartSystem>().enabled = false;
+        m_Player.GetComponent<HungerSystem>().enabled = false;
     }
 }
