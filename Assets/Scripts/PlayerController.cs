@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,7 +19,6 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
     private Rigidbody2D rb;
-    private SoundManager soundManager;
     private float timeBetweenFootstepSound = 0.34f;
     private Vector3 lastPosition;
     private Vector3 lastDirection;
@@ -36,7 +33,6 @@ public class PlayerController : MonoBehaviour
     {
         animator     = GetComponent<Animator>();
         rb           = GetComponent<Rigidbody2D>();
-        soundManager = GetComponent<SoundManager>();
 
         lastPosition = transform.position;
 
@@ -47,7 +43,6 @@ public class PlayerController : MonoBehaviour
     {
         isSneezing = true;
         animator.Play("Sneeze");
-        soundManager.PlaySound(SoundType.Sneeze, 0.9f);
     }
 
     public void SneezeFinished()
@@ -58,7 +53,7 @@ public class PlayerController : MonoBehaviour
     
     public void CollectKey()
     {
-        soundManager.PlaySound(SoundType.KeyCollect, 0.7f);
+        FindObjectOfType<AudioManager>().Play("KeyCollect");
     }
 
     private bool soundInit = false;
@@ -66,8 +61,8 @@ public class PlayerController : MonoBehaviour
     private void InitSound()
     {
         soundInit = true;
-        soundManager.PlaySound(SoundType.Music, 0.06f);
-        soundManager.PlaySound(SoundType.Ambiance, 0.1f);
+        FindObjectOfType<AudioManager>().PlayMusic();
+        FindObjectOfType<AudioManager>().PlayAmbiance();
     }
 
     void FixedUpdate()
@@ -145,10 +140,8 @@ public class PlayerController : MonoBehaviour
         if (distanceTravelled >= 0.001f)
         {
             animator.SetFloat("Speed", effectiveSpeed);
-            soundManager.PlayFootstepSound(effectiveTimeBetweenFootstepSound);
-        }
-        else
-        {
+            FindObjectOfType<AudioManager>().PlayFootstepSound(false, effectiveTimeBetweenFootstepSound);
+        } else {
             animator.SetFloat("Speed", 0.0f);
         }
     }
