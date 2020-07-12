@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private float runningSpeed = 8.0f;
 
     [SerializeField]
-    public float dashSpeed = 30.0f;
+    public float dashSpeed = 20.0f;
 
     [SerializeField]
     public float startDashTime = 0.07f;
