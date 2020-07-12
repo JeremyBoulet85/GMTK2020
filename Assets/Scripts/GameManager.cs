@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     private int totalStrikes = 3;
 
     public bool Finished { get; private set; } = false;
-    public bool ShouldRespawn { get; private set; } = false;
+    public bool IsGameOver { get; private set; } = false;
     public int CurrentKeys { get; private set; } = 0;
     public int TotalKeys { get => totalKeys; }
     public int StrikeCount { get; private set; } = 0;
@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     private GameObject m_Player;
     private Transform m_PlayerSpawnTransform;
+    private Transform m_GameOverSpawnTransform;
 
     void Awake()
     {
@@ -39,9 +40,14 @@ public class GameManager : MonoBehaviour
 
     public void Respawn()
     {
-        ShouldRespawn = false;
-        StrikeCount = 0;
         m_Player.transform.position = m_PlayerSpawnTransform.position;
+    }
+
+    public void GameOver()
+    {
+        IsGameOver = false;
+        StrikeCount = 0;
+        m_Player.transform.position = m_GameOverSpawnTransform.position;
     }
 
     public void CheckGameWin()
@@ -69,6 +75,8 @@ public class GameManager : MonoBehaviour
         m_PlayerSpawnTransform = GameObject.Find("PlayerSpawn").transform;
         m_Player.transform.position = m_PlayerSpawnTransform.position;
 
+        m_GameOverSpawnTransform = GameObject.Find("GameOverSpawn").transform;
+
         var spawns = GameObject.FindGameObjectsWithTag("KeySpawn");
         foreach (var spawn in spawns)
         {
@@ -84,7 +92,7 @@ public class GameManager : MonoBehaviour
     public void GetStriked()
     {
         ++StrikeCount;
-        ShouldRespawn = StrikeCount >= TotalStrikes;
+        IsGameOver = StrikeCount >= TotalStrikes;
     }
 
     public void PickUpKey()

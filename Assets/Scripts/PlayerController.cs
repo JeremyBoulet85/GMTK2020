@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public float dashCooldownTime = 5.0f;
 
+    public bool IsFrozen { get; private set; } = false;
     private Animator animator;
     private Rigidbody2D rb;
     private float timeBetweenFootstepSound = 0.34f;
@@ -61,6 +62,11 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", 0.0f);
     }
 
+    public void Freeze(bool freeze)
+    {
+        IsFrozen = freeze;
+    }
+
     private bool soundInit = false;
     
     private void InitSound()
@@ -72,6 +78,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (IsFrozen)
+        {
+            StopWalking();
+            return;
+        }
+
         if (!soundInit)
             InitSound();
 
