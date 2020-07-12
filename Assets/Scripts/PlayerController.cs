@@ -111,8 +111,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private bool soundInit = false;
+    private void InitSound()
+    {
+        soundInit = true;
+        FindObjectOfType<AudioManager>().PlayMusic();
+        FindObjectOfType<AudioManager>().PlayAmbiance();
+    }
+
     void FixedUpdate()
     {
+        if (!soundInit)
+            InitSound();
 
         if (dashCooldown > 0)
         {

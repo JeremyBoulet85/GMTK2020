@@ -63,19 +63,8 @@ public class GameManager : MonoBehaviour
         m_Player.transform.position = m_PlayerSpawnTransform.position;
     }
 
-    private bool soundInit = false;
-    private void InitSound()
-    {
-        soundInit = true;
-        FindObjectOfType<AudioManager>().PlayMusic();
-        FindObjectOfType<AudioManager>().PlayAmbiance();
-    }
-
     void Update()
     {
-        if (!soundInit)
-            InitSound();
-
         if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P)) && !IsInstructionPannelShown)
         {
             if (IsGamePaused)
