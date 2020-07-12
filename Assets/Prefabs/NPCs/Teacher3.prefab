@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e48ee5525364449a50dc3d1d515d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMale: 1
   pointA: {fileID: 0}
   pointB: {fileID: 0}
   speed: 1
