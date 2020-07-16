@@ -6,69 +6,20 @@ public class PlayerDetection : MonoBehaviour
 {
     private LineRenderer lineRenderer;
 
-    // Start is called before the first frame update
     void Start()
     {
         lineRenderer = transform.Find("Line").GetComponent<LineRenderer>();
         UpdateConeColor(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public bool CanHearPlayer(Vector2 playerLocation, float detectionRadius)
     {
-        
-    }
-
-    public bool CanHearPlayer(Vector2 playerLocation, float detectionRadius, bool playerIsRunning)
-    {
-        if (FindObjectOfType<AudioManager>().madeSound && PointInsideSphere(playerLocation, detectionRadius) ||
-            playerIsRunning && PointInsideSphere(playerLocation, detectionRadius))
-        {
-            FindObjectOfType<AudioManager>().madeSound = false;
-            return true;
-        }
-
-        return false;
+        return PointInsideSphere(playerLocation, detectionRadius);
     }
 
     public bool CanSeePlayer(Vector2 playerLocation, float detectionRadius, Vector2 direction)
     {
         return PointInsideSphere(playerLocation, detectionRadius) && IsInsideVisionCone(playerLocation, direction) && CanSeePlayer(playerLocation);
-    }
-
-    private bool PointInsideSphere(Vector2 point, float radius)
-    {
-        float distance = Vector2.Distance(point, transform.position);
-
-        return distance < radius;
-    }
-
-
-    private bool IsInsideVisionCone(Vector3 location, Vector2 direction)
-    {
-        return Vector2.Angle(location - transform.position, direction.normalized) < 10f;
-    }
-
-    private bool CanSeePlayer(Vector2 playerLocation)
-    {
-        int layerMask = 1 << 8;
-
-        layerMask = ~layerMask;
-
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, playerLocation, layerMask);
-
-        if (hit.collider != null && hit.collider.CompareTag("Player"))
-        {
-            return true;
-
-        }
-
-        return hit.collider == null;
-    }
-
-    public Vector2 Rotate(Vector2 v, float degrees)
-    {
-        return (Quaternion.Euler(0, 0, degrees) * v).normalized;
     }
 
     public void UpdateConeColor(bool isAlerted)
@@ -94,4 +45,37 @@ public class PlayerDetection : MonoBehaviour
         lineRenderer.SetPosition(3, Vector2.zero);
     }
 
+    private bool PointInsideSphere(Vector2 point, float radius)
+    {
+        float distance = Vector2.Distance(point, transform.position);
+
+        return distance < radius;
+    }
+
+    private bool IsInsideVisionCone(Vector3 location, Vector2 direction)
+    {
+        return Vector2.Angle(location - transform.position, direction.normalized) < 10f;
+    }
+
+    private bool CanSeePlayer(Vector2 playerLocation)
+    {
+        int layerMask = 1 << 8;
+
+        layerMask = ~layerMask;
+
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, playerLocation, layerMask);
+
+        if (hit.collider != null && hit.collider.CompareTag("Player"))
+        {
+            return true;
+
+        }
+
+        return hit.collider == null;
+    }
+
+    private Vector2 Rotate(Vector2 v, float degrees)
+    {
+        return (Quaternion.Euler(0, 0, degrees) * v).normalized;
+    }
 }

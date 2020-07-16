@@ -856,21 +856,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3247107699006645481, guid: e2514fbbdfdcb374da9af10992be3df4,
-        type: 3}
-      propertyPath: pointA
-      value: 
-      objectReference: {fileID: 1134492753}
-    - target: {fileID: 3247107699006645481, guid: e2514fbbdfdcb374da9af10992be3df4,
-        type: 3}
-      propertyPath: pointB
-      value: 
-      objectReference: {fileID: 324169589}
-    - target: {fileID: 3247107699006645481, guid: e2514fbbdfdcb374da9af10992be3df4,
-        type: 3}
-      propertyPath: speed
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4959789138019095283, guid: e2514fbbdfdcb374da9af10992be3df4,
         type: 3}
       propertyPath: m_Name
@@ -3111,16 +3096,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teacher8
       objectReference: {fileID: 0}
-    - target: {fileID: 4532662653449995495, guid: 41ca8dfef84cfb3439bd663be91d3b72,
-        type: 3}
-      propertyPath: pointA
-      value: 
-      objectReference: {fileID: 2146184385}
-    - target: {fileID: 4532662653449995495, guid: 41ca8dfef84cfb3439bd663be91d3b72,
-        type: 3}
-      propertyPath: pointB
-      value: 
-      objectReference: {fileID: 1244383452}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41ca8dfef84cfb3439bd663be91d3b72, type: 3}
 --- !u!4 &153021333 stripped
@@ -14768,16 +14743,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teacher11
       objectReference: {fileID: 0}
-    - target: {fileID: 4532662653449995495, guid: 41ca8dfef84cfb3439bd663be91d3b72,
-        type: 3}
-      propertyPath: pointA
-      value: 
-      objectReference: {fileID: 23763549}
-    - target: {fileID: 4532662653449995495, guid: 41ca8dfef84cfb3439bd663be91d3b72,
-        type: 3}
-      propertyPath: pointB
-      value: 
-      objectReference: {fileID: 2129348736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41ca8dfef84cfb3439bd663be91d3b72, type: 3}
 --- !u!4 &569701354 stripped
@@ -22297,20 +22262,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3247107699006645481, guid: e2514fbbdfdcb374da9af10992be3df4,
-        type: 3}
-      propertyPath: pointA
-      value: 
-      objectReference: {fileID: 778630432}
-    - target: {fileID: 3247107699006645481, guid: e2514fbbdfdcb374da9af10992be3df4,
-        type: 3}
-      propertyPath: pointB
-      value: 
-      objectReference: {fileID: 510255004}
     - target: {fileID: 4959789138019095283, guid: e2514fbbdfdcb374da9af10992be3df4,
         type: 3}
       propertyPath: m_Name
-      value: Teacher9
+      value: Teacher3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2514fbbdfdcb374da9af10992be3df4, type: 3}
@@ -39001,16 +38956,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 178531682}
     m_Modifications:
-    - target: {fileID: 251687268513952233, guid: 6d2a55ac6a154bb40bd6a96f7fc29e60,
-        type: 3}
-      propertyPath: pointA
-      value: 
-      objectReference: {fileID: 465539221}
-    - target: {fileID: 251687268513952233, guid: 6d2a55ac6a154bb40bd6a96f7fc29e60,
-        type: 3}
-      propertyPath: pointB
-      value: 
-      objectReference: {fileID: 229369324}
     - target: {fileID: 3486089593767262500, guid: 6d2a55ac6a154bb40bd6a96f7fc29e60,
         type: 3}
       propertyPath: pointA
@@ -68610,16 +68555,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teacher5
       objectReference: {fileID: 0}
-    - target: {fileID: 4532662653449995495, guid: 41ca8dfef84cfb3439bd663be91d3b72,
-        type: 3}
-      propertyPath: pointA
-      value: 
-      objectReference: {fileID: 1496531659}
-    - target: {fileID: 4532662653449995495, guid: 41ca8dfef84cfb3439bd663be91d3b72,
-        type: 3}
-      propertyPath: pointB
-      value: 
-      objectReference: {fileID: 1875002650}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41ca8dfef84cfb3439bd663be91d3b72, type: 3}
 --- !u!4 &1852029213 stripped
@@ -70504,20 +70439,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3247107699006645481, guid: e2514fbbdfdcb374da9af10992be3df4,
-        type: 3}
-      propertyPath: pointA
-      value: 
-      objectReference: {fileID: 1622575635}
-    - target: {fileID: 3247107699006645481, guid: e2514fbbdfdcb374da9af10992be3df4,
-        type: 3}
-      propertyPath: pointB
-      value: 
-      objectReference: {fileID: 783822863}
     - target: {fileID: 4959789138019095283, guid: e2514fbbdfdcb374da9af10992be3df4,
         type: 3}
       propertyPath: m_Name
-      value: Teacher10
+      value: Teacher3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2514fbbdfdcb374da9af10992be3df4, type: 3}
@@ -70828,16 +70753,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 178531682}
     m_Modifications:
-    - target: {fileID: 251687268513952233, guid: 6d2a55ac6a154bb40bd6a96f7fc29e60,
-        type: 3}
-      propertyPath: pointA
-      value: 
-      objectReference: {fileID: 911862834}
-    - target: {fileID: 251687268513952233, guid: 6d2a55ac6a154bb40bd6a96f7fc29e60,
-        type: 3}
-      propertyPath: pointB
-      value: 
-      objectReference: {fileID: 699536326}
     - target: {fileID: 3486089593767262500, guid: 6d2a55ac6a154bb40bd6a96f7fc29e60,
         type: 3}
       propertyPath: pointA

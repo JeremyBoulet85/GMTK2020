@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1962636564508521267}
   - component: {fileID: 8332617708292545701}
   - component: {fileID: 595809718997877788}
-  - component: {fileID: 3247107699006645481}
   - component: {fileID: -5433942613276201938}
   - component: {fileID: -4438231434711820339}
   - component: {fileID: 8899516477392934149}
@@ -107,27 +106,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3247107699006645481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4959789138019095283}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e48ee5525364449a50dc3d1d515d55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMale: 1
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 0.5
-  waitTime: 2
-  exclamation: {fileID: 2344749319038539405, guid: 5d35babf1a0dcef46be13329fb294ce8,
-    type: 3}
-  interrogation: {fileID: 2131497859453011052, guid: e3374957682b7de45ad60a803e53a2de,
-    type: 3}
 --- !u!114 &-5433942613276201938
 MonoBehaviour:
   m_ObjectHideFlags: 0

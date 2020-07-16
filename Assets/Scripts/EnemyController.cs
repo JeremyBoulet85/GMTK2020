@@ -28,24 +28,28 @@ public class EnemyController : MonoBehaviour
     private float foundTimer = 0f;
     private float lookAroundTimer = 0f;
     private int lookAroundCounter = 0;
+    private const float soundDetectionRadius = 3f;
+    private const float visionDetectionRadius = 4.5f;
 
     enum EnemyState
     {
+        // Don't move the order!
         Patrolling,
+        Waiting,
+        SwitchingTarget,
         Alerted,
         Investigating,
         LookingAround,
-        Waiting,
-        SwitchingTarget,
         FoundPlayer
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         movement = GetComponent<EnemyMovement>();
         detection = GetComponent<PlayerDetection>();
+        player.gameObject.GetComponent<PlayerController>().OnSoundProduced += ReactToSound;
+
         if (currentTarget == null)
         {
             currentTarget = pointA;
@@ -59,7 +63,7 @@ public class EnemyController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         switch (state)
         {
@@ -71,48 +75,49 @@ public class EnemyController : MonoBehaviour
                 Investigate();
                 break;
             case EnemyState.LookingAround:
+                FindPlayer();
                 LookAround();
                 break;
             case EnemyState.Waiting:
-                GetAlerted();
+                ReactToVision();
                 Wait();
                 break;
             case EnemyState.SwitchingTarget:
-                GetAlerted();
+                ReactToVision();
                 SwitchTarget();
                 break;
             case EnemyState.FoundPlayer:
                 FoundPlayer();
                 break;
         }
-        detection.DrawCone(movement.GetDirection(), 6f);
+        UpdateVisionCone();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (state == EnemyState.Patrolling)
         {
-            GetAlerted();
+            ReactToVision();
             Patrol();
         }
-        detection.DrawCone(movement.GetDirection(), 6f);
+        detection.DrawCone(movement.GetDirection(), visionDetectionRadius);
     }
 
-    void Patrol()
+    private void Patrol()
     {
         if (state != EnemyState.Patrolling)
         {
             return;
         }
 
-        if (movement.WalkTowardTarget(currentTarget.position))
+        if (movement.WalkTowardTarget(currentTarget.position, player.transform.position))
         {
             // If reached target, wait
             state = EnemyState.Waiting;
         }
     }
 
-    void SwitchTarget()
+    private void SwitchTarget()
     {
         if (state != EnemyState.SwitchingTarget)
         {
@@ -127,7 +132,7 @@ public class EnemyController : MonoBehaviour
         state = EnemyState.Patrolling;
     }
 
-    void Alerted()
+    private void Alerted()
     {
         if (state != EnemyState.Alerted)
         {
@@ -144,11 +149,10 @@ public class EnemyController : MonoBehaviour
         {
             alertedTimer = 0f;
             state = EnemyState.Investigating;
-            detection.UpdateConeColor(true);
         }
     }
 
-    void Investigate()
+    private void Investigate()
     {
         if (state != EnemyState.Investigating)
         {
@@ -164,7 +168,7 @@ public class EnemyController : MonoBehaviour
         else if (alertHit.collider == null )
         {
             // If no obstacle between enemy and alert location, walk to it
-            if (movement.WalkTowardTarget(alertLocation))
+            if (movement.WalkTowardTarget(alertLocation, player.transform.position))
             {
                 state = EnemyState.LookingAround;
             }
@@ -174,18 +178,9 @@ public class EnemyController : MonoBehaviour
             // If there are obstacles between enemy and alert location, look around
             state = EnemyState.LookingAround;
         }
-
-        // Check if the current target is still accessible from the alert location
-        //RaycastHit2D currentTargetHit = Physics2D.Linecast(currentTarget.position, alertLocation);
-        //if (currentTargetHit.collider != null)
-        //{
-        //    // it was not accessible, so enemy go back to patrolling
-        //    DestroyReaction();
-        //    state = EnemyState.Patrolling;
-        //}
     }
 
-    void LookAround()
+    private void LookAround()
     {
         if (state != EnemyState.LookingAround)
         {
@@ -205,13 +200,12 @@ public class EnemyController : MonoBehaviour
             {
                 lookAroundCounter = 0;
                 DestroyReaction();
-                detection.UpdateConeColor(false);
                 state = EnemyState.Patrolling;
             }
         }
     }
 
-    void Wait()
+    private void Wait()
     {
         if (state != EnemyState.Waiting)
         {
@@ -228,7 +222,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    void FoundPlayer()
+    private void FoundPlayer()
     {
         if (state != EnemyState.FoundPlayer)
         {
@@ -279,31 +273,53 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void GetAlerted()
-    {
-
-        Vector2 playerLocation = player.transform.position;
-        if (detection.CanSeePlayer(playerLocation, 6f, movement.GetDirection()))
-        {
-            alertLocation = playerLocation;
-            state = EnemyState.Alerted;
-        }
-        else if (detection.CanHearPlayer(playerLocation, 6f, player.GetComponent<PlayerController>().isRunning))
-        {
-            alertLocation = playerLocation;
-            state = EnemyState.Alerted;
-        }
-    }
-
     private void FindPlayer()
     {
-        if (detection.CanSeePlayer(player.transform.position, 6f, movement.GetDirection()))
+        if (detection.CanSeePlayer(player.transform.position, visionDetectionRadius, movement.GetDirection()))
         {
             state = EnemyState.FoundPlayer;
         }
-        else
+    }
+
+    private void ReactToVision()
+    {
+
+        Vector2 playerLocation = player.transform.position;
+        if (detection.CanSeePlayer(playerLocation, visionDetectionRadius, movement.GetDirection()))
         {
-            state = EnemyState.Investigating;
+            if (state == EnemyState.Alerted)
+            {
+                alertLocation = playerLocation;
+                state = EnemyState.Investigating;
+            }
+            else
+            {
+                alertLocation = playerLocation;
+                state = EnemyState.Alerted;
+            }
         }
+    }
+
+    private void ReactToSound(Transform player)
+    {
+        if (detection.CanHearPlayer(player.position, soundDetectionRadius))
+        {
+            if (state == EnemyState.Alerted || state == EnemyState.Investigating)
+            {
+                alertLocation = player.position;
+                state = EnemyState.Investigating;
+            }
+            else
+            {
+                alertLocation = player.position;
+                state = EnemyState.Alerted;
+            }
+        }
+    }
+
+    private void UpdateVisionCone()
+    {
+        detection.UpdateConeColor(state >= EnemyState.Alerted);
+        detection.DrawCone(movement.GetDirection(), visionDetectionRadius);
     }
 }

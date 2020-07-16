@@ -341,30 +341,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void HearPlayerSound()
     {
-        if (state == PatrolState.FoundPlayer || state == PatrolState.StrikePlayer)
-        {
-            return;
-        }
 
-        bool isRunning = player.GetComponent<PlayerController>().isRunning;
-
-        if (FindObjectOfType<AudioManager>().madeSound && PointInsideSphere(player.transform.position, detectionRadius) || 
-            isRunning && PointInsideSphere(player.transform.position, detectionRadius))
-        {
-            ResetTimers();
-            FindObjectOfType<AudioManager>().madeSound = false;
-            soundLocation = player.transform.position;
-
-            UpdateDirection(soundLocation);
-            if (CanSeePlayer())
-            {
-                state = PatrolState.FoundPlayer;
-            }
-            else
-            {
-                state = PatrolState.Investigating;
-            }
-        }
     }
 
     private bool CanSeePlayer()

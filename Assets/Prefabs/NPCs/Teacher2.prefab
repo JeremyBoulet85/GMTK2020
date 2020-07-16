@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2017490474528911697}
   - component: {fileID: 7337270645398254226}
-  - component: {fileID: 4532662653449995495}
   - component: {fileID: 1877948538764498664}
   - component: {fileID: -7939916125375394197}
   - component: {fileID: -8621388521900977397}
@@ -88,27 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &4532662653449995495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4031373086878614149}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e48ee5525364449a50dc3d1d515d55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMale: 1
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 1
-  waitTime: 2
-  exclamation: {fileID: 2344749319038539405, guid: 5d35babf1a0dcef46be13329fb294ce8,
-    type: 3}
-  interrogation: {fileID: 2131497859453011052, guid: e3374957682b7de45ad60a803e53a2de,
-    type: 3}
 --- !u!95 &1877948538764498664
 Animator:
   serializedVersion: 3

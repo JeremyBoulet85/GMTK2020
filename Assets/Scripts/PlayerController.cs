@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,12 +27,13 @@ public class PlayerController : MonoBehaviour
     private float timeBetweenFootstepSound = 0.34f;
     private Vector3 lastPosition;
     private Vector3 lastDirection;
-    private bool isSneezing = false;
+    private bool isProducingSound = false;
     private Vector3 fartPos;
     private float dashTime;
     private float dashCooldown = 0.0f;
     private bool isDashing = false;
     public GameObject circle = null;
+    public event Action<Transform> OnSoundProduced;
 
     public GaugeBarController staminaBar;
 
@@ -52,14 +54,16 @@ public class PlayerController : MonoBehaviour
 
     public void Sneeze()
     {
-        isSneezing = true;
+        OnSoundProduced?.Invoke(transform);
+
+        isProducingSound = true;
         circle.GetComponent<Animator>().SetBool("makingSound", true);
         animator.Play("Sneeze");
     }
 
     public void SneezeFinished()
     {
-        isSneezing = false;
+        isProducingSound = false;
         circle.GetComponent<Animator>().SetBool("makingSound", false);
         animator.Play("Idle");
     }
@@ -112,9 +116,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void FixedUpdate()
-    {
-
-
+    {  
         if (dashCooldown > 0)
         {
             dashCooldown -= Time.fixedDeltaTime;
@@ -127,7 +129,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (isSneezing)
+        if (isProducingSound)
         {
             rb.velocity = new Vector3(0.0f, 0.0f, 0.0f);
             return;
@@ -137,6 +139,7 @@ public class PlayerController : MonoBehaviour
         float effectiveTimeBetweenFootstepSound = timeBetweenFootstepSound;
 
         if (Input.GetKey(KeyCode.LeftShift)) {
+            OnSoundProduced?.Invoke(transform);
             isRunning = true;
             circle.GetComponent<Animator>().SetBool("makingSound", true);
             animator.speed = 2.0f;

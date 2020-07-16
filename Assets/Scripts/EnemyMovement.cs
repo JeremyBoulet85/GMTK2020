@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -10,17 +8,12 @@ public class EnemyMovement : MonoBehaviour
     private Vector2 direction;
     private Animator animator;
     private Vector2[] directions = { new Vector2(-1, 0), new Vector2(0, 1), new Vector2(1, 0), new Vector2(0, -1) };
+    private float footstepSoundDistance = 10.0f;
+    private float footstepSoundInterval = 0.8f;
 
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void UpdateDirection(int index)
@@ -41,13 +34,18 @@ public class EnemyMovement : MonoBehaviour
         return direction;
     }
 
-    public bool WalkTowardTarget(Vector2 target)
+    public bool WalkTowardTarget(Vector2 target, Vector2 playerLocation)
     {
         if (HasReachedTarget(target, 0.5f))
         {
             return true;
         }
+
         UpdateDirection(target);
+        if (Vector3.Distance(transform.position, playerLocation) < footstepSoundDistance)
+        {
+            FindObjectOfType<AudioManager>().PlayFootstepSound(true, footstepSoundInterval);
+        }
         transform.Translate(speed * direction * Time.deltaTime, Space.World);
 
         return false;

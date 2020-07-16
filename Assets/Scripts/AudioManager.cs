@@ -8,7 +8,6 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance = null;
 
     public Sound[] sounds;
-    public bool madeSound = false;
     public AudioMixer mixer;
 
     bool playingAmbiance = false;
@@ -101,9 +100,6 @@ public class AudioManager : MonoBehaviour
 
     public void Play(string name)
     {
-        if (playerSounds.Contains(name))
-            madeSound = true;
-
         Sound s = Array.Find(sounds, sound => sound.name == name);
 
         s.source.Play();
