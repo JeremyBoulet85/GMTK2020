@@ -20,7 +20,9 @@ public class EnemyController : MonoBehaviour
     private PlayerDetection detection;
     private Transform currentTarget = null;
     private GameObject player;
-    private GameObject reactionInstance = null;
+    private GameObject exclamationInstance = null;
+    private GameObject interrogationInstance = null;
+    private bool alreadyReacted;
     private Vector2 alertLocation;
 
     private float waitTimer = 0f;
@@ -60,6 +62,18 @@ public class EnemyController : MonoBehaviour
         }
         movement.UpdateDirection(currentTarget.position);
         state = EnemyState.Patrolling;
+        InitReactions();
+    }
+
+    private void InitReactions()
+    {
+        exclamationInstance = Instantiate(foundPlayerReaction, gameObject.transform);
+        exclamationInstance.transform.position = new Vector2(transform.position.x, transform.position.y + 1.5f);
+        exclamationInstance.SetActive(false);
+
+        interrogationInstance = Instantiate(alertedReaction, gameObject.transform);
+        interrogationInstance.transform.position = new Vector2(transform.position.x, transform.position.y + 1.5f);
+        exclamationInstance.SetActive(false);
     }
 
     // Update is called once per frame
@@ -91,6 +105,7 @@ public class EnemyController : MonoBehaviour
                 break;
         }
         UpdateVisionCone();
+        UpdateReaction();
     }
 
     private void FixedUpdate()
@@ -100,7 +115,8 @@ public class EnemyController : MonoBehaviour
             ReactToVision();
             Patrol();
         }
-        detection.DrawCone(movement.GetDirection(), visionDetectionRadius);
+        UpdateVisionCone();
+        UpdateReaction();
     }
 
     private void Patrol()
@@ -139,11 +155,6 @@ public class EnemyController : MonoBehaviour
             return;
         }
 
-        if (alertedTimer == 0)
-        {
-            InstantiateReaction(alertedReaction);
-        }
-
         alertedTimer += Time.deltaTime;
         if (alertedTimer > 0.7f)
         {
@@ -162,7 +173,7 @@ public class EnemyController : MonoBehaviour
         RaycastHit2D alertHit = Physics2D.Linecast(transform.position, alertLocation);
         if (alertHit.collider != null && alertHit.collider.CompareTag("Player"))
         {
-            DestroyReaction();
+
             state = EnemyState.FoundPlayer;
         }
         else if (alertHit.collider == null )
@@ -186,7 +197,7 @@ public class EnemyController : MonoBehaviour
         {
             return;
         }
-
+       
         lookAroundTimer += Time.deltaTime;
         if (lookAroundTimer > 1f)
         {
@@ -199,7 +210,6 @@ public class EnemyController : MonoBehaviour
             else
             {
                 lookAroundCounter = 0;
-                DestroyReaction();
                 state = EnemyState.Patrolling;
             }
         }
@@ -228,7 +238,7 @@ public class EnemyController : MonoBehaviour
         {
             return;
         }
-
+      
         player.GetComponent<PlayerController>().Freeze(true);
 
         if (foundTimer == 0)
@@ -236,13 +246,11 @@ public class EnemyController : MonoBehaviour
             GameManager.instance.GetStriked();
             movement.UpdateDirection(player.transform.position);
             FindObjectOfType<AudioManager>().Play(isMale ? "MaleAngry" : "FemaleAngry");
-            InstantiateReaction(foundPlayerReaction);
         }
 
         foundTimer += Time.deltaTime;
         if (foundTimer > 2f)
         {
-            DestroyReaction();
             foundTimer = 0f;
 
             if (!GameManager.instance.IsGameOver)
@@ -258,21 +266,6 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void InstantiateReaction(GameObject reaction)
-    {
-        DestroyReaction();
-        reactionInstance = Instantiate(reaction, gameObject.transform);
-        reactionInstance.transform.position = new Vector2(transform.position.x, transform.position.y + 1.5f);
-    }
-
-    private void DestroyReaction()
-    {
-        if (reactionInstance != null)
-        {
-            Destroy(reactionInstance);
-        }
-    }
-
     private void FindPlayer()
     {
         if (detection.CanSeePlayer(player.transform.position, visionDetectionRadius, movement.GetDirection()))
@@ -283,20 +276,10 @@ public class EnemyController : MonoBehaviour
 
     private void ReactToVision()
     {
-
         Vector2 playerLocation = player.transform.position;
         if (detection.CanSeePlayer(playerLocation, visionDetectionRadius, movement.GetDirection()))
         {
-            if (state == EnemyState.Alerted)
-            {
-                alertLocation = playerLocation;
-                state = EnemyState.Investigating;
-            }
-            else
-            {
-                alertLocation = playerLocation;
-                state = EnemyState.Alerted;
-            }
+            React(playerLocation);
         }
     }
 
@@ -304,16 +287,21 @@ public class EnemyController : MonoBehaviour
     {
         if (detection.CanHearPlayer(player.position, soundDetectionRadius))
         {
-            if (state == EnemyState.Alerted || state == EnemyState.Investigating)
-            {
-                alertLocation = player.position;
-                state = EnemyState.Investigating;
-            }
-            else
-            {
-                alertLocation = player.position;
-                state = EnemyState.Alerted;
-            }
+            React(player.position);
+        }
+    }
+
+    private void React(Vector2 playerLocation)
+    {
+        if (state == EnemyState.Alerted || state == EnemyState.Investigating)
+        {
+            alertLocation = playerLocation;
+            state = EnemyState.Investigating;
+        }
+        else
+        {
+            alertLocation = playerLocation;
+            state = EnemyState.Alerted;
         }
     }
 
@@ -321,5 +309,24 @@ public class EnemyController : MonoBehaviour
     {
         detection.UpdateConeColor(state >= EnemyState.Alerted);
         detection.DrawCone(movement.GetDirection(), visionDetectionRadius);
+    }
+
+    private void UpdateReaction()
+    {
+        if (state >= EnemyState.Alerted && state != EnemyState.FoundPlayer)
+        {
+            interrogationInstance.SetActive(true);
+            exclamationInstance.SetActive(false);
+        }
+        else if (state == EnemyState.FoundPlayer)
+        {
+            interrogationInstance.SetActive(false);
+            exclamationInstance.SetActive(true);
+        }
+        else
+        {
+            interrogationInstance.SetActive(false);
+            exclamationInstance.SetActive(false);
+        }
     }
 }
