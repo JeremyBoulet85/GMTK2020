@@ -9,10 +9,6 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     Transform pointB = null;
     [SerializeField]
-    GameObject foundPlayerReaction = null;
-    [SerializeField]
-    GameObject alertedReaction = null;
-    [SerializeField]
     bool isMale = false;
 
     private EnemyState state;
@@ -67,13 +63,8 @@ public class EnemyController : MonoBehaviour
 
     private void InitReactions()
     {
-        exclamationInstance = Instantiate(foundPlayerReaction, gameObject.transform);
-        exclamationInstance.transform.position = new Vector2(transform.position.x, transform.position.y + 1.5f);
-        exclamationInstance.SetActive(false);
-
-        interrogationInstance = Instantiate(alertedReaction, gameObject.transform);
-        interrogationInstance.transform.position = new Vector2(transform.position.x, transform.position.y + 1.5f);
-        exclamationInstance.SetActive(false);
+        interrogationInstance = transform.Find("Interrogation").gameObject;
+        exclamationInstance = transform.Find("Exclamation").gameObject;
     }
 
     // Update is called once per frame
