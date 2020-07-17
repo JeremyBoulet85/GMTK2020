@@ -147,7 +147,7 @@ public class EnemyController : MonoBehaviour
         }
 
         alertedTimer += Time.deltaTime;
-        if (alertedTimer > 0.7f)
+        if (alertedTimer > 0.6f)
         {
             alertedTimer = 0f;
             state = EnemyState.Investigating;
@@ -284,10 +284,9 @@ public class EnemyController : MonoBehaviour
 
     private void React(Vector2 playerLocation)
     {
-        if (state == EnemyState.Alerted || state == EnemyState.Investigating)
+        if (state == EnemyState.Investigating && detection.CanSeePlayer(playerLocation, visionDetectionRadius, movement.GetDirection()))
         {
-            alertLocation = playerLocation;
-            state = EnemyState.Investigating;
+            state = EnemyState.FoundPlayer;
         }
         else
         {
